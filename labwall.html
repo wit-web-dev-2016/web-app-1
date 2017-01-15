@@ -2,10 +2,12 @@
  <html>
    <head>
 
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
@@ -17,8 +19,10 @@
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
-      <style>
-        
+     
+
+     <style>
+       
 
 body 
 {
@@ -38,9 +42,9 @@ figcaption
 
 
 
-    </style>
+     </style>
 
-  </head>
+   </head>
 
   <body>
     
@@ -61,21 +65,21 @@ figcaption
 </a>
 
   <div class="seven wide center aligned column">
-    <h2 class="headder"> Web Development</h2>
+    <h2 class="headder">  Web App 1 Labs</h2>
     <p> All Labs in the Course </p>
   </div>
 
   
 <div class="two wide column sitemap">
-  <div class="popup" data-content="Top Level Topic View">
-    <a href="index.html"> <i class="huge home icon"></i> Topics </a>
+  <div class="popup" data-content="To the top level Topics for this Module...">
+    <a href="index.html"> <i class="huge home icon"></i> Module </a>
   </div>
 </div>
 
   
 <div class="four wide column">
   <div class="ui center aligned mini message segment">
-    <a href="mailto:edeleastar@wit.ie">Eamonn de Leastar</a> & <a href="mailto:bmullally@wit.ie">Dr.Brenda Mullally</a>, <a href="http:/www.wit.ie"> WIT </a>.
+    Your Name.
     <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
         target="_blank">Creative Commons License
     </a>
@@ -106,8 +110,8 @@ figcaption
 <div class="ui bottom attached segment pushable">
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     
-    <a class="item" href="topic01/book-a/index.html">
-      Lab-00
+    <a class="item" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
+      Lab-1 Gomix Intro
     </a>
     
   </div>
@@ -116,20 +120,21 @@ figcaption
       <div class="ui four doubling stackable cards">
         
         
-  <a class="ui raised link card" href="topic01/book-a/index.html">
+  <a class="ui raised link card" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
     <div class="content">
         <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-00 </div>
+        <div class="header"> Lab-1 Gomix Intro </div>
     </div>
     <div class="image">
-      <img class="ui bordered rounded image" src="topic01/book-a/img/main.png">
+      <img class="ui bordered rounded image" src="topic-01-gomix-intro/book-a-gomix-intro/img/main.png">
     </div>
     <div class="content">
       <div class="description">
-         <p>This lab will firstly introduce you to the tools we will use during the web development module and secondly introduce you to creating, editing, saving and displaying a web page.</p>
+         <p>Create, modify and view your first Gomix project.</p>
 
       </div>
     </div>
+    
   </a>
 
         
@@ -143,24 +148,22 @@ figcaption
 
     </footer>
     <script>
-      
-$(document).ready(function()
-{
-  $("img").addClass ("ui image");
+      $(document).ready(function () {
+  $('img').addClass('ui image');
   $('.ui.embed').embed();
 
-  var images = $(".lab img");
-  jQuery.each(images, function(i)  {
-    if((images[i].alt).length > 0)
-    {
-      var div_img = $(document.createElement("div")).addClass("ui segment");
-      $(images[i]).wrap(div_img);
-      var div_label = $(document.createElement("div")).addClass("ui ribbon teal top attached label");
-      div_label.append(images[i].alt);
-      $(div_label).insertBefore(images[i]);
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
     }
   });
 
+  $('.ui.embed').embed();
 
   $('.ui.menu .item')
       .tab({
