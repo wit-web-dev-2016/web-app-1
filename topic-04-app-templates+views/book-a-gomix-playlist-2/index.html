@@ -1,0 +1,730 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      App: Templates + Routes
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-4 Gomix Playlist 2">
+      Lab-4 Gomix Playlist 2
+    </a>
+    
+    <a class="item" data-tab="Objectives">
+      Objectives
+    </a>
+    
+    <a class="item" data-tab="Exercise Solutions">
+      Exercise Solutions
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
+          Lab-1 Gomix Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-4 Gomix Playlist 2">
+        <h2>Objectives</h2>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Objectives">
+        <h1>Routing &amp;</h1>
+<h2>Routing</h2>
+<ul>
+<li>todo</li>
+<li>todo</li>
+</ul>
+<h2>Objective 2</h2>
+<ul>
+<li>todo</li>
+<li>todo</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercise Solutions">
+        <h1>Exercise Solutions</h1>
+<p>This lab requires that the <code>gomix-playlist-1</code> lab be completed. If you have lost your solution, create a new project in Gomix and select the <code>import from github</code> option and enter <code>edeleastar/gomix-playlist-1</code> to import a completed version.</p>
+<h2>Exercise 2: Add a new playlist</h2>
+<p>Extend the JSON file to include an additional playlist - so that three playlists are displayed on the dashboard.</p>
+<h2>Exercise 3: Introduce IDs</h2>
+<p>When manipulating data maintained in JSON, or other external format, each object will often require an ID in order to manipulate the information effectively. Introduce an ID for every playlist, and every song.</p>
+<h2>Exercise 4: New Fields</h2>
+<p>Extend the playlist to have new entry called <code>duration</code>. Also, extend each song to also have a <code>duration</code> field + a <code>genre</code> field.</p>
+<p>Modify the dashboard view to display these new fields.</p>
+<h2>Solutions</h2>
+<h2>models/playlist-store.json</h2>
+<pre><code class="lang-js">{
+  &quot;playlistCollection&quot;: [
+    {
+      &quot;id&quot; : &quot;01&quot;,
+      &quot;title&quot;: &quot;Beethoven Sonatas&quot;,
+      &quot;duration&quot;: 35,
+      &quot;songs&quot;: [
+        {
+          &quot;id&quot; : &quot;04&quot;,
+          &quot;title&quot;: &quot;Piano Sonata No. 3&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 5
+        },
+        {
+          &quot;id&quot; : &quot;05&quot;,
+          &quot;title&quot;: &quot;Piano Sonata No. 7&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 6
+        },
+        {
+          &quot;id&quot; : &quot;06&quot;,
+          &quot;title&quot;: &quot;Piano Sonata No. 10&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 4
+        }
+      ]
+    },
+    {
+      &quot;id&quot; : &quot;02&quot;,
+      &quot;title&quot;: &quot;Beethoven Concertos&quot;,
+      &quot;duration&quot;: 23,
+      &quot;songs&quot;: [
+        {
+          &quot;id&quot; : &quot;07&quot;,
+          &quot;title&quot;: &quot;Piano Concerto No. 0&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 8
+        },
+        {
+          &quot;id&quot; : &quot;08&quot;,
+          &quot;title&quot;: &quot;Piano Concerto No. 4&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 3
+        },
+        {
+          &quot;id&quot; : &quot;09&quot;,
+          &quot;title&quot;: &quot;Piano Concerto No. 6&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 4
+        }
+      ]
+    },
+    {
+      &quot;id&quot; : &quot;03&quot;,
+      &quot;title&quot;: &quot;Beethoven Variations&quot;,
+      &quot;duration&quot;: 67,
+      &quot;songs&quot;: [
+        {
+          &quot;id&quot; : &quot;10&quot;,
+          &quot;title&quot;: &quot;Opus 34: Six variations on a theme in F major&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 11
+        },
+        {
+          &quot;id&quot; : &quot;11&quot;,
+          &quot;title&quot;: &quot;Opus 120: Thirty-three variations on a waltz by Diabelli in C majo&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 45
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<h2>views/dashboard.hbs</h2>
+<pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
+
+{{#each playlists}}
+  &lt;section class=&quot;ui segment&quot;&gt;
+    &lt;h2 class=&quot;ui header&quot;&gt;
+      {{title}}
+    &lt;/h2&gt;
+    &lt;p&gt; Total Duration: {{duration}} &lt;/p&gt;
+    &lt;table class=&quot;ui table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Song&lt;/th&gt;
+          &lt;th&gt;Artist&lt;/th&gt;
+          &lt;th&gt;Genre&lt;/th&gt;
+          &lt;th&gt;Duration&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        {{#each songs}}
+          &lt;tr&gt;
+            &lt;td&gt;
+              {{title}}
+            &lt;/td&gt;
+            &lt;td&gt;
+              {{artist}}
+            &lt;/td&gt;
+            &lt;td&gt;
+              {{genre}}
+            &lt;/td&gt;
+            &lt;td&gt;
+              {{duration}}
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        {{/each}}
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/section&gt;
+{{/each}}</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Playlist Summaries</h1>
+<p>We would like to change the app to just display a list of playlists on the dashboard, not the complete contents of each playlist. Replace the current dashboard with the following:</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
+
+{{#each playlists}}
+  &lt;section class=&quot;ui segment&quot;&gt;
+    &lt;h2 class=&quot;ui header&quot;&gt;
+      {{title}}
+    &lt;/h2&gt;
+    &lt;p&gt; Total Duration: {{duration}} &lt;/p&gt;
+    &lt;a href=&quot;#&quot;&gt; View &lt;/a&gt;
+  &lt;/section&gt;
+{{/each}}</code></pre>
+<p>This will render like this:</p>
+<p><img src="img/01.png" alt=""></p>
+<p>The <code>view</code> links are currently inert, but we would like them to cause a new view to be rendered, containing the playlist concerned.</p>
+<p>As each playlist now has an ID, this can make this convenient to implement. Here is a new version of the <code>view</code> link:</p>
+<pre><code class="lang-html">    &lt;a href=&quot;/playlist/{{id}}&quot;&gt; View &lt;/a&gt;</code></pre>
+<p>With this change in place, try hovering over each view link (without pressing it). In Crome, keep an eye on the stats bar which should show a the link including the id:</p>
+<p><img src="img/02.png" alt=""></p>
+<p>Hover over each link and note how the ID changes. Clicking on any link causes the following error:</p>
+<pre><code>Cannot GET /playlist/02</code></pre>
+<p>We need a new controller to display a new view containing the playlist details. We will do this in the next step.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Router + Controller</h1>
+<p>The starting point for any new link in our app is to first define a <code>route</code> to support this link. All supported routes are defined in <code>routes.js</code></p>
+<h2>routes.js</h2>
+<pre><code class="lang-js">&#39;use strict&#39;;
+
+const express = require(&#39;express&#39;);
+const router = express.Router();
+
+const start = require(&#39;./controllers/start&#39;);
+const dashboard = require(&#39;./controllers/dashboard.js&#39;);
+const about = require(&#39;./controllers/about.js&#39;);
+
+router.get(&#39;/&#39;, start.index);
+router.get(&#39;/dashboard&#39;, dashboard.index);
+router.get(&#39;/about&#39;, about.index);
+
+module.exports = router;</code></pre>
+<p>In particular, these are the three routes currently supported:</p>
+<pre><code class="lang-js">router.get(&#39;/&#39;, start.index);
+router.get(&#39;/dashboard&#39;, dashboard.index);
+router.get(&#39;/about&#39;, about.index);</code></pre>
+<p>These are the three patterns our app responds to: <code>/</code>, <code>/dashboard</code> and <code>/about</code>. Any other pattern will generate a not found error from our app.</p>
+<p>We now have a new pattern <code>/playlist/id</code>, which we would like to route to a controller that would render a new view detailing the playlist contents. Also note that each of these statements matches a route pattern with a function inside a controller. So, for instance, this import + route:</p>
+<pre><code class="lang-js">const about = require(&#39;./controllers/about.js&#39;);
+...
+router.get(&#39;/about&#39;, about.index);</code></pre>
+<p>... ensures that this function would be called if the route was triggered:</p>
+<pre><code class="lang-js">const about = {
+  index(request, response) {
+    const viewData = {
+      title: &#39;About Playlist Maker&#39;,
+    };
+    response.render(&#39;about&#39;, viewData);
+  },
+};</code></pre>
+<p>Make sure you can see this connection before proceeding.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Controller/View/Route</h1>
+<p>Bringing in a new controller usually requires three things:</p>
+<ul>
+<li>a controller</li>
+<li>a view</li>
+<li>a route</li>
+</ul>
+<p>Here is is the new controller:</p>
+<h2>controllers/playlist.js</h2>
+<pre><code class="lang-js">&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+const playlistCollection = require(&#39;../models/playlist-store.js&#39;);
+
+const playlist = {
+  index(request, response) {
+    const viewData = {
+      title: &#39;Playlist&#39;,
+    };
+    response.render(&#39;playlist&#39;, viewData);
+  },
+};
+
+module.exports = playlist;</code></pre>
+<p>This will render a view called <code>playlist</code>. This is the playlist view (for the moment):</p>
+<h2>views/playlist.hbs</h2>
+<pre><code class="lang-html">{{&gt; menu}}
+
+&lt;section class=&quot;ui center aligned middle aligned segment&quot;&gt;
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    Playlist Details...
+  &lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+<p>Finally, the route. This will require the controller to be imported:</p>
+<h2>routes.js</h2>
+<pre><code class="lang-js">...
+const playlist = require(&#39;./controllers/playlist.js&#39;);
+...</code></pre>
+<p>... and then we can add the new route:</p>
+<pre><code class="lang-js">router.get(&#39;/playlist/:id&#39;, playlist.index);</code></pre>
+<p>Notice that the route includes this segment: <code>/:id</code>. This means it matches any route that includes an extra wildcard segment at the end.</p>
+<p>Implement all of the above now and verify that the view is rendered as expected.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Playlists</h1>
+<p>In order to display the correct playlist, we need to extract the id from the url. Modify the playlist controller as follows:</p>
+<pre><code class="lang-js">  index(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(&#39;Playlist id = &#39;, playlistId);
+    const viewData = {
+      title: &#39;Playlist&#39;,
+    };
+    response.render(&#39;playlist&#39;, viewData);
+  },</code></pre>
+<p>We are extracting and logging the id here:</p>
+<pre><code>    const playlistId = request.params.id;
+    logger.debug(&#39;Playlist id = &#39;, playlistId);</code></pre>
+<p>Run the app and select each of the playlist links in turn. The logs will display each of the Ids in turn.</p>
+<p>We need to find a way of locating the playlist with the id, and then pass this specific playlist to the view to be rendered. This requires a rethink of the model, in particular the <code>playlist-store.js</code> module.</p>
+<p>Here is a new version of this module:</p>
+<h2>models/playlist-store.js</h2>
+<pre><code class="lang-js">&#39;use strict&#39;;
+
+const playlistStore = {
+
+  playlistCollection: require(&#39;./playlist-store.json&#39;).playlistCollection,
+
+  getAllPlaylists() {
+    return this.playlistCollection;
+  },
+
+  getPlaylist(id) {
+    let foundPlaylist = null;
+    for (let playlist of this.playlistCollection) {
+      if (id == playlist.id) {
+        foundPlaylist = playlist;
+      }
+    }
+
+    return foundPlaylist;
+  },
+};
+
+module.exports = playlistStore;</code></pre>
+<p>In this version, we have an object <code>playlsitStore</code> one attribute:</p>
+<ul>
+<li><code>playListCollection</code>: this is the array of playlists loaded from the json file.</li>
+</ul>
+<p>and two functions:</p>
+<ul>
+<li><code>getAllPlaylists()</code> : return all playlists</li>
+<li><code>getlPlaylist(id)</code>: locate and return a specific playlist.</li>
+</ul>
+<p>The Dashboard controller will have to be refactored to use this object:</p>
+<h2>controllers/dashboard.js</h2>
+<pre><code class="lang-js">...
+const playlistStore = require(&#39;../models/playlist-store&#39;);
+
+...
+    const viewData = {
+      title: &#39;Playlist Dashboard&#39;,
+      playlists: playlistStore.getAllPlaylists(),
+    };
+    logger.info(&#39;about to render&#39;, playlistStore.getAllPlaylists());
+    response.render(&#39;dashboard&#39;, viewData);
+  },
+};
+...</code></pre>
+<p>In the above we are calling <code>playlistStore.getAllPlaylists()</code> in order to get the playlists to render to the same view.</p>
+<p>Finally, the playlists controller + view can be implemented:</p>
+<h2>controllers/playlist.js</h2>
+<pre><code class="lang-js">&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+const playlistStore = require(&#39;../models/playlist-store&#39;);
+
+const playlist = {
+  index(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(&#39;Playlist id = &#39;, playlistId);
+    const viewData = {
+      title: &#39;Playlist&#39;,
+      playlist: playlistStore.getPlaylist(playlistId),
+    };
+    response.render(&#39;playlist&#39;, viewData);
+  },
+};
+
+module.exports = playlist;</code></pre>
+<h2>views/playlist.hbs</h2>
+<pre><code class="lang-html">{{&gt; menu}}
+
+&lt;section class=&quot;ui center aligned middle aligned segment&quot;&gt;
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    {{playlist.title}}
+  &lt;/h2&gt;
+  {{&gt; listsongs}}
+&lt;/section&gt;</code></pre>
+<p>The app should now run as expected, with playlist summaries on the dashboard, and a view link rendering the playlists details.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Deleting Songs 1</h1>
+<p>Having a playlist app, without the ability to create/delete songs or playlists is clearly very limited. We have, essentially, an app that allows us to <code>Read</code> our models, but not <code>Create</code>, <code>Update</code> or <code>Delete</code> elements of the model.</p>
+<p>We can start with providing a facility to delete songs from individual playlists. Our view will need to look like this:</p>
+<p><img src="img/03.png" alt=""></p>
+<p>and deleting a button should remove the corresponding song.</p>
+<p>Any new button/link/action on our page requires:</p>
+<ul>
+<li>an element in a view</li>
+<li>a route matching the view element</li>
+<li>a matching controller function</li>
+</ul>
+<p>.. and it may also involve some interaction with the model.</p>
+<h1>View</h1>
+<p>The new button must appear in each song row:</p>
+<h2>views/partials/listsongs.hbs</h2>
+<pre><code class="lang-html">    ...
+        &lt;td&gt;
+          &lt;a href=&quot;/playlist/{{../playlist.id}}/deletesong/{{id}}&quot; class=&quot;ui tiny red button&quot;&gt;Delete Song&lt;/a&gt;
+        &lt;/td&gt;
+    ...</code></pre>
+<h1>Route</h1>
+<p>A new route - containing both the playlist and song id - and linking to a new function in the playlist controller:</p>
+<h2>routes.js</h2>
+<pre><code class="lang-js">router.get(&#39;/playlist/:id/deletesong/:songid&#39;, playlist.deleteSong);</code></pre>
+<h1>Controller</h1>
+<p>This is a new function to handle this route:</p>
+<h2>controllers/playlist.js</h2>
+<pre><code class="lang-js">  deleteSong(request, response) {
+    const playlistId = request.params.id;
+    const songId = request.params.songid;
+    logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
+    playlistStore.removeSong(playlistId, songId);
+    response.redirect(&#39;/playlist/&#39; + playlistId);
+  },</code></pre>
+<h1>Model</h1>
+<p>The model now needs a new method to delete a song, given the id of the playlist and the song:</p>
+<h2>models/playlist-store.js</h2>
+<pre><code class="lang-js">  removeSong(id, songId) {
+    const playlist = this.getPlaylist(id);
+    // remove the song with id songId from the playlist
+  },</code></pre>
+<p>Try all of this now - and verify that the logs shows the attempt to delete the song when the button is pressed.</p>
+<p>We havent yet deleted the song - we will leave that to the next step.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>Deleting Songs 2</h1>
+<p>There are many techniques for deleting an element from an array, which require more in depth Javascript knowledge. However, we have a simpler solution for the moment via the <code>lodash</code> library.</p>
+<p>At the top of our <code>playlist-store.js</code> module, import this library:</p>
+<h2>models/playlist-store.js</h2>
+<pre><code class="lang-js">const _ = require(&#39;lodash&#39;);</code></pre>
+<p>Here is the complete <code>removeSong</code> function:</p>
+<pre><code class="lang-js">  removeSong(id, songId) {
+    const playlist = this.getPlaylist(id);
+    _.remove(playlist.songs, { id: songId });
+  },</code></pre>
+<p>This library is already installed in our project template - and you can read about how it works and what is does:</p>
+<ul>
+<li><a href="https://lodash.com/">https://lodash.com/</a></li>
+</ul>
+<p>This is a modern, comprehensive library for managing data structures in Javascript. Watch this video:</p>
+<ul>
+<li><a href="https://egghead.io/lessons/core-javascript-introduction-to-lodash">https://egghead.io/lessons/core-javascript-introduction-to-lodash</a></li>
+</ul>
+<p>Which will give you a very brief idea of some of the features of this library. This library has many features and capabilities and we will explore some of them in subsequent labs.</p>
+<p>As a start - we can simplify the <code>getPlaylist</code> function:</p>
+<pre><code class="lang-js">  getPlaylist(id) {
+    let foundPlaylist = null;
+    for (let playlist of this.playlistCollection) {
+      if (id == playlist.id) {
+        foundPlaylist = playlist;
+      }
+    }
+
+    return foundPlaylist;
+  },</code></pre>
+<p>This performs a linear search to locate and return a playlist with a matching id. This can be simplified using lodash:</p>
+<pre><code class="lang-js">  getPlaylist(id) {
+    return _.find(this.playlistCollection, { id: id });
+  },</code></pre>
+<p>In future, when we are working with our playlists, we will usually check with lodash when we need to do anything, to see if it has a shorter/easier technique than writing our own algorithms.</p>
+<p>For some more advanced uses, skim read this:</p>
+<ul>
+<li><a href="http://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting">http://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting</a></li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises</h1>
+<p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Gomix project, and import <code>edeleastar/gomix-playlist-2</code>.</p>
+<h2>Exercise 1: UX Enhancements</h2>
+<p>Introduce a &#39;Delete Playlist&#39; button for each playlist, represented by a <code>trash</code> icon. E.g:</p>
+<p><img src="img/04.png" alt=""></p>
+<p>In addition, the <code>view</code> link is replace by a <code>folder open</code> icon.</p>
+<p>Bind the <code>delete playlist</code> button to a new function to be implemented in the Dashboard controller, which should log the id of the playlist to be deleted.</p>
+<h2>Exercise 2: Delete Playlist Functionality</h2>
+<p>Make the button actually delete the denoted playlist.</p>
+<p>HINT: This is a new function in the <code>playlist-store</code> module to delete a playlist, given an ID:</p>
+<pre><code class="lang-js">removePlaylist(id) {
+  _.remove(this.playlistCollection, { id: id });
+},</code></pre>
+<p>Try to implement the rest of the feature, using the song delete feature as a guide.</p>
+<h2>Exercise 3: listplaylists partial</h2>
+<p>This is the current <code>dashoard.hbs</code> partial:</p>
+<pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
+
+{{#each playlists}}
+  &lt;section class=&quot;ui segment&quot;&gt;
+    &lt;h2 class=&quot;ui header&quot;&gt;
+      {{title}}
+    &lt;/h2&gt;
+    &lt;p&gt; Total Duration: {{duration}} &lt;/p&gt;
+    &lt;a href=&quot;/playlist/{{id}}&quot; class=&quot;ui icon button&quot;&gt;
+      &lt;i class=&quot;icon folder open&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;/dashboard/deleteplaylist/{{id}}&quot; class=&quot;ui icon button&quot;&gt;
+      &lt;i class=&quot;icon trash&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/section&gt;
+{{/each}}</code></pre>
+<p>Replace the above with this version:</p>
+<pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
+
+&lt;section class=&quot;ui segment&quot;&gt;
+  {{&gt; listplaylists}}
+&lt;/section&gt;</code></pre>
+<p>This requires you to write a new partial called <code>listplaylists</code>.</p>
+<p>Here is how the dashboard should look when complete:</p>
+<p><img src="img/05.png" alt=""></p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        Eamonn de Leastar & Brenda Mullally.
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
