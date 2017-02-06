@@ -98,10 +98,6 @@ h3
       Lab-4 Gomix Playlist 2
     </a>
     
-    <a class="item" data-tab="Objectives">
-      Objectives
-    </a>
-    
     <a class="item" data-tab="Exercise Solutions">
       Exercise Solutions
     </a>
@@ -173,22 +169,8 @@ h3
       <br>
       
       <div  class="ui tab segment lab" data-tab="Lab-4 Gomix Playlist 2">
-        <h2>Objectives</h2>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Objectives">
-        <h1>Routing &amp;</h1>
-<h2>Routing</h2>
-<ul>
-<li>todo</li>
-<li>todo</li>
-</ul>
-<h2>Objective 2</h2>
-<ul>
-<li>todo</li>
-<li>todo</li>
-</ul>
+        <h1>Objectives</h1>
+<p>Refactor the dashboard controller to show summary on of the playlists + link to show playlist details.</p>
 
       </div>
      
@@ -347,7 +329,7 @@ h3
 <p>The <code>view</code> links are currently inert, but we would like them to cause a new view to be rendered, containing the playlist concerned.</p>
 <p>As each playlist now has an ID, this can make this convenient to implement. Here is a new version of the <code>view</code> link:</p>
 <pre><code class="lang-html">    &lt;a href=&quot;/playlist/{{id}}&quot;&gt; View &lt;/a&gt;</code></pre>
-<p>With this change in place, try hovering over each view link (without pressing it). In Crome, keep an eye on the stats bar which should show a the link including the id:</p>
+<p>With this change in place, try hovering over each view link (without pressing it). In Chrome, keep an eye on the stats bar which should show a the link including the id:</p>
 <p><img src="img/02.png" alt=""></p>
 <p>Hover over each link and note how the ID changes. Clicking on any link causes the following error:</p>
 <pre><code>Cannot GET /playlist/02</code></pre>
@@ -391,7 +373,7 @@ router.get(&#39;/about&#39;, about.index);</code></pre>
     response.render(&#39;about&#39;, viewData);
   },
 };</code></pre>
-<p>Make sure you can see this connection before proceeding.</p>
+<p>Make sure you understand this connection before proceeding.</p>
 
       </div>
      
