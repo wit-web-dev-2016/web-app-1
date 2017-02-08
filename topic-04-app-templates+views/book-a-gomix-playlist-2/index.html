@@ -163,6 +163,12 @@ h3
         </a>
       
     
+      
+        <a class="item" href="../../topic-05-app-models/book-a-gomix-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
   </div>
   <div class="pusher">
     <div class="ui basic segment">
@@ -479,6 +485,10 @@ module.exports = playlistStore;</code></pre>
 const playlistStore = require(&#39;../models/playlist-store&#39;);
 
 ...
+
+const dashboard = {
+  index(request, response) {
+    logger.info(&#39;dashboard rendering&#39;);
     const viewData = {
       title: &#39;Playlist Dashboard&#39;,
       playlists: playlistStore.getAllPlaylists(),
@@ -487,6 +497,7 @@ const playlistStore = require(&#39;../models/playlist-store&#39;);
     response.render(&#39;dashboard&#39;, viewData);
   },
 };
+
 ...</code></pre>
 <p>In the above we are calling <code>playlistStore.getAllPlaylists()</code> in order to get the playlists to render to the same view.</p>
 <p>Finally, the playlists controller + view can be implemented:</p>
