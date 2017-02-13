@@ -241,6 +241,18 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
   &lt;/div&gt;
   &lt;button class=&quot;ui blue submit button&quot;&gt;Add Song&lt;/button&gt;
 &lt;/form&gt;</code></pre>
+<p>Then we need to include this in the playlist view:</p>
+<h2>views/playlist.hbs</h2>
+<pre><code>{{&gt; menu}}
+
+&lt;section class=&quot;ui center aligned middle aligned segment&quot;&gt;
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    {{playlist.title}}
+  &lt;/h2&gt;
+  {{&gt; listsongs}}
+  {{&gt; addsong}}
+&lt;/section&gt;</code></pre>
+<p>This should now appear:</p>
 <p><img src="img/01.png" alt=""></p>
 <p>This requires a new route to support the <code>POST</code> action:</p>
 <h2>routes.js</h2>
