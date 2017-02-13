@@ -89,7 +89,7 @@ h3
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-      App: Model View Controller
+      App: Models
     </a>
   </header>
   <div class="right tab-menu menu">
@@ -251,6 +251,7 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
   addSong(request, response) {
     const playlistId = request.params.id;
     const playlist = playlistStore.getPlaylist(playlistId);
+    const newSong = {
       title: request.body.title,
       artist: request.body.artist,
     };
