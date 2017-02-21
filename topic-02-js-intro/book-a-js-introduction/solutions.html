@@ -68,17 +68,36 @@ h1
 {
   font-style:italic;
   font-size:130%;
-  border-bottom: thin solid black;
+  border-bottom:thin solid black;
 }
+
 h2
 {
   font-size:110%;
   border-bottom: thin solid black;
 }
+
 h3
 {
   font-size:100%;
   border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
 }
 
 
@@ -100,17 +119,10 @@ const user = {
 console.log(user);</code></pre>
 <h1>Exercise 2:</h1>
 <pre><code>const usersFirstName = prompt(&#39;enter first name&#39;);
-<<<<<<< HEAD
-const usersLastName = prompt(&#39;enter first name&#39;);
-const usersAge = prompt(&#39;enter first name&#39;);
-
-const userGreeting = prompt(&#39;enter first name&#39;);
-=======
 const usersLastName = prompt(&#39;enter last name&#39;);
 const usersAge = prompt(&#39;enter your age&#39;);
 
 const userGreeting = prompt(&#39;enter your greeting&#39;);
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 
 const user = {
   firstName: usersFirstName,
@@ -122,12 +134,8 @@ const user = {
   },
 };
 
-<<<<<<< HEAD
-console.log(user);</code></pre>
-=======
 console.log(user);
 user.sayHello();</code></pre>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <h1>Exercise 3:</h1>
 <pre><code>Have a go yourself!</code></pre>
 

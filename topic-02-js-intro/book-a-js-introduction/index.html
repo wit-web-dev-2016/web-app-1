@@ -68,17 +68,36 @@ h1
 {
   font-style:italic;
   font-size:130%;
-  border-bottom: thin solid black;
+  border-bottom:thin solid black;
 }
+
 h2
 {
   font-size:110%;
   border-bottom: thin solid black;
 }
+
 h3
 {
   font-size:100%;
   border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
 }
 
 
@@ -89,11 +108,7 @@ h3
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-<<<<<<< HEAD
-      JS Variables, Boolean Logic & Objects
-=======
       JS: Variables, Boolean Logic & Objects
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
     </a>
   </header>
   <div class="right tab-menu menu">
@@ -126,13 +141,10 @@ h3
       06
     </a>
     
-<<<<<<< HEAD
-=======
     <a class="item" data-tab="07">
       07
     </a>
     
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
     <a class="item" data-tab="Exercises">
       Exercises
     </a>
@@ -158,8 +170,6 @@ h3
         </a>
       
     
-<<<<<<< HEAD
-=======
       
         <a class="item" href="../../topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
           Lab-3 Gomix Playlist 1
@@ -178,9 +188,8 @@ h3
         </a>
       
     
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
   </div>
-  <div class="pusher">
+  <div class="pusher" tabindex="-1">
     <div class="ui basic segment">
       <br>
       
@@ -189,11 +198,6 @@ h3
 <p>Background &amp; Tools, Variables &amp; Boolean Logic</p>
 <h2>Background &amp; Tools</h2>
 <ul>
-<<<<<<< HEAD
-<li>Define what JavaScript is, where it can be used, and how it came to be</li>
-<li>Describe the evolution of JavaScript and how it has changed rapidly</li>
-=======
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <li>Show messages using <code>alert</code> and <code>console.log</code></li>
 <li>Include a script in an HTML file</li>
 </ul>
@@ -202,15 +206,10 @@ h3
 <li>Initialize and assign variables in JavaScript</li>
 <li>Store variables using the <code>prompt</code> function</li>
 <li>Write comments in your JavaScript code</li>
-<<<<<<< HEAD
-<li>List all of the data types in JavaScript</li>
-<li>Compare and contrast primitive data types with objects</li>
-=======
 <li><p>List all of the data types in JavaScript</p>
 </li>
 <li><p>Distinguish between variables defined using const, let and var </p>
 </li>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 </ul>
 <h2>Boolean Logic</h2>
 <ul>
@@ -220,34 +219,18 @@ h3
 <li>Explain the difference between <code>==</code> and <code>===</code> in JavaScript</li>
 <li>Convert between data types explicitly in JavaScript</li>
 </ul>
-<<<<<<< HEAD
-=======
 <h2>Objects</h2>
 <ul>
 <li>Compare and contrast primitive data types with objects</li>
 <li>Be able to create an object consisting of multiple primitive types</li>
 <li>Compose a simple method inside an object.</li>
 </ul>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="01">
         <h1>Running Javascript</h1>
 <h2>Option 1: Chrome Developer Console</h2>
-<<<<<<< HEAD
-<p>For most of our short JavaScript examples, we will be using the Chrome console. To open up the console press <code>Option + Command + j</code> on a Mac (or <code>Control + Shift + J</code> on Windows and Linux). Another way to get to the console is to right click on the web page, select Inspect, and then move to the tab called <code>Console</code>.</p>
-<p>Inside of this console you can write JavaScript! So let&#39;s start by alerting a message. In the Chrome Console, type the following:</p>
-<pre><code>alert(&quot;JavaScript is sweet!&quot;);</code></pre>
-<p>Hit enter, and you should see a pop-up window with the message you typed inside of the alert. (Make sure that when you are writing commands in the Chrome console, you always press enter after you type your code; otherwise, the code won&#39;t run.) Try it again with a different message!</p>
-<p>If you find those pop-ups annoying, you can also tell JavaScript to log a message directly to the console, using a function called console.log. Try it out:</p>
-<pre><code>console.log(&quot;This is less obtrusive.&quot;);</code></pre>
-<p>Once again, after you&#39;ve written the JavaScript, press enter to execute your code. You should see this message logged in the console.</p>
-<p>As you start typing more in the console, you will see it begins to fill up quickly. If you would like to clear the console you can either type in <code>clear()</code> and press enter or press <code>command + k</code>. If you would like see learn some more keyboard shortcuts with the chrome console, you can learn more about that <a href="https://developers.google.com/web/tools/chrome-devtools/shortcuts?hl=en">here</a></p>
-<h2>Option 2: JavaScript and HTML in 2 Separate Files</h2>
-<p>The console is great for writing little bits of JavaScript. But if you need to write code that spans multiple lines, it can be a little annoying. You&#39;ll need to type shift + enter to get a line break in the console, since just hitting enter executes your code. This isn&#39;t too much trouble for code that&#39;s a few lines, but writing a lot of JavaScript in this way can quickly get tiring.</p>
-<p>Another option is to keep your HTML and JavaScript in separate files. To do this, you still need to include a script tag in a HTML file, and this tag should link to a separate JavaScript file. Here&#39;s how you could do that if you have a file called first.js:</p>
-=======
 <p>For some of the short JavaScript examples, we will be using the Chrome console. To open up the console press <code>Control + Shift + J</code> on Windows and Linux (on a Mac <code>Option + Command + j</code>) . Another way to get to the console is to right click on the web page, select Inspect, and then move to the tab called <code>Console</code>.</p>
 <p>Inside of this console you can write JavaScript! So let&#39;s start by alerting a message. In the Chrome Console, type the following:</p>
 <pre><code>alert(&quot;JavaScript is sweet!&quot;);</code></pre>
@@ -259,7 +242,6 @@ h3
 <h2>Option 2: JavaScript and HTML in 2 Separate Files</h2>
 <p>The console is great for writing little bits of JavaScript. But if you need to write code that spans multiple lines, it can be a little annoying. You&#39;ll need to type shift + enter to get a line break in the console, since just hitting enter executes your code. This isn&#39;t too much trouble for code that&#39;s a few lines, but writing a lot of JavaScript in this way can quickly get tiring.</p>
 <p>Another option is to keep your HTML and JavaScript in separate files. To do this, you still need to include a script tag in a HTML file, and this tag should link to a separate JavaScript file. Here&#39;s how you could do it:firstf</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <h2>first.html</h2>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt; 
@@ -283,36 +265,22 @@ h3
       <div  class="ui tab segment lab" data-tab="02">
         <h1>Variables</h1>
 <h2>Fundamentals</h2>
-<<<<<<< HEAD
-<p>What&#39;s a variable, and why would you ever want to use one? The word &quot;variable&quot; may be most familiar to you from math class, when you often use letters like <em>x</em> or <em>y</em> to represent numbers.</p>
-=======
 <p>What&#39;s a variable, and why would you ever want to use one? The word &quot;variable&quot; may be most familiar to you mathematics classes, when you often use letters like <em>x</em> or <em>y</em> to represent numbers.</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>This idea also exists in programming languages. Using variables lets us write code that&#39;s easier to read and also easier to change. It&#39;s unlikely you&#39;ll ever write a significant amount of JavaScript code without using variables, so it&#39;s good to get used to them early.</p>
 <p>To see why variables are useful, suppose you want to log a set of greetings to the console:</p>
 <pre><code>console.log(&quot;Hi, Matt!&quot;);
 console.log(&quot;How are you doing, Matt?&quot;);
 console.log(&quot;See you later, Matt!&quot;);</code></pre>
-<<<<<<< HEAD
-<p>This works fine, but what if we want to change the person&#39;s name from &quot;Matt&quot; to something else? We&#39;ll have to change three different spots in our text file, and there&#39;s a risk that we&#39;ll make a typo when fixing any one of these changes. Wouldn&#39;t it be better if we could just store a single copy of the name, and use it wherever we want?</p>
-<p>Variables give us this ability. So let&#39;s write our first variable. In JavaScript, you initialize variables using the <code>var</code> keyword. Strictly speaking, using this keyword is not necessary, but in practice it should almost always be there (we&#39;ll discuss why a bit later).</p>
-<p>In your javascript file rewrite the example above to use a variable:</p>
-=======
 <p>Paste the above into the console in Chrome.</p>
 <p><img src="img/01x.png" alt=""></p>
 <p>This works fine, but what if we want to change the person&#39;s name from &quot;Matt&quot; to something else? We&#39;ll have to change three different spots in our text file, and there&#39;s a risk that we&#39;ll make a typo when fixing any one of these changes. Wouldn&#39;t it be better if we could just store a single copy of the name, and use it wherever we want?</p>
 <p>Variables give us this ability. So let&#39;s write our first variable. In JavaScript, you can initialize variables using the <code>var</code> keyword. Try this:</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <pre><code>var firstName = &quot;Matt&quot;;
 console.log(&quot;Hi, &quot; + firstName + &quot;!&quot;);
 console.log(&quot;How are you doing, &quot; + firstName + &quot;?&quot;);
 console.log(&quot;See you later, &quot; + firstName + &quot;!&quot;);</code></pre>
-<<<<<<< HEAD
-<p>If you enter this code correctly, you should see the same result as before - JavaScript knows that <code>firstName</code> corresponds to the name Matt! You will only see these results if you have the console open in Chrome. Remeber (To open up the console press <code>Option + Command + j</code> on a Mac (or <code>Control + Shift + J</code> on Windows)</p>
-=======
 <p>If you enter this code correctly, you should see the same result as before - JavaScript knows that <code>firstName</code> corresponds to the name Matt! </p>
 <p><img src="img/02x.png" alt=""></p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>There are a few different things going on here, so let&#39;s unpack the code a bit. On the first line, we&#39;re declaring a variable using the <code>var</code> keyword. A variable is just a way for us to save some data in JavaScript. When we typed in <code>var firstName = &quot;Matt&quot;</code>, JavaScript stored the word <code>Matt</code> in the variable <code>firstName</code>. From then on, any time you use <code>firstName</code> in the console while this window is still open, you&#39;ll see the value that <code>firstName</code> has stored.</p>
 <p>On the subsequent lines, you&#39;ll see there&#39;s something else going on too: we&#39;re using the <code>+</code> operator to combine words made up of characters, or <em>strings</em>, together. In JavaScript, when you combine two strings with the <code>+</code> operator, you get a new string which is a combination of the two. You can think of this as adding the strings together; a more formal name for it is <em>concatenation</em>. For example, if you write the expression <code>&quot;Hello&quot; + &quot; World&quot;</code> in the console, you should see that the result is the single string <code>&quot;Hello World&quot;</code>.</p>
 <p>Let&#39;s declare some more variables.</p>
@@ -321,11 +289,7 @@ var lastName = &quot;Lane&quot;;
 var fullName = firstName + &quot; &quot; + lastName;</code></pre>
 <p>In all of these examples, we have the keyword <code>var</code> in front, followed by the variable name, an assignment operator (the <code>=</code> sign), and then the value we want to assign to our variable.</p>
 <p>These examples also illustrate a common convention when writing JavaScript: when declaring variables using multiple words, the standard is to capitalize each word after the first word, and otherwise use lower-case letters (e.g. <code>firstName</code>, not <code>firstname</code>, <code>first_name</code>, <code>FirstName</code>, or some other variation). This casing convention is called camel case, and while your JavaScript code will work just fine if you don&#39;t abide by this convention, it&#39;s good to get in the habit of camel casing your variables.</p>
-<<<<<<< HEAD
-<h3>The <code>prompt</code> function</h3>
-=======
 <h2>The <code>prompt</code> function</h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>Let&#39;s revisit our earlier example:</p>
 <pre><code>var firstName = &quot;Matt&quot;;
 console.log(&quot;Hi, &quot; + firstName + &quot;!&quot;);
@@ -343,10 +307,6 @@ console.log(&quot;See you later, &quot; + firstName + &quot;!&quot;);</code></pr
 <pre><code>/* this is the start of
 a multiline comment, and
 this is the ending. */</code></pre>
-<<<<<<< HEAD
-<h1>Primitive Data Types in JavaScript</h1>
-<p>So far, we&#39;ve only used variables to store <em>strings</em>. But JavaScript can work with other types of data as well. Let&#39;s take a look at the primitive data types (you don&#39;t need to worry about what primitive means just yet).</p>
-=======
 <h1>Exercises</h1>
 <h2>Exercise 1: Variables</h2>
 <p>Create the following variables using the chrome console:</p>
@@ -361,7 +321,6 @@ this is the ending. */</code></pre>
       <div  class="ui tab segment lab" data-tab="03">
         <h1>Primitive Data Types</h1>
 <p>Most of the variables so far stored <em>strings</em>. But JavaScript can work with other types of data as well. Let&#39;s take a look at the primitive data types.</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>JavaScript has 6 primitive data types, but we&#39;ll only talk about 5 of them. Here&#39;s what they look like:</p>
 <ul>
 <li>string - <code>var greeting = &quot;hello&quot;;</code></li>
@@ -372,11 +331,7 @@ this is the ending. */</code></pre>
 </ul>
 <p>JavaScript is known as a &quot;weakly&quot; typed language. What this means is that when you create variables and assign them to values, you do not have to specify the type of data you are working with. In statically (or strongly) typed languages, like Java and C++, you do need to specify the type.</p>
 <p>Now let&#39;s look at data types a little more.</p>
-<<<<<<< HEAD
-<h3>strings</h3>
-=======
 <h2>strings</h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>As we saw above, a string is a set of characters enclosed in quotes. A string can be defined using double quotes:</p>
 <pre><code>var greeting = &quot;Hello Whiskey&quot;;</code></pre>
 <p>or using single quotes:</p>
@@ -385,22 +340,14 @@ this is the ending. */</code></pre>
 <pre><code>var phrase = &#39;Matt said, &quot;I haven\&#39;t been to Chile&quot;, the other day.&#39;;</code></pre>
 <p>What would happen if you try to use double quotes to create the previous string instead of using single quotes? Try it in your console.</p>
 <p>Also notice that there is a backslash before the single quote in haven&#39;t. The backslash is called an escape character and it tells JavaScript that the single quote in the string should not be used to end the string. Try removing the backslash from the string and see what happens in your JavaScript console.</p>
-<<<<<<< HEAD
-<h3>number</h3>
-=======
 <p>Try declaring the above variables in the chrome, and then log then:</p>
 <p><img src="img/03x.png" alt=""></p>
 <h2>number</h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>JavaScript numbers can be positive:</p>
 <pre><code>var num = 5;</code></pre>
 <p>negative:</p>
 <pre><code>var num = -25;</code></pre>
-<<<<<<< HEAD
-<h3>decimal numbers:</h3>
-=======
 <h2>decimal numbers:</h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <pre><code>var piApproximation = 3.14159265;</code></pre>
 <p>and we can also do all of the math expressions you&#39;d expect:</p>
 <pre><code>var x = 1 + 3;
@@ -409,13 +356,9 @@ var b = 5.9;
 var c = Math.sqrt(a * a + b * b);
 var studentTeacherRatio = 4 / 1;</code></pre>
 <p>If you need to do any kind of calculation in the application you&#39;re building, chances are you&#39;ll be relying heavily on the number type.</p>
-<<<<<<< HEAD
-<h3>boolean</h3>
-=======
 <p>Declare and output these variables in the console:</p>
 <p><img src="img/04x.png" alt=""></p>
 <h2>boolean</h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>A boolean type can only be in one of two states, true or false. In other words:</p>
 <pre><code>var pizzaIsGood = true;</code></pre>
 <pre><code>var pizzaIsBad = false;</code></pre>
@@ -427,19 +370,11 @@ var studentTeacherRatio = 4 / 1;</code></pre>
 <pre><code>var favoriteFood = &quot;Candy&quot;;
 // Changed your mind
 var favoriteFood = undefined;</code></pre>
-<<<<<<< HEAD
-<h3>null</h3>
-<p>Null is not the same as undefined. It signifies an intentional absense of data.</p>
-<pre><code>var secondEmailAddress = null;</code></pre>
-<p>It is important to remember that <code>null</code> and <code>undefined</code> are different types in JavaScript! This can be a confusing feature of JavaScript, even for people who know other programming languages. The distinction can seem somewhat arbitrary when you&#39;re first learning the language, but as you get more comfortable the distinction will become clearer. For now, you don&#39;t need to worry about it too much; if you&#39;re interested, you can read some discussion about the differences <a href="http://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript">here</a> and <a href="https://www.quora.com/What-is-the-rationale-for-JavaScript-supporting-both-null-and-undefined">here</a>.</p>
-<h3>Figuring out a variable&#39;s type in JavaScript</h3>
-=======
 <h2>null</h2>
 <p>Null is not the same as undefined. It signifies an intentional absense of data.</p>
 <pre><code>var secondEmailAddress = null;</code></pre>
 <p>It is important to remember that <code>null</code> and <code>undefined</code> are different types in JavaScript. This can be a confusing feature of JavaScript, even for people who know other programming languages. The distinction can seem somewhat arbitrary when you&#39;re first learning the language, but as you get more comfortable the distinction will become clearer. </p>
 <h2>Figuring out a variable&#39;s type in JavaScript</h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>In JavaScript, we have a keyword called <code>typeof</code> that returns the type of the variable. While this seems pretty fool-proof, there are some quirks that we should be aware of. In the Chrome console, let&#39;s type out each one of these:</p>
 <ul>
 <li><code>typeof &quot;&quot;;</code> - &quot;string&quot;</li>
@@ -448,28 +383,17 @@ var favoriteFood = undefined;</code></pre>
 <li><code>typeof undefined;</code> - &quot;undefined&quot;</li>
 <li><code>typeof null;</code> // hmmm, this is not what we expect, it returns &quot;object&quot;!</li>
 </ul>
-<<<<<<< HEAD
-<h3>Converting between types</h3>
-<p>Very often you&#39;ll need to convert a value from one type to another. For example, maybe you want to do some math on a couple of numbers, but you get the numbers from a form and they have a value of string. In some cases JavaScript will change types implicitly, in a process that&#39;s often referred to as (implicit) type coercion. We&#39;ll discuss the details of this later.</p>
-<p>For now, though, let&#39;s take a look at some ways to explicitly change the type of a value. Here are a few examples:</p>
-<h4>Converting to a string: <code>toString</code></h4>
-=======
 <h2>Converting between types</h2>
 <p>Very often you&#39;ll need to convert a value from one type to another. For example, maybe you want to do some math on a couple of numbers, but you get the numbers from a form and they have a value of string. In some cases JavaScript will change types implicitly, in a process that&#39;s often referred to as (implicit) type coercion. We&#39;ll discuss the details of this later.</p>
 <p>For now, though, let&#39;s take a look at some ways to explicitly change the type of a value. Here are a few examples:</p>
 <h2>Converting to a string: <code>toString</code></h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>The <code>toString</code> method will convert any value which is not undefined or null into a string. Here are a couple of examples:</p>
 <pre><code>var num = 5;
 var bool = true;
 
 num.toString(); // &quot;5&quot;;
 bool.toString(); // &quot;true&quot;;</code></pre>
-<<<<<<< HEAD
-<h4>Converting to a number</h4>
-=======
 <h2>Converting to a number</h2>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>There are several ways you can convert a value to a number. One way is to parse the number, using <code>parseInt</code> or <code>parseFloat</code>: each function will look at a string from left to write and try to make sense of the characters it sees as numbers. Here are some examples:</p>
 <pre><code>parseInt(&quot;2&quot;); // 2
 parseFloat(&quot;2&quot;); // 2
@@ -479,43 +403,6 @@ parseInt(&quot;2.3alkweflakwe&quot;); // 2
 parseFloat(&quot;2.3alkweflakwe&quot;); // 2.3
 parseInt(&quot;w2.3alkweflakwe&quot;); // NaN (not a number)
 parseFloat(&quot;w2.3alkweflakwe&quot;); // NaN (not a number)</code></pre>
-<<<<<<< HEAD
-<p>Both of these functions parse from left to right. If they see numbers, they&#39;ll continue parsing until they find a non-numerical character, and will either return an integer or a float, depending on which function was used. That&#39;s why <code>parseInt(&quot;2.3alkweflakwe&quot;)</code> returns a valid integer, but <code>parseInt(&quot;w2.3alkweflakwe&quot;)</code> does not.</p>
-<p>Somewhat related is the <code>Number</code> function. This doesn&#39;t parse, it simply tries to convert the entire string directly to a number. Sometimes this can lead to slightly different behavior compared to the parsing functions:</p>
-<pre><code>Number(&quot;2&quot;); // 2
-Number(&quot;3.14&quot;); // 3.14
-Number(&quot;2.3alkweflakwe&quot;); // NaN 
-Number(&quot;w2.3alkweflakwe&quot;); // NaN</code></pre>
-<p>A nice shorthand for this conversion is the unary operator <code>+</code>:</p>
-<pre><code>+&quot;2&quot;; // 2
-+&quot;3.14&quot;; // 3.14
-+&quot;2.3alkweflakwe&quot;; // NaN 
-+&quot;w2.3alkweflakwe&quot;; // NaN</code></pre>
-<h4>Converting to a boolean: <code>!!</code></h4>
-<p>We&#39;ll talk about the <code>!</code> operator on booleans in a later chapter. For now, all you need to know is that <code>!!</code> will convert a value to its boolean equivalent. Here are a couple of examples:</p>
-<pre><code>var greeting = &quot;hi&quot;;
-var nothing = 0;
-
-!!greeting; // true
-!!nothing; // false</code></pre>
-<h1>Exercises</h1>
-<h2>Exercise 1: Variables</h2>
-<p>Create the following variables using the chrome console:</p>
-<ul>
-<li><code>name</code>, which is a string set to your current name</li>
-<li><code>dayOfBirth</code>, which is a number set to the day of your birth month</li>
-</ul>
-<h2>Exercise 2: Script</h2>
-<p>Write a script in <code>first.js</code> to do the following:</p>
-<ul>
-<li>Prompt the user for their favorite color. Once the user has submitted a favorite color, log that color to the console along with a friendly message.</li>
-</ul>
-<p>Load this in chrome and keep an eye on the console to see that the message is being displayed.</p>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="03">
-=======
 <h2>Exercise :</h2>
 <p>In the <code>first.js</code> file created in step 1, to do the following:</p>
 <ul>
@@ -528,7 +415,6 @@ var nothing = 0;
       </div>
      
       <div  class="ui tab segment lab" data-tab="04">
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
         <h1>Boolean Logic</h1>
 <h3>Boolean Logic</h3>
 <p>An essential part of writing programs is being able to execute code that depends on certain conditions. There are many different examples when you&#39;d want to conditionally execute code. Here are just a few:</p>
@@ -538,35 +424,21 @@ var nothing = 0;
 <li>You&#39;re building a tic-tac-toe game, and want to know whether it&#39;s X&#39;s turn or O&#39;s turn</li>
 <li>You&#39;re building a social network and want to keep person A from seeing person B&#39;s profile unless the two of them are friends</li>
 </ul>
-<<<<<<< HEAD
-<p>And so on, and so on. It&#39;s very hard to write any kind of interesting software without making use of conditionals and boolean logic.</p>
-<p>So let&#39;s talk about how to write conditional logic in JavaScript. To do so, we&#39;ll make use of booleans (<code>true</code> and <code>false</code>), along with <code>if</code> statements and <code>switch</code> statements.</p>
-=======
 <p>It&#39;s very hard to write any kind of interesting software without making use of conditionals and boolean logic. To do so, we&#39;ll make use of booleans (<code>true</code> and <code>false</code>), along with <code>if</code> statements and <code>switch</code> statements.</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>An <code>if</code> statement looks something like this:</p>
 <pre><code>var instructor = &quot;Elie&quot;;
 
 // we begin with an &quot;if&quot; statement followed by a condition in () and a block of code inside of {}
-<<<<<<< HEAD
-if(instructor === &quot;Elie&quot;) {
-=======
 if (instructor === &quot;Elie&quot;) {
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
     console.log(&quot;Yes!&quot;);
 } else {
     console.log(&quot;No&quot;);
 }</code></pre>
-<<<<<<< HEAD
-<p>Notice that we used a <code>===</code> instead of <code>=</code>. Anytime that we use more than one equals operator (we can either use <code>==</code> or <code>===</code>) we are doing what is called <strong>comparison</strong> (comparing values). When we use a single equals operator <code>=</code>, we are doing what is called <strong>assignment</strong> (setting a variable equal to some value).</p>
-<p>This first example might appear a little strange, because the condition inside of the <code>if</code> statement (<code>instructor === &quot;Elie&quot;</code>) will always return true! Here&#39;s another example for you to consider. Run this code a couple of times and try to get both messages to log to the console based on what you enter into the prompt:</p>
-=======
 <p>Try this (using copy/paste from above):</p>
 <p><img src="img/05x.png" alt=""></p>
 <p>Notice that we used a <code>===</code> instead of <code>=</code>. Anytime that we use more than one equals operator (we can either use <code>==</code> or <code>===</code>) we are doing a <strong>comparison</strong> (comparing values). When we use a single equals operator <code>=</code>, we are doing what is called <strong>assignment</strong> (setting a variable equal to some value).</p>
 <p>This first example might appear a little strange, because the condition inside of the <code>if</code> statement (<code>instructor === &quot;Elie&quot;</code>) will always return true! Here&#39;s another example for you to consider.</p>
 <p> Run this code a couple of times and try to get both messages to log to the console based on what you enter into the prompt:</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <pre><code>var favoriteFood = prompt(&quot;What&#39;s your favorite food?&quot;);
 
 if(favoriteFood === &quot;pizza&quot;) {
@@ -574,12 +446,7 @@ if(favoriteFood === &quot;pizza&quot;) {
 } else {
     console.log(&quot;That&#39;s cool. My favorite food is pizza.&quot;);
 }</code></pre>
-<<<<<<< HEAD
-<p>(If you&#39;re having trouble getting the first message to log, it may help to know that strings are <em>case-sensitive</em>: &quot;pizza&quot; and &quot;PIZZA&quot; are different strings.)</p>
-<p>Now, what&#39;s the difference between <code>==</code> and <code>===</code>, you ask? Great question! We&#39;ll get to that down below. For now, though, it might be helpful to play around with these operators in the Chrome console, and see if you can come up with a guess as to how these operators behave differently.</p>
-=======
 <p>Now, what&#39;s the difference between <code>==</code> and <code>===</code>, you ask? We&#39;ll get to that down below. For now, though, it might be helpful to play around with these operators in the Chrome console, and see if you can come up with a guess as to how these operators behave differently.</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <pre><code>var number = 55;
 
 // we begin with an &quot;if&quot; statement followed by a condition in () and a block of code inside of {}
@@ -588,10 +455,7 @@ if(number == &quot;55&quot;) {
 } else {
     console.log(&quot;No&quot;);
 }</code></pre>
-<<<<<<< HEAD
-=======
 <p>Paste the above code into the console - the first time using <code>==</code> in the comparison, the second time using <code>===</code>. Observe the output carefully.</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <h3>Difference between <code>==</code> and <code>===</code></h3>
 <p>In JavaScript we have two different operators for comparison: the double and triple equals. Both operators check whether the two things being compared have the same value, but there&#39;s one important difference. <code>==</code> allows for type coercion of the values, while <code>===</code> does not. So to understand the difference between these operators, we first need to understand what is meant by type coercion.</p>
 <p>Consider the following examples:</p>
@@ -610,11 +474,7 @@ if (null) {
 
 // 4.
 +&quot;304&quot;; // 304</code></pre>
-<<<<<<< HEAD
-<p>Let&#39;s figure out what&#39;s happening in each of these examples. In the first one, you&#39;ve asked JavaScript to add a number and a string. In a lot of programming languages, this would throw an error, but JavaScript is more accomodating! It evaluates the expression 5 + &quot;hi&quot; by first <em>coercing</em> 5 into a string, and then interpreting the &quot;+&quot; operator as string concatenation. So it combines the string &quot;5&quot; with the string &quot;hi&quot; into the string &quot;5hi&quot;.</p>
-=======
 <p>Let&#39;s figure out what&#39;s happening in each of these examples. In the first one, you&#39;ve asked JavaScript to add a number and a string. In a lot of programming languages, this would throw an error, but JavaScript is more accomodating. It evaluates the expression 5 + &quot;hi&quot; by first <em>coercing</em> 5 into a string, and then interpreting the &quot;+&quot; operator as string concatenation. So it combines the string &quot;5&quot; with the string &quot;hi&quot; into the string &quot;5hi&quot;.</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>The next two examples show a similar sort of <em>coercion</em>. JavaScript expects the values inside of parentheses that come after the keyword <code>if</code> to be booleans. If you pass in a value which is not a boolean, JavaScript will <em>coerce</em> the value to a boolean according to the rules for truthy/falsey values defined on the next step. Since &quot;foo&quot; is not a falsey value, it will be coerced to <code>true</code>, which is why the second example logs something to the console. <code>null</code>, however, is a falsey value, so it gets coerced to false and nothing shows up in the third example.</p>
 <p>The last example shows a very common way to coerce a stringified number back into a number. By prefacing the string with the plus sign, JavaScript will perform a <em>coercion</em> on the value and convert it from a string value to a number value.</p>
 <p>In essence, then, coercion is just the process of converting a value from one type to another. JavaScript uses coercion pretty liberally among programming languages, so if you don&#39;t understand how coercion in JavaScript works, it can be easy to introduce bugs into your code.</p>
@@ -661,11 +521,7 @@ if(x &lt;= 5){
 </ul>
 <p>If you ever want to determine if a value is truthy or falsey, you can prefix it with <code>!!</code>. By using <code>!!</code> it explicitly coerces a value into its boolean form.</p>
 <p>What do these values return? Try them out in the Chrome console now:</p>
-<<<<<<< HEAD
-<p><code>!!false</code><br><code>!!-1</code><br><code>!!-</code><br><code>!![]</code><br><code>!!{}</code><br><code>!!&quot;&quot;</code><br><code>!!null</code></p>
-=======
 <p><code>!!false</code><br><code>!!-1</code><br><code>!!-567</code><br><code>!![]</code><br><code>!!{}</code><br><code>!!&quot;&quot;</code><br><code>!!null</code></p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>You can read more about these <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">here</a></p>
 <h3>!, || and &amp;&amp;</h3>
 <p>In our conditions (and assignments) we can use certain logical operators to write more complex statements. Here are some other useful operators:</p>
@@ -709,11 +565,6 @@ switch(feeling){
 <ol>
 <li><code>2 == &quot;2&quot;;</code></li>
 <li><code>2 === 2;</code></li>
-<<<<<<< HEAD
-<li><code>10 % 3;</code></li>
-<li><code>10 % 3 === 1;</code></li>
-=======
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <li><code>true &amp;&amp; false;</code></li>
 <li><code>false || true;</code></li>
 <li><code>true || false;</code></li>
@@ -721,11 +572,7 @@ switch(feeling){
 <h2>Exercise 2: If Statement</h2>
 <p>Answer the following questions about this code block:</p>
 <pre><code>var isLearning = true;
-<<<<<<< HEAD
-if(isLearning){
-=======
 if (isLearning) {
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
   console.log(&quot;Keep it up!&quot;);
 } else {
   console.log(&quot;Pretty sure you are learning....&quot;);
@@ -738,28 +585,11 @@ if (isLearning) {
 
       </div>
      
-<<<<<<< HEAD
-      <div  class="ui tab segment lab" data-tab="04">
-=======
       <div  class="ui tab segment lab" data-tab="05">
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
         <h1>Const, Let &amp; Simple Objects</h1>
 <h2>Const &amp; Let</h2>
 <p>The variable statement declares a variable, optionally initializing it to a value.</p>
 <h3>var</h3>
-<<<<<<< HEAD
-<pre><code>// String 
-var greeting = “hello&quot;;
- // Number
- var favoriteNum = 33;</code></pre>
-<h3>const</h3>
-<p>The <code>const</code> statement is similar to the var statement, however, the value cannot be redeclared or reassigned.</p>
-<pre><code>// String
- const greeting = &#39;hello&#39;; 
-
-// Number
- const favoriteNum = 33;</code></pre>
-=======
 <pre><code>// String
 var greeting = “hello&quot;;
 // Number
@@ -771,7 +601,6 @@ const greeting = &#39;hello&#39;;
 
 // Number
 const favoriteNum = 33;</code></pre>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>So if we try this:</p>
 <pre><code>favoriteNum = 23;</code></pre>
 <p>We will get an error. Try the above in the chrome console now and see what happens. You should see something like this:</p>
@@ -779,11 +608,7 @@ const favoriteNum = 33;</code></pre>
 <h3>let</h3>
 <p>We can also use <code>let</code>:</p>
 <pre><code>let anotherFavourite = 33;
-<<<<<<< HEAD
-anotherFavourite = 33;</code></pre>
-=======
 anotherFavourite = 32;</code></pre>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>This is similar to <code>var</code>, in that it introduces a variable that can be reassigned later. It has other benefits we will explore in subsequent lessons.</p>
 <p>In our applications, we will always use <code>const</code> or <code>let</code>, and avoid using <code>var</code>.</p>
 <h2>Simple Objects</h2>
@@ -800,37 +625,21 @@ anotherFavourite = 32;</code></pre>
 <li>3 strings and 2 numbers</li>
 </ul>
 <p>Objects are central to creating interesting and powerful programs.</p>
-<<<<<<< HEAD
-<p>Try this on the console:</p>
-<pre><code>const homer = { 
-  firstName: &#39;homer&#39;,
-  lastName: &#39;simpson&#39;,
- };</code></pre>
-=======
 <p>Try this on the console (remember to use Shift and Enter to go onto a new line for entering multiple lines of code:</p>
 <pre><code>const homer = {
   firstName: &#39;homer&#39;,
   lastName: &#39;simpson&#39;,
 };</code></pre>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p>Then try this:</p>
 <pre><code>console.log(homer);</code></pre>
 <p>This will look like this:</p>
 <p><img src="img/02.png" alt=""></p>
 <p>Try this object:</p>
-<<<<<<< HEAD
-<pre><code>const bart = { 
-  firstName: &#39;bart&#39;, 
-  lastName: &#39;simpson&#39;, 
-  age: 10, 
-};  
-=======
 <pre><code>const bart = {
   firstName: &#39;bart&#39;,
   lastName: &#39;simpson&#39;,
   age: 10,
 };
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 
 console.log(bart);</code></pre>
 <p>We have now created 2 objects. We can print the two of them again:</p>
@@ -862,11 +671,7 @@ console.log (&#39;homer = &#39; + homer);</code></pre>
 
       </div>
      
-<<<<<<< HEAD
-      <div  class="ui tab segment lab" data-tab="05">
-=======
       <div  class="ui tab segment lab" data-tab="06">
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
         <h1>Objects with Functions</h1>
 <p>Try this object in the console:</p>
 <pre><code>const marge = {
@@ -912,11 +717,7 @@ ned.speak();</code></pre>
 
       </div>
      
-<<<<<<< HEAD
-      <div  class="ui tab segment lab" data-tab="06">
-=======
       <div  class="ui tab segment lab" data-tab="07">
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
         <h1>Chrome Debugger</h1>
 <p>Use this copy of the <code>simpsons.js</code> file (copy/paste in, replacing your content:</p>
 <h2>simpsons.js</h2>
@@ -969,11 +770,7 @@ ned.speak();</code></pre>
 <p>Notice that the object homer has appeared on the right panel above.</p>
 <p>Now try the following - press the <code>Step over..</code> button indicated below:</p>
 <p><img src="img/12.png" alt=""></p>
-<<<<<<< HEAD
-<p>This will move the blue indicator one in the script:</p>
-=======
 <p>This will move the blue indicator on in the script:</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <p><img src="img/13.png" alt=""></p>
 <p>Press this <code>Step over</code> button again a few times. Monitor the changes in the right hand panel as you do this. </p>
 <p>Reload the page again - step through the script line by line, carefully looking at the right hand pane,.</p>
@@ -1000,11 +797,7 @@ ned.speak();</code></pre>
 <p>Extend the program to also ask also for a greeting. Extend the object so that it has a member function &#39;sayHello&#39; that, when called, prints the greeting to the console, including the name of the user.</p>
 <h2>Exercise 3:</h2>
 <p>Challenging!</p>
-<<<<<<< HEAD
-<p>Write a script that will read to values using prompt()</p>
-=======
 <p>Write a script that will read two values using prompt()</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 <ul>
 <li>the name of a song</li>
 <li>the artist who composed it</li>
@@ -1040,11 +833,7 @@ if(firstVariable){
 <li>Is the value of secondVariable a &quot;truthy&quot; value? <strong>Why?</strong></li>
 <li>Is the value of thirdVariable a &quot;truthy&quot; value? <strong>Why?</strong></li>
 </ol>
-<<<<<<< HEAD
-<p>Run the script - in the console or in exercise.js - to see if your answers are correct.</p>
-=======
 <p>Run the script - in the console or in first.js - to see if your answers are correct.</p>
->>>>>>> 4f7600b7df9d7b6d4026c78171f356d23d15a2d3
 
       </div>
      
@@ -1061,6 +850,29 @@ if(firstVariable){
       </div>
     </div>
   </div>
+
+<script>
+  $(document).on('keydown', function (e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
 
     <footer>
 
