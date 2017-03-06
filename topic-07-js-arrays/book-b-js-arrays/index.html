@@ -137,8 +137,8 @@ body
       05
     </a>
     
-    <a class="item" data-tab="Exercises">
-      Exercises
+    <a class="item" data-tab="06">
+      06
     </a>
     
     <a class="item" href="../../index.html">
@@ -304,9 +304,20 @@ console.log(arr10); // [5, undefined, 3, 2]</code></pre>
 <li>arrays-01.html</li>
 <li>arrays-01.js</li>
 </ul>
+<p>Use this contents for the html file:</p>
+<h2>arrays-01.html</h2>
+<pre><code>&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;arrays-01.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <p>And use the developer tools in chrome to run and monitor the script.</p>
 <h2>Exercise 1:</h2>
-<p>Create an array of your favorite foods (call it <code>favoriteFoods</code>). Make sure it has at least three elements.</p>
+<p>In arrays-01.js, create an array of your favorite foods (call it <code>favoriteFoods</code>). Make sure it has at least three elements.</p>
 <ul>
 <li>Access the second element in <code>favoriteFoods</code>.</li>
 <li>Change the last element in <code>favoriteFoods</code> to some other food.</li>
@@ -402,8 +413,18 @@ console.log(arr26.lastIndexOf(10)); // -1 - still returns -1 if the value is not
 <li>arrays-02.js</li>
 </ul>
 <p>And use the developer tools in chrome to run and monitor the script.</p>
+<h2>arrays-02.html</h2>
+<pre><code>&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;arrays-02.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <h2>Exercise 1:</h2>
-<p>Declare an empty array called me like this:</p>
+<p>In arrays-02.js, declare an empty array called me like this:</p>
 <pre><code>const me = [];</code></pre>
 <p>After writing code for each of the steps below, print out the <code>me</code> array like this:</p>
 <pre><code>console.log(me);</code></pre>
@@ -491,6 +512,16 @@ for (let t = 0; t &lt; name.length; t++) {
 <li>arrays-03.js</li>
 </ul>
 <p>And use the developer tools in chrome to run and monitor the script.</p>
+<h2>arrays-03.html</h2>
+<pre><code>&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;arrays-03.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <h2>Exercises 1: Array iteration</h2>
 <p>Introduce this array:</p>
 <pre><code>const people = [&#39;Greg&#39;, &#39;Mary&#39;, &#39;Devon&#39;, &#39;James&#39;];</code></pre>
@@ -583,6 +614,17 @@ do {
 <li>arrays-04.html</li>
 <li>arrays-04.js</li>
 </ul>
+<p>And use the developer tools in chrome to run and monitor the script.</p>
+<h2>arrays-04.html</h2>
+<pre><code>&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;arrays-04.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <h1>Exercise 1: Iteration</h1>
 <p>Using this array:</p>
 <pre><code>const people = [&#39;Greg&#39;, &#39;Mary&#39;, &#39;Devon&#39;, &#39;James&#39;];</code></pre>
@@ -634,9 +676,8 @@ Song 3:Beethoven
 Song 4:Piano Sonata No. 10
 Song 5:Beethoven</code></pre>
 <p>However, this is very inconvenient and difficult to manage. The output above does not really represent our intention. We could try this:</p>
-<pre><code>for (let k = 0; k &lt; songList2.length; k++) {
+<pre><code>for (let k = 0; k &lt; songList2.length; k=k+2) {
   console.log(&#39;Song &#39; + k + &#39;: Title: &#39; + songList2[k] + &#39;: Artist: &#39; + songList2[k + 1]);
-  k = k + 1;
 }</code></pre>
 <p>Which outputs:</p>
 <pre><code>Song 0: Title: Piano Sonata No. 3: Artist: Beethoven
@@ -671,7 +712,23 @@ const songList3 = [
 <p>Note how we access each element:</p>
 <pre><code>songList3[j].title  ... songList3[j].artist</code></pre>
 <p>Each element is an object, so we can access each attribute using &#39;.&#39; and then the name of the attribute.</p>
-<h1>Exercises:</h1>
+<h1>Exercises</h1>
+<p>For these exercises, create:</p>
+<ul>
+<li>arrays-05.html</li>
+<li>arrays-05.js</li>
+</ul>
+<p>Use this contents for the html file:</p>
+<h2>arrays-05.html</h2>
+<pre><code>&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;arrays-05.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <h2>Exercise 1:</h2>
 <p>Extend songList3 to include a &#39;duration&#39; field for each song. This should be a simple number. Have the this number included in the log when the list is printed out.</p>
 <h2>Exercise 2:</h2>
@@ -681,45 +738,116 @@ const songList3 = [
 
       </div>
      
-      <div  class="ui tab segment lab" data-tab="Exercises">
-        <h1>Exercises</h1>
-<p>Last week in lab 3 you worked on creating a playlist object that stored an array of songs. </p>
-<p>Let&#39;s examine again the syntax and structure of that object and the array it contained:</p>
-<pre><code class="lang-js">const sonatas = {
-  title: &#39;Sonatas&#39;,
-  songs: [
-    {
-      title: &#39;Piano Sonata No. 3&#39;,
-      artist: &#39;Beethoven&#39;,
-    },
-    {
-      title: &#39;Piano Sonata No. 7&#39;,
-      artist: &#39;Beethoven&#39;,
-    },
-    {
-      title: &#39;Piano Sonata No. 10&#39;,
-      artist: &#39;Beethoven&#39;,
-    },
-  ],
-};</code></pre>
-<p>Examine the above structure carefully. This is a Javascript <code>object literal</code>. It consists of :</p>
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Nested Arrays</h1>
+<p>Here is a more complex datastructure, representing multiple playlists:</p>
+<pre><code class="lang-js">const playlistCollection = [
+  {
+    id: &quot;01&quot;,
+    title: &quot;Beethoven Sonatas&quot;,
+    songs: [
+      {
+        id: &quot;04&quot;,
+        title: &quot;Piano Sonata No. 3&quot;,
+        artist: &quot;Beethoven&quot;,
+      },
+      {
+        id: &quot;05&quot;,
+        title: &quot;Piano Sonata No. 7&quot;,
+        artist: &quot;Beethoven&quot;,
+      },
+      {
+        id: &quot;06&quot;,
+        title: &quot;Piano Sonata No. 10&quot;,
+        artist: &quot;Beethoven&quot;,
+      }
+    ]
+  },
+  {
+    id: &quot;02&quot;,
+    title: &quot;Beethoven Concertos&quot;,
+    songs: [
+      {
+        id: &quot;07&quot;,
+        title: &quot;Piano Concerto No. 0&quot;,
+        artist: &quot;Beethoven&quot;,
+      },
+      {
+        id: &quot;08&quot;,
+        title: &quot;Piano Concerto No. 4&quot;,
+        artist: &quot;Beethoven&quot;,
+      },
+      {
+        id: &quot;09&quot;,
+        title: &quot;Piano Concerto No. 6&quot;,
+        artist: &quot;Beethoven&quot;,
+      }
+    ]
+  },
+  {
+    id: &quot;03&quot;,
+    title: &quot;Beethoven Variations&quot;,
+    songs: [
+      {
+        id: &quot;10&quot;,
+        title: &quot;Opus 34: Six variations on a theme in F major&quot;,
+        artist: &quot;Beethoven&quot;,
+      },
+      {
+        id: &quot;11&quot;,
+        title: &quot;Opus 120: Thirty-three variations on a waltz by Diabelli in C majo&quot;,
+        artist: &quot;Beethoven&quot;,
+      }
+    ]
+  }
+];</code></pre>
+<h1>Exercises</h1>
+<p>For these exercises, create:</p>
 <ul>
-<li><p>a title field containing the string <code>Sonatas</code></p>
-</li>
-<li><p>an array called <code>songs</code>, which contains 3 objects, each of which has:</p>
-<ul>
-<li>title</li>
-<li>artist</li>
+<li>arrays-06.html</li>
+<li>arrays-06.js</li>
 </ul>
-</li>
-</ul>
-<h1>Exercises:</h1>
+<p>Use this contents for the html file:</p>
+<h2>arrays-06.html</h2>
+<pre><code>&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;arrays-06.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <h2>Exercise 1:</h2>
-<p>Include a &#39;duration&#39; field for each song in sonatas. This should be a simple number.</p>
+<p>Try the following - and observe the output in the console:</p>
+<pre><code>console.log (playlistCollection);</code></pre>
 <h2>Exercise 2:</h2>
-<p>Write a fragment to output the <code>sonatas</code> object to the console. Include the total number of songs.</p>
+<p>Comment out the above, and try this instead:</p>
+<pre><code>for (let i = 0; i &lt; playlistCollection.length; i++) {
+  console.log(playlistCollection[i]);
+}</code></pre>
+<p>Compare the output form this with the previous version.</p>
 <h2>Exercise 3:</h2>
-<p>Write a fragment to output the total duration of the <code>sonatas</code> playlist.</p>
+<p>Comment out the above, and try this instead:</p>
+<pre><code>for (let i = 0; i &lt; playlistCollection.length; i++) {
+  console.log(playlistCollection[i].title)
+}</code></pre>
+<p>Compare the output form this with the previous version.</p>
+<h2>Exercise 4:</h2>
+<p>These last two are more complex - try each on in turn and compare the console output:</p>
+<pre><code>for (let i = 0; i &lt; playlistCollection.length; i++) {
+  console.log(playlistCollection[i].title)
+  for (let j=0; j &lt; playlistCollection[i].songs.length; j++) {
+    console.log(playlistCollection[i].songs[j]);
+  }
+}</code></pre>
+<pre><code>for (let i = 0; i &lt; playlistCollection.length; i++) {
+  console.log(playlistCollection[i].title)
+  for (let j=0; j &lt; playlistCollection[i].songs.length; j++) {
+    console.log(playlistCollection[i].songs[j].title);
+    console.log(playlistCollection[i].songs[j].artist);
+  }
+}</code></pre>
 
       </div>
      
