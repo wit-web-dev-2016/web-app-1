@@ -464,7 +464,7 @@ const accounts = {
   },
 
   logout(request, response) {
-    response.cookie(&#39;spacebook&#39;, &#39;&#39;);
+    response.cookie(&#39;playlist&#39;, &#39;&#39;);
     response.redirect(&#39;/&#39;);
   },
 
@@ -668,13 +668,28 @@ const accounts = require (&#39;./accounts.js&#39;);
 <h2>Exercise 1</h2>
 <p>Test the application more comprehensively - signing up a range of users, and creating playlists. Make sure the users only see the playlists they have created.</p>
 <h2>Exercise 2</h2>
+<p>Look at the <code>authenticate</code> method again:</p>
+<pre><code>  authenticate(request, response) {
+    const user = userstore.getUserByEmail(request.body.email);
+    if (user) {
+      response.cookie(&#39;playlist&#39;, user.email);
+      logger.info(`logging in ${user.email}`);
+      response.redirect(&#39;/dashboard&#39;);
+    } else {
+      response.redirect(&#39;/login&#39;);
+    }
+  },</code></pre>
+<p>Can you see anything not quite right about it? </p>
+<p>Hint: what happens if incorrect password entered? Try this now.</p>
+<p>See if you can fix this problem - i.e. only allow user to log in if they provide correct password.</p>
+<h2>Exercise 3</h2>
 <p>Version 3 of the Gomark assignment can be downloaded from here:</p>
 <ul>
 <li><a href="https://github.com/edeleastar/gomark-3">https://github.com/edeleastar/gomark-3</a></li>
 </ul>
 <p>In Gomix, create a new project, and import from github: <code>edeleastar/gomark-3</code>.</p>
 <p>Using this lab as a guide - see if you can introduce sessions into gomark?</p>
-<h2>Exercise 3</h2>
+<h2>Exercise 4</h2>
 <p>You should still have your own gomark assignment. Try this same now - bringing in the sessions feature into your solution.</p>
 
       </div>
