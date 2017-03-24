@@ -1,0 +1,752 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Gomix: Images
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-10 Gomix images">
+      Lab-10 Gomix images
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
+          Lab-1 Gomix Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-models/book-a-gomix-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-06-gomark/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-gomix-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic-10-gomix-images/book-a-gomix-images/index.html">
+          Lab-10 Gomix images
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-10 Gomix images">
+        <h1>Objectives</h1>
+<p>Build an application the can facilitate upload and display of images in Gomix.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Setup</h1>
+<p>In Gomix,  create a new project and then import this to replace the default content:</p>
+<ul>
+<li><a href="https://github.com/edeleastar/gomix-template-2">https://github.com/edeleastar/gomix-template-2</a></li>
+</ul>
+<p>You do this be going to the advanced menu, select Import from Github and enter <code>edeleastar/gomix-template-2</code></p>
+<p>Explore the UX. It is a variant on the template we have been already using, except this one has user accounts built in. </p>
+<p>There are already 2 accounts pre-loaded (Homer and Marge). Try these out - and also try registering a new user.</p>
+<p>Review the source - it should be familiar from earlier labs.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Express Libraries</h1>
+<h2>package.json</h2>
+<p>This module here provides a relatively straightforward way of supporting file uploads in a Express application:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/express-fileupload">https://www.npmjs.com/package/express-fileupload</a></li>
+</ul>
+<p>To include a module like this into our application, we need to modify the <code>package.json</code> file with the correct details:</p>
+<pre><code>...
+   &quot;express-fileupload&quot;: &quot;^0.1.2&quot;,
+...</code></pre>
+<p>We also need another library to simplify file handling:</p>
+<pre><code>    &quot;fs-extra&quot;: &quot;^2.1.2&quot;,</code></pre>
+<p>Here is how the package.json dependencies section should look now:</p>
+<pre><code>...
+  &quot;dependencies&quot;: {
+    &quot;body-parser&quot;: &quot;^1.15.2&quot;,
+    &quot;cookie-parser&quot;: &quot;^1.4.3&quot;,
+    &quot;express&quot;: &quot;^4.14.0&quot;,
+    &quot;express-fileupload&quot;: &quot;^0.1.2&quot;,
+    &quot;express-handlebars&quot;: &quot;^3.0.0&quot;,
+    &quot;fs-extra&quot;: &quot;^2.1.2&quot;,
+    &quot;lodash&quot;: &quot;^4.17.3&quot;,
+    &quot;lowdb&quot;: &quot;^0.14.0&quot;,
+    &quot;uuid&quot;: &quot;^3.0.1&quot;,
+    &quot;winston&quot;: &quot;^2.3.0&quot;
+  },
+...</code></pre>
+<p>When editing the package.json file in gomix, make sure to keep the logs open - so you can see if there are any typos/errors immediately.</p>
+<p>If you are working fully offline, on your own workstations, then the following commands - entered from within the project folder - will update package.json for you automatically:</p>
+<pre><code>npm install express-fileupload --save
+npm install fs-extra --save</code></pre>
+<h2>server.js</h2>
+<p>We also need to include this module in <code>server.js</code> and initialise it correctly:</p>
+<pre><code>...
+const fileUpload = require(&#39;express-fileupload&#39;);
+...
+
+
+...
+app.use(fileUpload());
+...</code></pre>
+<p>Here is the full server module:</p>
+<pre><code>&#39;use strict&#39;;
+
+const express = require(&#39;express&#39;);
+const logger = require(&#39;./utils/logger&#39;);
+const bodyParser = require(&#39;body-parser&#39;);
+const cookieParser = require(&#39;cookie-parser&#39;);
+const fileUpload = require(&#39;express-fileupload&#39;);
+
+const app = express();
+app.use(cookieParser());
+const exphbs = require(&#39;express-handlebars&#39;);
+app.use(bodyParser.urlencoded({ extended: false, }));
+app.use(express.static(&#39;public&#39;));
+app.use(fileUpload());
+app.engine(&#39;.hbs&#39;, exphbs({
+  extname: &#39;.hbs&#39;,
+  defaultLayout: &#39;main&#39;,
+}));
+app.set(&#39;view engine&#39;, &#39;.hbs&#39;);
+
+const routes = require(&#39;./routes&#39;);
+app.use(&#39;/&#39;, routes);
+
+const listener = app.listen(process.env.PORT || 4000, function () {
+  logger.info(`gomix-template-1 started on port ${listener.address().port}`);
+});</code></pre>
+<p>Make sure the app starts without any errors and functions as expected.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>The Picture Store</h1>
+<p>We will encapsulate our picture storage in a new module in the <code>models</code> folder called picture-store.js:</p>
+<h2>models/picture-store.js</h2>
+<pre><code>&#39;use strict&#39;;
+
+const _ = require(&#39;lodash&#39;);
+const JsonStore = require(&#39;./json-store&#39;);
+var fs = require(&quot;fs-extra&quot;);
+
+const pictureStore = {
+
+  store: new JsonStore(&#39;./models/picture-store.json&#39;, { pictures: [] }),
+  collection: &#39;pictures&#39;,
+  pictureFolder: &#39;models/pictures/&#39;,
+  path: &#39;&#39;,
+
+  init() {
+    fs.ensureDirSync(&#39;./&#39; + this.pictureFolder);
+    let fullpath = __dirname.split(&#39;/&#39;);
+    fullpath.pop();
+    this.path = fullpath.join(&#39;/&#39;) + &#39;/&#39; + this.pictureFolder;
+  },
+
+  getAlbum(userid) {
+    if (!this.path) {
+      this.init();
+    }
+    return this.store.findOneBy(this.collection, { userid: userid });
+  },
+
+  storePicture(userId, imageFile) {
+    if (!this.path) {
+      this.init();
+    }
+    fs.ensureDirSync(this.pictureFolder + userId);
+    const imgFullPath = this.pictureFolder + &#39;/&#39; + userId + &#39;/&#39; + imageFile.name;;
+    imageFile.mv(imgFullPath, function (err) {
+      if (err) {
+        console.log(&#39;error saving picture&#39;);
+      }
+    });
+  },
+
+  addPicture(userId, title, imageFile) {
+    this.storePicture(userId, imageFile);
+    let album = this.getAlbum(userId);
+    if (!album) {
+      album = {
+        userid: userId,
+        pictures: [],
+      };
+      this.store.add(this.collection, album);
+    }
+
+    const picture = {
+      title: title,
+      img: &#39;/&#39; + userId + &#39;/&#39; + imageFile.name,
+      file: imageFile.name,
+    }
+    album.pictures.push(picture);
+  },
+
+  getPicturePath(id, name) {
+    if (!this.path) {
+      this.init();
+    }
+    return this.path + id + &#39;/&#39; + name;
+  },
+
+  deleteAllPictures() {
+    fs.removeSync(this.pictureFolder);
+    this.store.removeAll(this.collection);
+  },
+
+  deletePicture(userId, fileName) {
+    let album = this.getAlbum(userId);
+    _.remove(album.pictures, { file: fileName});
+
+    fs.removeSync(this.getPicturePath(userId, fileName));
+  }
+};
+
+module.exports = pictureStore;</code></pre>
+<p>You do not need to understand this code in order to use it. Essentially, we just need to understand how to call these two methods:</p>
+<pre><code>  addPicture(userId, title, imageFile) {
+    ...
+  }
+  ...
+  getPicturePath(id, name) {
+    ...
+  },</code></pre>
+<p>These are only methods we will need to call on the pictureStore object. We will see these in action in the next steps.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Dashboard</h1>
+<p>Here is a replacement for the Dashboard view:</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code>{{&gt; menu id=&quot;dashboard&quot;}}
+
+&lt;section class=&quot;ui segment&quot;&gt;
+  &lt;h1 class=&quot;ui header&quot;&gt;
+    Welcome {{user.firstName}} {{user.lastName}}
+  &lt;/h1&gt;
+
+  &lt;section class=&quot;ui raised segment&quot;&gt;
+    &lt;h1 class=&quot;ui header&quot;&gt;
+      Your Pictures:
+    &lt;/h1&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;ui raised segment&quot;&gt;
+    &lt;div class=&quot;ui small dividing header&quot;&gt; Picture Upload &lt;/div&gt;
+    &lt;section class=&quot;ui raised form segment&quot;&gt;
+      &lt;form action=&quot;/dashboard/uploadpicture&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+        &lt;div class=&quot;two fields&quot;&gt;
+          &lt;div class=&quot;field&quot;&gt;
+            &lt;label&gt;First Name&lt;/label&gt;
+            &lt;input type=&quot;file&quot; name=&quot;picture&quot;&gt;  &lt;/input&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;field&quot;&gt;
+            &lt;label&gt;Title&lt;/label&gt;
+            &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;ui mini blue submit button&quot;&gt; Upload &lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/section&gt;
+  &lt;/section&gt;
+
+&lt;/section&gt;</code></pre>
+<p>The dahboard should look like this:</p>
+<p><img src="img/01.png" alt=""></p>
+<p>The UI for uploading a picture should work - try to upload one now. When you press the &#39;upload&#39; button you will get this:</p>
+<pre><code>Cannot POST /dashboard/uploadpicture</code></pre>
+<p>This is because the form action route is not yet implemented:</p>
+<pre><code>...
+      &lt;form action=&quot;/dashboard/uploadpicture&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+...</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Picture Routes</h1>
+<p>We can bring in these new routes now:</p>
+<h2>routes.js</h2>
+<pre><code>...
+router.get(&#39;/dashboard/getpicture/:path/:name&#39;, dashboard.getPicture);
+router.post(&#39;/dashboard/uploadpicture&#39;, dashboard.uploadPicture);
+...</code></pre>
+<p>Here is a new version of the dashboard.js module:</p>
+<h2>controllers/dashboard.js</h2>
+<pre><code>&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+const accounts = require(&#39;./accounts.js&#39;);
+const pictureStore = require(&#39;../models/picture-store.js&#39;);
+
+const dashboard = {
+  index(request, response) {
+    logger.info(&#39;dashboard rendering&#39;);
+    const loggedInUser = accounts.getCurrentUser(request);
+    const viewData = {
+      title: &#39;Template 2 Dashboard&#39;,
+      user: loggedInUser,
+      album: pictureStore.getAlbum(loggedInUser.id),
+    };
+    response.render(&#39;dashboard&#39;, viewData);
+  },
+
+  uploadPicture(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    pictureStore.addPicture(loggedInUser.id, request.body.title, request.files.picture);
+    response.redirect(&#39;/dashboard&#39;);
+  },
+
+  getPicture(request, response) {
+    const fullPicturePath = pictureStore.getPicturePath(request.params.path, request.params.name);
+    response.sendFile(fullPicturePath);
+  },
+};
+
+module.exports = dashboard;</code></pre>
+<p>Try this now, and upload a picture - pick a small image from somewhere on your local machine. It will not display yet - but it should upload successfully.</p>
+<p>Because of the lag in how gomix works, it may take a little while for <code>picture-store.json</code> to refresh. When it eventually does, it may look something like this:</p>
+<h2>models/picture-store.json</h2>
+<pre><code>{
+  &quot;pictures&quot;: [
+    {
+      &quot;userid&quot;: &quot;3ad52697-6d98-4d80-8273-084de55a86c0&quot;,
+      &quot;pictures&quot;: [
+        {
+          &quot;title&quot;: &quot;&quot;,
+          &quot;img&quot;: &quot;/3ad52697-6d98-4d80-8273-084de55a86c0/marge.gif&quot;,
+          &quot;file&quot;: &quot;marge.gif&quot;
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<p>Our pictures will not appear yet however (next steps).</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Displaying Pictures</h1>
+<p>To Display the pictures, replace the pictures segment on daashboard with this:</p>
+<pre><code>...
+  &lt;section class=&quot;ui raised segment&quot;&gt;
+    &lt;h3 class=&quot;ui header&quot;&gt;
+      Your Pictures:
+    &lt;/h3&gt;
+    {{#each album.pictures}}
+      &lt;img src=&quot;/dashboard/getpicture{{img}}&quot;&gt;
+    {{/each}}
+  &lt;/section&gt;
+...</code></pre>
+<p>When you log in now again, and if you upload some pictures, they will appear on the dashboard.</p>
+<p><img src="img/02.png" alt=""></p>
+<h1>Cards</h1>
+<p>We could improve the layout by bringing in the following partial:</p>
+<h2>views/partials/card.hbs</h2>
+<pre><code>&lt;div class=&quot;ui card&quot;&gt;
+  &lt;div class=&quot;ui small center aligned image&quot;&gt;
+    &lt;img src=&quot;/dashboard/getpicture{{img}}&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;center aligned header&quot;&gt;{{title}}&lt;/p&gt;
+    &lt;div class=&quot;center aligned meta&quot;&gt;
+      {{file}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>... and we can replace the picture segment on the dashboad with this:</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code>...
+  &lt;section class=&quot;ui raised segment&quot;&gt;
+    &lt;div class=&quot;ui cards&quot;&gt;
+    {{#each album.pictures}}
+      {{&gt; card }}
+    {{/each}}
+    &lt;/div&gt;
+  &lt;/section&gt;
+...</code></pre>
+<p>Try it now:</p>
+<p><img src="img/03.png" alt=""></p>
+<p>If we add a title to the picture when we upload, it should appear in the card:</p>
+<p><img src="img/04.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>Deleting Photos</h1>
+<p>Gomix does not let you see the <code>picture</code> folder - although when you download the project, it will contain pictures you will have uploaded.</p>
+<p>In order to help with Gomix development, we need some way of cleaning out the picture store, deleting all images. We already have support for this in the picture-store module. We can introduce new buttons into the UX to trigger delete.</p>
+<h1>Delete All</h1>
+<p>Delete all photos is easy. First bring in this route:</p>
+<h2>routes.js</h2>
+<pre><code>...
+router.get(&#39;/dashboard/deleteallpictures&#39;, dashboard.deleteAllPictures);
+...</code></pre>
+<p>... and this action in the dashboard module</p>
+<h2>controllers/dashboard.js</h2>
+<pre><code>...
+  deleteAllPictures(request, response) {
+    pictureStore.deleteAllPicturea();
+    response.redirect(&#39;/dashboard&#39;);
+  },
+...</code></pre>
+<p>Finally, we can plant this button somewhere in the dashboard view:</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code>...
+      &lt;a href=&quot;/dashboard/deleteallpictures&quot;&gt; &lt;button class=&quot;negative ui button&quot;&gt;Delete All&lt;/button&gt;&lt;/a&gt;
+...</code></pre>
+<p>Run the app now, locate and press the <code>Delete All</code> button. It should remove all pictures from the app, and also delete all of the actual images (hidden) in your project.</p>
+<h1>Delete a single picture</h1>
+<p>To delete a single picture, we need this routes:</p>
+<h2>routes.js</h2>
+<pre><code>...
+router.get(&#39;/dashboard/deletepicture/:path/:name&#39;, dashboard.deletePicture);
+...</code></pre>
+<p>this action in the dashboard module</p>
+<h2>controllers/dashboard.js</h2>
+<pre><code>  deletePicture(request, response) {
+    pictureStore.deletePicture(request.params.path, request.params.name);
+    response.redirect(&#39;/dashboard&#39;);
+  },</code></pre>
+<p>.. and a new version of the card which will include a delete (trash can) button:</p>
+<h2>views/partials/card.hbs</h2>
+<pre><code>&lt;div class=&quot;ui card&quot;&gt;
+  &lt;div class=&quot;ui small center aligned image&quot;&gt;
+    &lt;img src=&quot;/dashboard/getpicture{{img}}&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;center aligned header&quot;&gt;{{title}}&lt;/p&gt;
+    &lt;div class=&quot;center aligned meta&quot;&gt;
+      {{file}}
+      &lt;a href=&quot;/dashboard/deletepicture{{img}}&quot;&gt;
+        &lt;i class=&quot;red icon trash&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>See if you can delete individual pictures now.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Solution</h1>
+<p>This is the completed application:</p>
+<ul>
+<li><a href="https://github.com/edeleastar/gomix-pictures">https://github.com/edeleastar/gomix-pictures</a></li>
+</ul>
+<p>If you are in Gomix - import the project from github: <code>edeleastar/gomix-pictures</code> </p>
+<h1>Exercise 1: Download and run Locally</h1>
+<p>Download the project and run it on our own workstation. Remember, after downloading you must run:</p>
+<pre><code>npm install</code></pre>
+<p>from inside the project folder, and then run:</p>
+<pre><code>npm start</code></pre>
+<p>to run. Browse to</p>
+<ul>
+<li><a href="http://localhost:4000/">http://localhost:4000/</a></li>
+</ul>
+<p>to see it in action. Experiment with uploading some pictures, and keep an eye on the contents of the <code>models/pictures</code> folder. This should give you a better idea as to how the app is working.</p>
+<h2>Exercise 2: (Advanced)</h2>
+<p>Ultimately, managing photos is best outsourced to a specialist service. Here is one example:</p>
+<ul>
+<li><a href="http://cloudinary.com/">http://cloudinary.com/</a></li>
+</ul>
+<p>The free account here would be fine:</p>
+<ul>
+<li><a href="http://cloudinary.com/pricing">http://cloudinary.com/pricing</a></li>
+</ul>
+<p>The documentation here show how to program the service from node:</p>
+<ul>
+<li><a href="http://cloudinary.com/documentation/node_integration">http://cloudinary.com/documentation/node_integration</a></li>
+</ul>
+<p>The examples they discuss are all on github:</p>
+<ul>
+<li><a href="https://github.com/cloudinary/cloudinary_npm/tree/master/samples">https://github.com/cloudinary/cloudinary_npm/tree/master/samples</a></li>
+</ul>
+<p>Could you replace/reimplement the picture-store module we have implemented with one that uses this service instead?</p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        Eamonn de Leastar & Brenda Mullally.
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+<script>
+  $(document).on('keydown', function (e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
