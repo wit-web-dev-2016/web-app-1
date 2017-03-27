@@ -68,17 +68,36 @@ h1
 {
   font-style:italic;
   font-size:130%;
-  border-bottom: thin solid black;
+  border-bottom:thin solid black;
 }
+
 h2
 {
   font-size:110%;
   border-bottom: thin solid black;
 }
+
 h3
 {
   font-size:100%;
   border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
 }
 
 
@@ -94,8 +113,8 @@ h3
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="Lab-10b Gomix images">
-      Lab-10b Gomix images
+    <a class="item" data-tab="Lab-10b gomix-picture-store">
+      Lab-10b gomix-picture-store
     </a>
     
     <a class="item" data-tab="01">
@@ -213,16 +232,16 @@ h3
     
       
         <a class="active item" href="../../topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
-          Lab-10b Gomix images
+          Lab-10b gomix-picture-store
         </a>
       
     
   </div>
-  <div class="pusher">
+  <div class="pusher" tabindex="-1">
     <div class="ui basic segment">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="Lab-10b Gomix images">
+      <div  class="ui tab segment lab" data-tab="Lab-10b gomix-picture-store">
         <h1>Objectives</h1>
 <p>Build an application the can facilitate upload and display of images in Gomix.</p>
 
@@ -656,6 +675,29 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
       </div>
     </div>
   </div>
+
+<script>
+  $(document).on('keydown', function (e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
 
     <footer>
 
