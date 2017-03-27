@@ -1,0 +1,575 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+
+  
+
+
+
+
+
+<header class="ui middle aligned center aligned stackable grid segment">
+
+  <a class="ui blue left corner label">
+  <div id="showTOC" class="popup" data-content="Reveal TOC">
+    <i id="toc" class="sitemap big  icon"></i>
+  </div>
+</a>
+
+  <div class="seven wide center aligned column">
+    <h2 class="headder">  Web Application Development 1</h2>
+    <p> All Labs in the Course </p>
+  </div>
+
+  
+<div class="two wide column sitemap">
+  <div class="popup" data-content="To the top level Topics for this Module...">
+    <a href="index.html"> <i class="huge home icon"></i> Module </a>
+  </div>
+</div>
+
+  
+<div class="four wide column">
+  <div class="ui center aligned mini message segment">
+    Eamonn de Leastar & Brenda Mullally.
+    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+        target="_blank">Creative Commons License
+    </a>
+  </div>
+</div>
+
+  
+<div class="ui two wide right aligned column">
+  <div class="ui left aligned middle aligned very basic grid">
+    <div class="row">
+      <div class="popup" data-content="All Slides in Course">
+        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="popup" data-content="All Labs in Course">
+        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</header>
+
+
+
+<div class="ui bottom attached segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+    <a class="item" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
+      Lab-1 Gomix Intro
+    </a>
+    
+    <a class="item" href="topic-02-js-intro/book-a-js-introduction/index.html">
+      Lab-2 JS Intro
+    </a>
+    
+    <a class="item" href="topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+      Lab-3 Gomix Playlist 1
+    </a>
+    
+    <a class="item" href="topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+      Lab-4 Gomix Playlist 2
+    </a>
+    
+    <a class="item" href="topic-05-app-models/book-a-gomix-playlist-3/index.html">
+      Lab-5 Gomix Playlist 3
+    </a>
+    
+    <a class="item" href="topic-06-gomark/book-a-gomark-1/index.html">
+      Lab-gomark-1
+    </a>
+    
+    <a class="item" href="topic-07-js-arrays/book-a-js-arrays/index.html">
+      Lab-6 JS Arrays
+    </a>
+    
+    <a class="item" href="topic-07-js-arrays/book-b-gomark-2/index.html">
+      Lab-gomark-2
+    </a>
+    
+    <a class="item" href="topic-08-gomix-sessions/book-a-gomark-3/index.html">
+      Lab-gomark-3
+    </a>
+    
+    <a class="item" href="topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
+      Lab-8 Gomix Sessions
+    </a>
+    
+    <a class="item" href="topic-09-js-objects/book-a-js-objects/index.html">
+      Lab-9 JS Objects
+    </a>
+    
+    <a class="item" href="topic-10-gomix-images/book-a-setup/index.html">
+      Lab-10a Cloudinary Setup
+    </a>
+    
+    <a class="item" href="topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
+      Lab-10b Gomix images
+    </a>
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <div class="ui four doubling stackable cards">
+        
+        
+  <a class="ui raised link card" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-1 Gomix Intro </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-01-gomix-intro/book-a-gomix-intro/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Create, modify and view your first Gomix project.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-02-js-intro/book-a-js-introduction/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-2 JS Intro </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-02-js-intro/book-a-js-introduction/img/main.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Background &amp; Tools, Variables &amp; Boolean Logic</p>
+<h2>Background &amp; Tools</h2>
+<ul>
+<li>Show messages using <code>alert</code> and <code>console.log</code></li>
+<li>Include a script in an HTML file</li>
+</ul>
+<h2>Variables</h2>
+<ul>
+<li>Initialize and assign variables in JavaScript</li>
+<li>Store variables using the <code>prompt</code> function</li>
+<li>Write comments in your JavaScript code</li>
+<li><p>List all of the data types in JavaScript</p>
+</li>
+<li><p>Distinguish between variables defined using const, let and var </p>
+</li>
+</ul>
+<h2>Boolean Logic</h2>
+<ul>
+<li>Write conditional logic using boolean operators</li>
+<li>List all of the falsey values in JavaScript</li>
+<li>Use if/else and switch statements to include conditional logic in your JavaScript code</li>
+<li>Explain the difference between <code>==</code> and <code>===</code> in JavaScript</li>
+<li>Convert between data types explicitly in JavaScript</li>
+</ul>
+<h2>Objects</h2>
+<ul>
+<li>Compare and contrast primitive data types with objects</li>
+<li>Be able to create an object consisting of multiple primitive types</li>
+<li>Compose a simple method inside an object.</li>
+</ul>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-3 Gomix Playlist 1 </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-03-app-controllers+views/book-a-gomix-playlist-1/img/main.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Import and run a new starter project. Extend this project to include multiple &#39;views&#39;. Explore the handlebars templating library.</p>
+<h2>Project Structure</h2>
+<ul>
+<li>be able create a new project from a github import</li>
+<li>become familiar with the role of the controllers and the views</li>
+<li>pass simple information from the controller to the view and render it in the view accurately</li>
+</ul>
+<h2>Templates</h2>
+<ul>
+<li>understand how simple handlebars templates are constructed</li>
+<li>be able to relate layouts, partials and views - and understand how these are rendered from controllers</li>
+<li>compose a simple loop to render a javascript array inside a html table</li>
+</ul>
+<h2>Object Representation</h2>
+<ul>
+<li>represent simple information as a javascript object Literal</li>
+<li>be capable of transforming these objects into JSON format</li>
+<li>load data from a JSON file and make it available to a javascript program.</li>
+</ul>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-4 Gomix Playlist 2 </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-04-app-templates+views/book-a-gomix-playlist-2/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Refactor the dashboard controller to show summary on of the playlists + link to show playlist details.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-05-app-models/book-a-gomix-playlist-3/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-5 Gomix Playlist 3 </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-05-app-models/book-a-gomix-playlist-3/img/main.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Enable Songs and Playlists to be added via simple forms.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-06-gomark/book-a-gomark-1/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-gomark-1 </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-06-gomark/book-a-gomark-1/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Implement version 1 of the Gomark assignment.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-07-js-arrays/book-a-js-arrays/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-6 JS Arrays </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-07-js-arrays/book-a-js-arrays/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p> Array Basics, Array Methods &amp; Iteration</p>
+<h2>Array Basics</h2>
+<ul>
+<li>Create a JavaScript array</li>
+<li>Access elements in an array</li>
+<li>Modify the values stored in an array</li>
+<li>Use <code>push</code> and <code>unshift</code> to add elements to an array</li>
+<li>Use <code>pop</code> and <code>shift</code> to remove elements from an array</li>
+<li>Use <code>splice</code> for more advanced array modifications</li>
+</ul>
+<h2>Array Methods</h2>
+<ul>
+<li>Use the array&#39;s length to see how many elements the array has</li>
+<li>Use array modification methods like <code>join</code>, <code>slice</code>, <code>concat</code> to modify arrays or create new arrays.</li>
+<li>Search for elements in an array using <code>indexOf</code> and <code>lastIndexOf</code></li>
+<li>Describe the difference between a reference type and a value type</li>
+</ul>
+<h2>Array Iteration</h2>
+<ul>
+<li>Understand what iteration is and why it is useful</li>
+<li>Compare and contrast <code>for</code>, <code>while</code> and <code>do...while</code> loops</li>
+<li>Use <code>break</code> and <code>continue</code> to write more efficient loops</li>
+</ul>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-07-js-arrays/book-b-gomark-2/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-gomark-2 </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-07-js-arrays/book-b-gomark-2/img/main.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <h2>Github Repo</h2>
+<p>Version 2 of the Gomark assignment can be downloaded from here:</p>
+<ul>
+<li><a href="https://github.com/edeleastar/gomark-2">https://github.com/edeleastar/gomark-2</a></li>
+</ul>
+<p>You can download this and run locally as outlined in earlier labs.</p>
+<h2>Running in Gomix</h2>
+<p>In Gomix, create a new project, and import <code>edeleastar/gomark-2</code>.</p>
+<h2>Running in Webstorm</h2>
+<p>You can also download this IDE here:</p>
+<ul>
+<li><a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a></li>
+</ul>
+<p>Before doing so - apply for the student pack here:</p>
+<ul>
+<li><a href="https://www.jetbrains.com/student/">https://www.jetbrains.com/student/</a></li>
+</ul>
+<p>Be sure to use your WIT email when you register.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-08-gomix-sessions/book-a-gomark-3/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-gomark-3 </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/book-a-gomark-3/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Final version of the Assignment 1 Gomark application</p>
+<p>Version 3 of the Gomark assignment can be downloaded from here:</p>
+<ul>
+<li><a href="https://github.com/edeleastar/gomark-3">https://github.com/edeleastar/gomark-3</a></li>
+</ul>
+<p>You can download this and run locally as outlined in earlier labs.</p>
+<h2>Running in Gomix</h2>
+<p>In Gomix, create a new project, and import from github: <code>edeleastar/gomark-3</code>.</p>
+<h2>Running in Webstorm</h2>
+<p>You can also download this IDE here:</p>
+<ul>
+<li><a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a></li>
+</ul>
+<p>Before doing so - apply for the student pack here:</p>
+<ul>
+<li><a href="https://www.jetbrains.com/student/">https://www.jetbrains.com/student/</a></li>
+</ul>
+<p>Be sure to use your WIT email when you register.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-8 Gomix Sessions </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/book-b-gomix-sessions/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-09-js-objects/book-a-js-objects/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-9 JS Objects </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-09-js-objects/book-a-js-objects/img/main.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Object basics and Object iteration.</p>
+<h2>Object Basics</h2>
+<ul>
+<li>Compare and contrast objects and arrays, and explain good use cases for each one</li>
+<li>Iterate over arrays and objects</li>
+<li>Add and remove properties/elements from objects</li>
+</ul>
+<h2>Object Iteration</h2>
+<ul>
+<li>Understand how to iterate through an object using a <code>for...in</code> loop</li>
+<li>Determine if a key exists in an object using an <code>if...in</code> statement</li>
+</ul>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-10-gomix-images/book-a-setup/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-10a Cloudinary Setup </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-10-gomix-images/book-a-setup/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Sign up and configure a Cloudinary Account.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+        
+  <a class="ui raised link card" href="topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="lab large icon"></i></div>
+        <div class="header"> Lab-10b Gomix images </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="topic-10-gomix-images/book-b-gomix-cloudinary/img/main.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Build an application the can facilitate upload and display of images in Gomix.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

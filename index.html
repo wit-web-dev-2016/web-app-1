@@ -1,0 +1,726 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+
+
+
+
+
+
+
+<header class="ui middle aligned center aligned stackable grid segment">
+
+  <a class="ui blue left corner label">
+  <div id="showTOC" class="popup" data-content="Reveal TOC">
+    <i id="toc" class="sitemap big  icon"></i>
+  </div>
+</a>
+
+  <div class="seven wide center aligned column">
+    <h2 class="headder">  Web Application Development 1</h2>
+    <p> Top Level Topics </p>
+  </div>
+
+
+  
+
+  
+<div class="four wide column">
+  <div class="ui center aligned mini message segment">
+    Eamonn de Leastar & Brenda Mullally.
+    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+        target="_blank">Creative Commons License
+    </a>
+  </div>
+</div>
+
+
+  
+<div class="ui two wide right aligned column">
+  <div class="ui left aligned middle aligned very basic grid">
+    <div class="row">
+      <div class="popup" data-content="All Slides in Course">
+        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="popup" data-content="All Labs in Course">
+        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</header>
+
+
+<div class="ui segment pushable">
+  <div class="ui inverted inline vertical sidebar menu">
+    
+    <div class="header">
+      <a class="item" href="topic-00-assignments/index.html">
+        Assignments
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-00-assignments/talk-a-assignment-1/assignment-1.pdf">
+          Assignment 1</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-00-assignments/talk-b-assignment-2/assignment-2.pdf">
+          Assignment 2</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-01-gomix-intro/index.html">
+        Gomix: Introduction to Gomix
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-01-gomix-intro/talk-a-gomix/gomix.pdf">
+          Introducing Gomix</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-gomix-intro/talk-b-gomix-tour/gomix-tour.pdf">
+          Gomix Tour</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-gomix-intro/talk-c-gomix-features/gomix-features.pdf">
+          Gomix Features</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-gomix-intro/talk-d-js-background/js-background.pdf">
+          JS Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
+          Lab-1 Gomix Intro</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-02-js-intro/index.html">
+        JS: Variables, Boolean Logic & Objects
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-02-js-intro/talk-a-js-varialbes/js-variables.pdf">
+          Variables</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-js-intro/talk-b-js-boolean-logic/js-boolean-logic.pdf">
+          Boolean Logic</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-js-intro/talk-c-js-variables-&-objects/js-variables-&-objects.pdf">
+          Const, Let & Objects</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-js-intro/talk-d-variables-&-objects-revisited/variables-&-objects-review.pdf">
+          Variables & Objects Review</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-03-app-controllers+views/index.html">
+        Gomix: Controllers + Views
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.pdf">
+          Web App Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-app-controllers+views/talk-b-front-end/front-end.pdf">
+          Front-end</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-app-controllers+views/talk-b-modules/modules.pdf">
+          Modules</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-app-controllers+views/talk-c-back-end/back-end.pdf">
+          Back-end</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-04-app-templates+views/index.html">
+        Gomix: Templates + Routes
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-04-app-templates+views/talk-a-templates/templates.pdf">
+          Templates</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-04-app-templates+views/talk-b-templates+json/templates+json.pdf">
+          Json</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-04-app-templates+views/talk-c-dashboard/dashboard.pdf">
+          Dashboard</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-04-app-templates+views/talk-d-playlist/playlist.pdf">
+          Playlist</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-04-app-templates+views/talk-e-mvc/mvc.pdf">
+          MVC</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-05-app-models/index.html">
+        Gomix: Model View Controller
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-05-app-models/talk-1-mvc-revisited/mvc.pdf">
+          Module View Controller</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-05-app-models/talk-2-delete-button/delete-button.pdf">
+          Delete Song</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-05-app-models/talk-3-form-design/forms-design.pdf">
+          Forms Design</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-05-app-models/talk-4-form-programming/form-prog.pdf">
+          Form Programming</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-05-app-models/talk-5-store/store.pdf">
+          The Store</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-05-app-models/book-a-gomix-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-06-gomark/index.html">
+        Gomix: Gomark Solution
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-06-gomark/talk-a-gomark-1/gomark-1.pdf">
+          Gomark V1</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-06-gomark/talk-b-arrays-basics/arrays-basics.pdf">
+          Arrays: Basics</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-06-gomark/book-a-gomark-1/index.html">
+          Lab-gomark-1</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-07-js-arrays/index.html">
+        JS: Arrays
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-07-js-arrays/talk-a-array-methods/array-methods.pdf">
+          Array Methods</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-07-js-arrays/talk-b-array-iteration/array-iteration.pdf">
+          Array Iteration</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-07-js-arrays/talk-c-arrays-of-strings/arrays-of-strings.pdf">
+          Arrays of Strings</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-07-js-arrays/talk-d-arrays-of-objects/arrays-of-objects.pdf">
+          Arrays of Objects</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-07-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-07-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-08-gomix-sessions/index.html">
+        Gomix: Sessions
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.pdf">
+           Sessions Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/talk-2-sessions-intro/c-sessions.pdf">
+          c-sessions</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/talk-2-using-sessions/using-sessions.pdf">
+          Using Sessions</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/talk-3-sessions-ux/sessions-ux.pdf">
+          Sessions UX</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/talk-4-creating-sessions/creating-sessions.pdf">
+          Creating Sessions</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/talk-b-gomix-sessions/sessions.pdf">
+          Gomark V3</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-09-js-objects/index.html">
+        JS: Objects
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-09-js-objects/talk-1-objects/objects.pdf">
+          JS Objects</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-09-js-objects/talk-2-playlist-4/playlist-4.pdf">
+          Playlist 4 Review</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-09-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-10-gomix-images/index.html">
+        Gomix: Images
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-10-gomix-images/talk-1-cloudinary/cloudinary.pdf">
+          Playlist 4 Review</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-10-gomix-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b Gomix images</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <div class="ui four doubling stackable cards">
+        
+          
+  <a class="ui raised link card" href="./topic-00-assignments/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Assignments </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-00-assignments/talk-a-assignment-1/assignment-1.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Specifications for Assignments 1 &amp; 2</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-01-gomix-intro/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Gomix: Introduction to Gomix </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-01-gomix-intro/talk-a-gomix/gomix.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>An introduction to the gomix platform + the very basics of the Javascript Language</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-02-js-intro/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> JS: Variables, Boolean Logic & Objects </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-02-js-intro/talk-a-js-varialbes/js-variables.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Primitive JS types. Making decisions using selection statements. Simple objects.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-03-app-controllers+views/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Gomix: Controllers + Views </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Build your first gomix app, a simple static playlist web site.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-04-app-templates+views/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Gomix: Templates + Routes </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-04-app-templates+views/talk-a-templates/templates.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Explore templating in more detail. Enhanced the routing behaviour</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-05-app-models/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Gomix: Model View Controller </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-05-app-models/topic.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Explore MVC as implemented in Playlist</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-06-gomark/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Gomix: Gomark Solution </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-06-gomark/talk-a-gomark-1/gomark-1.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>The Assignment one - Gomark - application</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-07-js-arrays/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> JS: Arrays </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-07-js-arrays/topic.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-08-gomix-sessions/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Gomix: Sessions </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>In order to implement user account management, sessions provide a mechanism for identifying specific users</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-09-js-objects/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> JS: Objects </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-09-js-objects/talk-1-objects/objects.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Review structure of javascript objects - and re-examine the Playlist 4 application in detail.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic-10-gomix-images/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Gomix: Images </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic-10-gomix-images/topic.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>How to build an application that enables a user to upload and display images.</p>
+
+      </div>
+    </div>
+    
+  </a>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

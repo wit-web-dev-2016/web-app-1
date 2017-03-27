@@ -1,0 +1,816 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Gomix: Controllers + Views
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-3 Gomix Playlist 1">
+      Lab-3 Gomix Playlist 1
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
+          Lab-1 Gomix Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-models/book-a-gomix-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-06-gomark/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-gomix-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-gomix-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b Gomix images
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-3 Gomix Playlist 1">
+        <h1>Objectives</h1>
+<p>Import and run a new starter project. Extend this project to include multiple &#39;views&#39;. Explore the handlebars templating library.</p>
+<h2>Project Structure</h2>
+<ul>
+<li>be able create a new project from a github import</li>
+<li>become familiar with the role of the controllers and the views</li>
+<li>pass simple information from the controller to the view and render it in the view accurately</li>
+</ul>
+<h2>Templates</h2>
+<ul>
+<li>understand how simple handlebars templates are constructed</li>
+<li>be able to relate layouts, partials and views - and understand how these are rendered from controllers</li>
+<li>compose a simple loop to render a javascript array inside a html table</li>
+</ul>
+<h2>Object Representation</h2>
+<ul>
+<li>represent simple information as a javascript object Literal</li>
+<li>be capable of transforming these objects into JSON format</li>
+<li>load data from a JSON file and make it available to a javascript program.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Template 1</h1>
+<p>Create a new project in gomix - this will be a replica of the project created at the start of the last lab. Rename the project to your preference.</p>
+<p>Trun on the logs viewer, and then import a project from github:</p>
+<p><img src="img/01.png" alt=""></p>
+<p>Enter <code>edeleastar/gomix-template-1</code> as shown. This will replace your project completely:</p>
+<p><img src="img/02.png" alt=""></p>
+<p>Run the app and explore the (small) number of views:</p>
+<p><img src="img/03.png" alt="">
+<img src="img/04.png" alt="">
+<img src="img/05.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Playlist</h1>
+<p>We are going to evolve this project into a simple playlist maker, enabling a user to create a playlist of songs. In this step, we will layout a static version.</p>
+<p>First, we can make some simple changes to rebrand the app as <code>Playlist 1</code> instead of <code>Template 1</code></p>
+<p>First replace the existing corresponding lines of code with each of the following in the views:</p>
+<h2>views/partials/menu.hbs</h2>
+<pre><code class="lang-html">...
+  &lt;header class=&quot;ui header item&quot;&gt; &lt;a href=&quot;/&quot;&gt; Playlist 1 &lt;/a&gt;&lt;/header&gt;
+...</code></pre>
+<h2>views/about.hbs</h2>
+<pre><code class="lang-html">...
+&lt;p&gt;
+  A Little Playlist Maker - Version 1
+&lt;/p&gt;
+...</code></pre>
+<h2>views/start.hbs</h2>
+<pre><code class="lang-html">...
+&lt;h1 class=&quot;ui header&quot;&gt;
+  Welcome to Playlist 1
+&lt;/h1&gt;
+&lt;p&gt;
+  A small app to let you compose playlists.
+&lt;/p&gt;
+...</code></pre>
+<p>Now the controllers:</p>
+<h2>controllers/about.js</h2>
+<pre><code class="lang-javascript">...
+    const viewData = {
+      title: &#39;About Playlist 1&#39;,
+    };
+...</code></pre>
+<h2>controllers/start.js</h2>
+<pre><code class="lang-javascript">...
+    const viewData = {
+      title: &#39;Welcome to Playlist 1&#39;,
+    };
+...</code></pre>
+<h2>controllers/dashboard.js</h2>
+<pre><code class="lang-javascript">...
+    const viewData = {
+      title: &#39;Playlist Dashboard&#39;,
+    };
+...</code></pre>
+<p>Make sure the app is still running, but with the new branding. If there are errors, turn the logs and you may be able to see the source of the problem - which will usually be some small error in the javascript sources.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Static Playlist</h1>
+<p>In this step we will start to display the playlist itself. First, replace <code>mainpanel.hbs</code> with a new partial (contained with the existing segment) called <code>listsongs.hbs</code>:</p>
+<h2>views/partials/listsongs.hbs</h2>
+<pre><code class="lang-html">&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Song&lt;/th&gt;
+      &lt;th&gt;Artist&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<p>Change the dashboard view to invoke this partial:</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
+
+&lt;section class=&quot;ui segment&quot;&gt;
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    Playlist Title
+  &lt;/h2&gt;
+  {{&gt; listsongs}}
+&lt;/section&gt;</code></pre>
+<p>Make sure the app runs successfully.</p>
+<p>To test out the UX, we might include some actual songs (replace the tbody with the following):</p>
+<h2>views/partials/listsongs.hbs</h2>
+<pre><code class="lang-html">&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      Piano Sonata No. 3
+    &lt;/td&gt;
+    &lt;td&gt;
+      Beethoven
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      Piano Sonata No. 7
+    &lt;/td&gt;
+    &lt;td&gt;
+      Beethoven
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      Piano Sonata No. 10
+    &lt;/td&gt;
+    &lt;td&gt;
+      Beethoven
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;</code></pre>
+<p>... and also give the playlist a title:</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code class="lang-html">....
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    Beethoven Sonatas
+  &lt;/h2&gt;
+...</code></pre>
+<p>Exercise the UX fully again. Keep an eye on the logs</p>
+<p><img src="img/06.png" alt=""></p>
+<p>Locate where in the controllers these messages are being generated:</p>
+<pre><code class="lang-js">...
+    logger.info(&#39;start rendering&#39;);
+...</code></pre>
+<p>These logging messages are a useful technique for figuring out what might be going wrong with an app. There are three variants of the logging statement: <code>info</code>, <code>error</code> and <code>debug</code>. Experiment now with some of these, and exercise the app to make sure the log messages appear.</p>
+<pre><code class="lang-js">...
+    logger.error(&#39;some error has occurred&#39;);
+...</code></pre>
+<pre><code class="lang-js">...
+    logger.debug(&#39;some step has occurred...&#39;);
+...</code></pre>
+<p>Error and debug messages may appear in red. You might need to open the <code>source</code> and <code>run</code> views of the app in side by side windows to get a clearer view of the logs.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Dynamic Playlist</h1>
+<p>The app as we have it now could have been completely built as a static web site. However, the framework and tools we have used in this version enable us to evolve this static site into an interactive app</p>
+<p>Thie first step is to eliminate some of the static content from the songlist partial. Here is a new version to replace the current version (In listsongs.hbs replace the table with the following):</p>
+<pre><code class="lang-html">&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Song&lt;/th&gt;
+      &lt;th&gt;Artist&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    {{#each playlist.songs}}
+      &lt;tr&gt;
+        &lt;td&gt;
+          {{title}}
+        &lt;/td&gt;
+        &lt;td&gt;
+          {{artist}}
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    {{/each}}
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<p>In the above, we are <code>iterating</code> over an <code>array</code> of <code>songs</code> inside a <code>playlist</code> object:</p>
+<pre><code class="lang-html">{{#each playlist.songs}}
+  &lt;tr&gt;
+    &lt;td&gt;
+      {{title}}
+    &lt;/td&gt;
+    &lt;td&gt;
+      {{artist}}
+    &lt;/td&gt;
+  &lt;/tr&gt;
+{{/each}}</code></pre>
+<p>This playlist object must be passed to the view for this to work.</p>
+<p>In the <code>dashboard.js</code> controller, we can define a playlist object in Javascript (place this definition prior to the dashboard object definition):</p>
+<pre><code class="lang-js">const sonatas = {
+  title: &#39;Sonatas&#39;,
+  songs: [
+    {
+      title: &#39;Piano Sonata No. 3&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Sonata No. 7&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Sonata No. 10&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+  ],
+};</code></pre>
+<p>Examine the above structure carefully. This is a javascript <code>object literal</code>. It consists of :</p>
+<ul>
+<li>a title field containing the string <code>Sonatas</code></li>
+<li>an array called <code>songs</code>, which contains 3 objects, each of which has:<ul>
+<li>title</li>
+<li>artist</li>
+</ul>
+</li>
+</ul>
+<p>The index method which is located in  dashboard.js file can now be modified to pass this list to the view:</p>
+<pre><code class="lang-js">const dashboard = {
+index(request, response) {
+  logger.info(&#39;dashboard rendering&#39;);
+  const viewData = {
+    title: &#39;Playlist Dashboard&#39;,
+    playlist: sonatas,
+  };
+  response.render(&#39;dashboard&#39;, viewData);
+},
+};</code></pre>
+<p>This should work now as expected. Make sure the playlist is displayed as expected.</p>
+<p>We can take advantage of the logger to display the playlist before we render it:</p>
+<pre><code class="lang-js">index(request, response) {
+  logger.info(&#39;dashboard rendering&#39;);
+  const viewData = {
+    title: &#39;Playlist Dashboard&#39;,
+    playlist: sonatas,
+  };
+  logger.info(&#39;about to render&#39;, sonatas);
+  response.render(&#39;dashboard&#39;, viewData);
+},</code></pre>
+<p>You should see something like this in the logs:</p>
+<p><img src="img/07.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>playlist-store</h1>
+<p>We would like to manage the playlists separately from the controller, so that we can eventually introduce multiple playlists.</p>
+<p>To prepare for this, create a new javascript module in the backend of your app call it <code>playlist-store.js</code> in a new <code>models</code> folder. In gomix, you can enter a full path, including a new directory when adding a file:</p>
+<p><img src="img/08.png" alt=""></p>
+<h2>models/playlist-store.js</h2>
+<pre><code class="lang-js">&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+
+const sonatas = {
+  title: &#39;Beethoven Sonatas&#39;,
+  songs: [
+    {
+      title: &#39;Piano Sonata No. 3&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Sonata No. 7&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Sonata No. 10&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+  ],
+};
+
+module.exports = sonatas;</code></pre>
+<p>Dashboard can then be simplified:</p>
+<h2>controllers/dashboard.js</h2>
+<pre><code class="lang-js">&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+const sonatas = require(&#39;../models/playlist-store.js&#39;);
+
+const dashboard = {
+  index(request, response) {
+    logger.info(&#39;dashboard rendering&#39;);
+    const viewData = {
+      title: &#39;Playlist Dashboard&#39;,
+      playlist: sonatas,
+    };
+    logger.info(&#39;about to render&#39;, sonatas);
+    response.render(&#39;dashboard&#39;, viewData);
+  },
+};
+
+module.exports = dashboard;</code></pre>
+<p>Notice in the above that we are importing the sonatas from the playlist-store module. Otherwise, the dashboard is unchanged.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Multiple playlists</h1>
+<p>Here is a new version of <code>playlist-store.js</code>:</p>
+<h2>models/playlist-store.js</h2>
+<pre><code>&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+
+const sonatas = {
+  title: &#39;Beethoven Sonatas&#39;,
+  songs: [
+    {
+      title: &#39;Piano Sonata No. 3&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Sonata No. 7&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Sonata No. 10&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+  ],
+};
+
+const concertos = {
+  title: &#39;Beethoven Concertos&#39;,
+  songs: [
+    {
+      title: &#39;Piano Concerto No. 0&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Concerto  No. 4&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+    {
+      title: &#39;Piano Concerto  No. 6&#39;,
+      artist: &#39;Beethoven&#39;,
+    },
+  ],
+};
+
+const playlistCollection = [sonatas, concertos];
+
+module.exports = playlistCollection;</code></pre>
+<p>Here we are defining 2 playlists :</p>
+<ul>
+<li>sonatas</li>
+<li>concertos</li>
+</ul>
+<p>... and then an array called <code>playlistCollection</code>, which lists these two:</p>
+<pre><code class="lang-js">const playlistCollection = [sonatas, concertos];</code></pre>
+<p>This is the object that is then exported:</p>
+<pre><code class="lang-js">module.exports = playlistCollection;</code></pre>
+<p>In a revised dashboard, we import this object, and pass it to the view:</p>
+<h2>controllers/dashboard.js</h2>
+<pre><code>...
+const playlistCollection = require(&#39;../models/playlist-store.js&#39;);
+
+const dashboard = {
+  index(request, response) {
+    logger.info(&#39;dashboard rendering&#39;);
+    const viewData = {
+      title: &#39;Playlist Dashboard&#39;,
+      playlists: playlistCollection,
+    };
+    logger.info(&#39;about to render&#39;, playlistCollection);
+    response.render(&#39;dashboard&#39;, viewData);
+  },
+};
+...</code></pre>
+<p>The dashboard view will have to be rewritten to now display a collection of playlists (we no longer use the listsongs.hbs partial in the dashboard.hbs):</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
+
+{{#each playlists}}
+  &lt;section class=&quot;ui segment&quot;&gt;
+    &lt;h2 class=&quot;ui header&quot;&gt;
+      {{title}}
+    &lt;/h2&gt;
+    &lt;table class=&quot;ui table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Song&lt;/th&gt;
+          &lt;th&gt;Artist&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        {{#each songs}}
+          &lt;tr&gt;
+            &lt;td&gt;
+              {{title}}
+            &lt;/td&gt;
+            &lt;td&gt;
+              {{artist}}
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        {{/each}}
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/section&gt;
+{{/each}}</code></pre>
+<p>Try this now, making sure you are seeing the two playlists on the dashboard:</p>
+<p><img src="img/09.png" alt=""></p>
+<p>Look carefully at <code>views/dashboard.hbs</code>, see if you can relate the template to the playlist data structure being passed to to it. Notice that it is performing a nested loop:</p>
+<ul>
+<li>iterating over the playlist array</li>
+</ul>
+<pre><code class="lang-html">...
+{{#each playlists}}
+  ...
+{{/each}}</code></pre>
+<ul>
+<li>then iterating over each song in a given playlist.</li>
+</ul>
+<pre><code class="lang-html">...
+{{#each playlists}}
+  ...
+  {{#each songs}}
+    ...
+  {{/each}}
+  ..
+{{/each}}</code></pre>
+<p>Notice that <code>title</code> means something slightly different in each context</p>
+<ul>
+<li>the title of the playlist
+OR</li>
+<li>the title of a song</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>Introducing JSON</h1>
+<p>In javascript, it can sometimes be very convenient to use a notation to represent a data structure, but without any additional javascript constructs. Java Script Object Notation (JSON) is designed for this purpose. Here is a new file to represent our playlists in JSON format, create it for the backend of your app:</p>
+<h2>models/playlist-store.json</h2>
+<pre><code class="lang-js">{
+  &quot;playlistCollection&quot;: [
+    {
+      &quot;title&quot;: &quot;Beethoven Sonatas&quot;,
+      &quot;songs&quot;: [
+        {
+          &quot;title&quot;: &quot;Piano Sonata No. 3&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Piano Sonata No. 7&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Piano Sonata No. 10&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;
+        }
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Beethoven Concertos&quot;,
+      &quot;songs&quot;: [
+        {
+          &quot;title&quot;: &quot;Piano Concerto No. 0&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Piano Concerto No. 4&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Piano Concerto No. 6&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<p>We consider this to be a data file rather than a program. Although it looks superficially like javascript, you cannot put control structures, functions or other constructs. Also, the formal is very strict, so the use of double quotes and separator commas is very precise. Any deviation will generate an error in any program that attempts to read it.</p>
+<p>We can revise <code>playlist-store.js</code> to read this file now:</p>
+<h2>models/playlist-store.js</h2>
+<pre><code class="lang-js">&#39;use strict&#39;;
+
+const playlistCollection = require(&#39;./playlist-store.json&#39;).playlistCollection;
+
+module.exports = playlistCollection;</code></pre>
+<p>The program should behave exactly as before.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises &amp; Archives</h1>
+<p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Gomix project, and import <code>edeleastar/gomix-playlist-1</code>.</p>
+<h2>Exercise 1: Review the JSON file format</h2>
+<p>Look again at the playlist as represented in:</p>
+<ul>
+<li>Step 6: Javascript Object Literal</li>
+<li>Step 7: JSON</li>
+</ul>
+<p>Review the differences carefully.</p>
+<h2>Exercise 2: Add a new playlist</h2>
+<p>Extend the JSON file to include an additional playlist - so that three playlists are displayed on the dashboard.</p>
+<h2>Exercise 3: Introduce IDs</h2>
+<p>When manipulating data maintained in JSON, or other external format, each object will often require an ID in order to manipulate the information effectively. Introduce an ID for every playlist, and every song, now.</p>
+<p>For instance for a playlist:</p>
+<pre><code class="lang-js">&quot;playlistCollection&quot;: [
+   {
+     &quot;id&quot;: &quot;01&quot;,
+     &quot;title&quot;: &quot;Beethoven Sonatas&quot;,
+     &quot;songs&quot;: [</code></pre>
+<p>... and for a song:</p>
+<pre><code>{
+  &quot;id&quot;: &quot;03&quot;,
+  &quot;title&quot;: &quot;Piano Sonata No. 3&quot;,
+  &quot;artist&quot;: &quot;Beethoven&quot;
+},</code></pre>
+<p>Place unique IDs on all your playlists and songs now. You can use any unique numbers (enclosed in double quotes) for the moment.</p>
+<h2>Exercise 4: New Fields</h2>
+<p>Extend the playlist to have new entry called <code>duration</code>. Also, extend each song to also have a <code>duration</code> field + a <code>genre</code> field.</p>
+<p>Modify the dashboard view to display these new fields.</p>
+<h2>Exercise 4:</h2>
+<p>Extend the following views:</p>
+<ul>
+<li>Welcome: Extend the welcome view to contain a more detailed outline of the purpose of the application</li>
+<li>About: Extend the about view to provide contact details (may be fictitious) for the author/company that created the app.</li>
+</ul>
+<h2>Exercise 5: Run Locally</h2>
+<p>Download the app and run it on your own workstation. Instructions for doing this are in the last lab.</p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        Eamonn de Leastar & Brenda Mullally.
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
