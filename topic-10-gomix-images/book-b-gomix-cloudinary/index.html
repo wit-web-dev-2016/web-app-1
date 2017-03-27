@@ -263,7 +263,7 @@ body
       <div  class="ui tab segment lab" data-tab="02">
         <h1>Express Libraries</h1>
 <h2>package.json</h2>
-<p>We need to add some modules to our application to support image. These are included in the <code>package.json</code> file:</p>
+<p>We need to add some modules to our application to support image upload and the cloudinary API. These are included in the <code>package.json</code> file like this:</p>
 <pre><code>...
    &quot;express-fileupload&quot;: &quot;^0.1.2&quot;,
    &quot;cloudinary&quot;: &quot;^1.8.0&quot;,
@@ -414,8 +414,8 @@ module.exports = pictureStore;</code></pre>
   deleteAllPictures(userId) {
   }
   ...</code></pre>
-<p>These are only methods we will need to call on the pictureStore object. We will see these in action in the next steps.</p>
-<p>Before moving, though, you now need the file of credentials we created in the last lab when we signed up to the cloudinary service.</p>
+<p>These are the only methods we will need to call on the pictureStore object. We will see these in action in the next steps.</p>
+<p>Before moving on, though, you now need the file of credentials we created in the last lab when we signed up to the cloudinary service.</p>
 <h2>.env.json</h2>
 <pre><code>{
   &quot;cloudinary&quot;: {
@@ -424,7 +424,7 @@ module.exports = pictureStore;</code></pre>
     &quot;api_secret&quot;: &quot;YOURSECRET&quot;
   }
 }</code></pre>
-<p>Make sure the file is named as above - and that it contains your credentials. It must be in the root folder, not the <code>models</code> folder.</p>
+<p>Make sure the file is named as above (it starts with a &#39;.&#39;) - and that it contains your credentials. It must be in the root folder, not the <code>models</code> folder.</p>
 
       </div>
      
@@ -527,7 +527,7 @@ module.exports = dashboard;</code></pre>
     }
   ]
 }</code></pre>
-<p>Log in to your cloudinary account and see if the image is in your Media Library. Also, see id the image url corresponds with the &quot;img&quot; url in your picture-store.json file (if you can load it).</p>
+<p>Log in to your cloudinary account and see if the image is in your Media Library. Also, see if the image url corresponds with the &quot;img&quot; url in your picture-store.json file (if you can load it).</p>
 <p>Our pictures will not appear on our dashboard yet however (next steps).</p>
 
       </div>
@@ -583,7 +583,7 @@ module.exports = dashboard;</code></pre>
      
       <div  class="ui tab segment lab" data-tab="07">
         <h1>Deleting Photos</h1>
-<p>Finally, we can bring in controls to delete images, either individually for in bulk. First of all new routes:</p>
+<p>Finally, we can bring in controls to delete images, either individually for in bulk. First the new routes:</p>
 <h2>routes.js</h2>
 <pre><code>...
 router.get(&#39;/dashboard/deleteallpictures&#39;, dashboard.deleteAllPictures);
