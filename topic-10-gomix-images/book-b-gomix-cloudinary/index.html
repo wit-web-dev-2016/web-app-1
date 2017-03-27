@@ -338,11 +338,16 @@ const _ = require(&#39;lodash&#39;);
 const JsonStore = require(&#39;./json-store&#39;);
 const cloudinary = require(&#39;cloudinary&#39;);
 const path = require(&#39;path&#39;);
-const env = require(&#39;../.env.json&#39;);
+const logger = require(&#39;../utils/logger&#39;);
 
-console.log(env.cloudinary);
-
-cloudinary.config(env.cloudinary);
+try {
+  const env = require(&#39;../.data/.env.json&#39;);
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info(&#39;You must provide a Cloudinary credentials file - see README.md&#39;);
+  process.exit(1);
+}
 
 const pictureStore = {
 
@@ -416,7 +421,7 @@ module.exports = pictureStore;</code></pre>
   ...</code></pre>
 <p>These are the only methods we will need to call on the pictureStore object. We will see these in action in the next steps.</p>
 <p>Before moving on, though, you now need the file of credentials we created in the last lab when we signed up to the cloudinary service.</p>
-<h2>.env.json</h2>
+<h2>.data/.env.json</h2>
 <pre><code>{
   &quot;cloudinary&quot;: {
     &quot;cloud_name&quot;: &quot;YOURID&quot;,
@@ -424,7 +429,7 @@ module.exports = pictureStore;</code></pre>
     &quot;api_secret&quot;: &quot;YOURSECRET&quot;
   }
 }</code></pre>
-<p>Make sure the file is named as above (it starts with a &#39;.&#39;) - and that it contains your credentials. It must be in the root folder, not the <code>models</code> folder.</p>
+<p>Create a folder called &#39;.data&#39; - this will be private in Glitch. Then create a file called <code>.env.json</code> in that folder containing your credentials as shown.</p>
 
       </div>
      
