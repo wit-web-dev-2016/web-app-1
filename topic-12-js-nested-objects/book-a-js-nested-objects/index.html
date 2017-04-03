@@ -1,0 +1,732 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      JS: Nested Objects
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-12 Nested Objects">
+      Lab-12 Nested Objects
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
+          Lab-1 Gomix Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-models/book-a-gomix-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-06-gomark/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-gomix-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-gomix-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
+          Lab-11 Functions
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-12 Nested Objects">
+        <h1>Objectives</h1>
+<p>Nested Objects &amp; Arrays</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Objectives</h1>
+<h2>Nested Objects</h2>
+<ul>
+<li>Create nested data structures using objects</li>
+<li>Access and iterate over data in a nested data structure</li>
+<li>Add and remove data inside of a complex data structure</li>
+</ul>
+<h2>Nested Arrays</h2>
+<ul>
+<li>Create and access values in two dimensional arrays</li>
+<li>Understand real-world use cases of multidimensial arrays</li>
+<li>Iterate over data in a multidimensional array</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Nested Objects I</h1>
+<h3>What is a data structure? A nested one?</h3>
+<p>So what do we mean by data structure? In some sense, a data structure is just that: a way of structuring data. In computer science, there are a multitude of different data structures (as you&#39;ll see!), because the most efficient way to store data depends on how you intend to <em>use</em> the data. Do you just need to read the data, or do you need to update it? How large is your set of data, and how quickly do you need to find things in it? Questions like these greatly influence what type of data structure you should be using.</p>
+<p>For now, though, we&#39;ll keep things limited to <code>Objects</code> and <code>Arrays</code>. We&#39;ve already seen how to use both of these structures to organize data. As we&#39;ll see in this unit, even with just these two data structures, we can get pretty far in terms of storing and accessing complex data.</p>
+<p>What, then, is a nested data structure? It just means one data structure inside of another! Let&#39;s start with a simple example.</p>
+<h3>Objects within Objects</h3>
+<p>Below is a simple example of creating an object that has a key and the value for that key is another object:</p>
+<pre><code>var schools = {
+    georgiaInstituteOfTechnology: {
+        address: &quot;North Ave NW, Atlanta, GA 30332&quot;,
+        phoneNumber: &quot;(404) 894-2000&quot;,
+        dateEstablished: &quot;October 13, 1885&quot;
+    }
+};</code></pre>
+<p>Now to access an object within an object, we can use dot notation just like in objects that are not nested:</p>
+<pre><code>// This statement assigns the object that is nested inside
+// of the larger schools object to the gtObject variable.
+var gtObject = schools.georgiaInstituteOfTechnology;</code></pre>
+<p>Now that we have the <code>gtObject</code> variable, we can use it to access keys within that object:</p>
+<pre><code>gtObject.address; // returns &quot;North Ave NW, Atlanta, GA 30332&quot;
+gtObject.phoneNumber; // returns &quot;(404) 894-2000&quot;
+gtObject.dateEstablished; //returns &quot;October 13, 1885&quot;</code></pre>
+<p>In fact, we don&#39;t even need the intermediate <code>gtObject</code> variable. We can simply use the dot operater on the first statement like this:</p>
+<pre><code>schools.georgiaInstituteOfTechnology.address;
+schools.georgiaInstituteOfTechnology.phoneNumber;
+schools.georgiaInstituteOfTechnology.dateEstablished;</code></pre>
+<p>All of the above statements evaluate to the same values as the <code>gtObject</code> examples.</p>
+<h3>Arrays Within Objects</h3>
+<p>Now let&#39;s look at an example of an object with an array as the value:</p>
+<pre><code>var instructorData = {
+    name: &quot;Tim&quot;,
+    favoriteHobbies: [&quot;Sailing&quot;, &quot;Hiking&quot;, &quot;Coding&quot;]
+};</code></pre>
+<p>In this example we now have multiple keys. The <code>name</code> key has a simple value of a string, <code>&quot;Tim&quot;</code>, but the <code>favoriteHobbies</code> key has a more complex value which is an array.</p>
+<p>Just like in the objects within objects example, we can access an element in the array by using the dot notation, and then access the array normally. To get the first element in the array, the code would be as follows:</p>
+<pre><code>instructorData.favoriteHobbies[0]; // returns &quot;Sailing&quot;</code></pre>
+<p>How would you add another hobby to the <code>favoriteHobbies</code> array inside of the object?</p>
+<h3>Complex Objects</h3>
+<p>Now let&#39;s look at an example that combines objects and arrays:</p>
+<pre><code>var instructorData = {
+    name: &quot;Elie&quot;,
+    additionalData: {
+        instructor: true,
+        favoriteHobbies: [&quot;Playing Cello&quot;, &quot;Tennis&quot;, &quot;Coding&quot;],
+        moreDetails: {
+            favoriteBasketballTeam: &quot;New York Knicks&quot;,
+            numberOfSiblings: 3,
+            isYoungest: true,
+            hometown: {
+                city: &quot;West Orange&quot;,
+                state: &quot;NJ&quot;,
+            },
+            citiesLivedIn: [&quot;Seattle&quot;, &quot;Providence&quot;, &quot;New York&quot;]
+        }
+    }
+};
+
+instructorData.name; // &quot;Elie&quot;
+instructorData.additionalData.instructor; // true
+instructorData.additionalData.favoriteHobbies[2]; // &quot;Coding&quot;
+instructorData.additionalData.moreDetails.favoriteBasketballTeam; // &quot;New York Knicks&quot;
+instructorData.additionalData.moreDetails.hometown.state; // &quot;NJ&quot;
+instructorData.additionalData.moreDetails.citiesLivedIn[1]; // &quot;Providence&quot;</code></pre>
+<p>So you may be thinking, <em>am I really going to be working with data like this? Seriously?</em> The answer is a strong <strong>YES</strong>! Very commonly, when you receive large amounts of data from third parties, you will be given it in a format that includes nested objects and/or arrays. It is imperative that you understand how to access data in these nested data structures. If you can&#39;t get to a point where you can easily manipulate nested data structures, you&#39;ll have a very difficult time integrating any kind of outside data into the applications you&#39;ll be building later on. Copy and paste the previous example into a snippet or make up your own example to practice!</p>
+<h3>Accessing and Setting values in nested objects</h3>
+<p>Using the dot notation is a great way to access values in nested objects. However, when dynamically setting values in a nested object (when you don&#39;t know exactly what the name of the key is going to be), you have to use the bracket notation. Let&#39;s take a look at a quick example. In the example below, we&#39;d like to write a function that adds a key to the nested object</p>
+<pre><code>var programmingLanguages = {
+    java: {
+        yearCreated: 1995,
+        creator: &quot;James Gosling&quot;
+    },
+    javaScript: {
+        yearCreated: 1995,
+        creator: &quot;Brendan Eich&quot;
+    }
+}
+
+function addProgrammingLanguage(nameOfLanguage, yearLanguageCreated, creatorOfLanguage){
+    // how can we access the programming languages object?
+    // We can&#39;t use dot notation, because we don&#39;t know the name of
+    // the key until the function is called.
+    // Instead we use bracket notation where the key is the
+    // nameOfLanguage that is being passed to the function.
+    programmingLanguages[nameOfLanguage] = {
+        // Creating the object which will be the value of the
+        // key.  We can directly assign the yearLanguageCreated
+        // and creatorOfLanguage to the appropriate keys here.
+        yearCreated: yearLanguageCreated,
+        creator: creatorOfLanguage
+    }
+}
+
+// Usage example: Adding a key of ruby to the programming language object,
+// with the value of 1995 for the key &quot;yearCreated&quot; and the value
+// &quot;Yukihiro Matsumoto&quot; for creatorOfLanguage
+addProgrammingLanguage(&quot;ruby&quot;, 1995, &quot;Yukihiro Matsumoto&quot;);</code></pre>
+<p>Remember, that when adding keys to an object, if you do NOT know exactly what the name of the key will be (meaning that the key will be dynamically created), you HAVE to use the bracket notation.</p>
+<h3>Writing functions to produce values in a nested data structure</h3>
+<p>When you&#39;re interacting with a nested data structure, sometimes it&#39;s helpful to encapsulate some of your logic into a function. This is especially true if you&#39;ll need to manipulate the data structure in similar ways multiple times. Below are some examples of writing functions that interact with nested data structures in different ways. We&#39;ll start with the same <code>instructorData</code> example from before:</p>
+<pre><code>var instructorData = {
+    name: &quot;Elie&quot;,
+    additionalData: {
+        instructor: true,
+        favoriteHobbies: [&quot;Playing Cello&quot;, &quot;Tennis&quot;, &quot;Coding&quot;],
+        moreDetails: {
+            favoriteBasketballTeam: &quot;New York Knicks&quot;,
+            numberOfSiblings: 3,
+            isYoungest: true,
+            hometown: {
+                city: &quot;West Orange&quot;,
+                state: &quot;NJ&quot;,
+            },
+            citiesLivedIn: [&quot;Seattle&quot;, &quot;Providence&quot;, &quot;New York&quot;]
+        }
+    }
+};</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Nested Objects II</h1>
+<p>Now let&#39;s try to write some functions that operate on this nested data structure. The answers are below - but try to do these on your own first!</p>
+<h3>Exercises</h3>
+<p>Write a function called <code>displayCities</code> that console.logs all the values in the citiesLivedIn array:</p>
+<pre><code>displayCities();
+
+// &quot;Seattle&quot;
+// &quot;Providence&quot;
+// &quot;New York&quot;</code></pre>
+<p>Write a function called <code>displayHometownData</code> that console.logs all the values inside of the the <code>hometown</code> object</p>
+<pre><code>displayHometownData();
+
+// &quot;West Orange&quot;
+// &quot;NJ&quot;</code></pre>
+<p>Let&#39;s write a function called <code>addDetail</code> that accepts two parameters, a key and a value and adds the key and value to the <code>moreDetails</code> object and returns the <code>moreDetails</code> object</p>
+<pre><code>addDetail(&quot;isHilarious&quot;, true);
+/*
+{
+    favoriteBasketballTeam: &quot;New York Knicks&quot;,
+    numberOfSiblings: 3,
+    isYoungest: true,
+    hometown: {
+        city: &quot;West Orange&quot;,
+        state: &quot;NJ&quot;,
+    },
+    citiesLivedIn: [&quot;Seattle&quot;, &quot;Providence&quot;, &quot;New York&quot;],
+    isHilarious: true
+}
+*/
+addDetail(&quot;previousApartments&quot;, [&quot;Mission&quot;, &quot;North Beach&quot;, &quot;Nob Hill&quot;]);
+/*
+{
+    favoriteBasketballTeam: &quot;New York Knicks&quot;,
+    numberOfSiblings: 3,
+    isYoungest: true,
+    hometown: {
+        city: &quot;West Orange&quot;,
+        state: &quot;NJ&quot;,
+    },
+    citiesLivedIn: [&quot;Seattle&quot;, &quot;Providence&quot;, &quot;New York&quot;],
+    isHilarious: true
+    previousApartments: [&quot;Mission&quot;, &quot;North Beach&quot;, &quot;Nob Hill&quot;]
+}
+*/</code></pre>
+<p>Finally, let&#39;s write a function called <code>removeDetail</code> that removes a key in the <code>moreDetails</code> object and returns the <code>moreDetails</code> object (the new keys added above are not included in these examples).</p>
+<pre><code>removeDetail(&#39;citiesLivedIn&#39;);
+/*
+{
+    favoriteBasketballTeam: &quot;New York Knicks&quot;,
+    numberOfSiblings: 3,
+    isYoungest: true,
+    hometown: {
+        city: &quot;West Orange&quot;,
+        state: &quot;NJ&quot;,
+    }
+}
+*/
+removeDetail(&#39;hometown&#39;);
+/*
+{
+    favoriteBasketballTeam: &quot;New York Knicks&quot;,
+    numberOfSiblings: 3,
+    isYoungest: true
+}
+*/
+removeDetail(&#39;favoriteBasketballTeam&#39;);
+/*
+{
+    numberOfSiblings: 3,
+    isYoungest: true
+}
+*/</code></pre>
+<h3>Solutions</h3>
+<p>For most of these functions, it is useful to store the nested information in a variable to avoid having to type it multiple times. Here are the solutions to the previous problems:</p>
+<p><strong>displayCities</strong></p>
+<pre><code>function displayCities(){
+    var cityArray = instructorData.additionalData.moreDetails.citiesLivedIn;
+    for(var i=0; i&lt; cityArray.length; i++){
+        console.log(cityArray[i]);
+    }
+}</code></pre>
+<p><strong>displayHometownData</strong></p>
+<pre><code>function displayHometownData(){
+    var hometownObject = instructorData.additionalData.moreDetails.hometown;
+    for(var key in hometownObject){
+        console.log(hometownObject[key]);
+    }
+}</code></pre>
+<p><strong>addDetail</strong></p>
+<pre><code>function addDetail(key,value){
+    var detailsObject = instructorData.additionalData.moreDetails;
+    detailsObject[key] = value;
+    return detailsObject;
+}</code></pre>
+<p><strong>removeDetail</strong></p>
+<p>We need to make sure we use the bracket notation and not dot notation when accessing our object. Since we do not know the name of the key until the function is called, we need to dynamically access that key, which must be done using bracket notation.</p>
+<pre><code>function removeDetail(key){
+    var detailsObject = instructorData.additionalData.moreDetails;
+    var valueToBeRemoved = detailsObject[key];
+    delete detailsObject[key];
+    return valueToBeRemoved;
+}</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Nested Objects Exercises</h1>
+<p>Given the following nested object:</p>
+<pre><code>var nestedData = {
+  innerData: {
+    order: [&quot;first&quot;, &quot;second&quot;, &quot;third&quot;],
+    snacks: [&quot;chips&quot;, &quot;fruit&quot;, &quot;crackers&quot;],
+    numberData: {
+        primeNumbers: [2,3,5,7,11],
+        fibonnaci: [1,1,2,3,5,8,13]
+    },
+    addSnack: function(snack){
+        this.snacks.push(snack);
+        return this;
+    }
+  }
+}</code></pre>
+<ul>
+<li>Using a for loop, console.log all of the numbers in the <code>primeNumbers</code> array.</li>
+<li>Using a for loop, console.log all of the even Fibonnaci numbers.</li>
+<li>Console.log the value &quot;second&quot; inside the order array.</li>
+<li>Invoke the <code>addSnack</code> function and add the snack &quot;chocolate&quot;.</li>
+<li>Inside of the addSnack function there is a special keyword called <code>this</code>. What does the word <code>this</code> refer to inside the <code>addSnack</code> function?</li>
+</ul>
+<p>Given the following nested object:</p>
+<pre><code>var nestedObject = {
+  speakers: [{name:&quot;Elie&quot;},{name:&quot;Tim&quot;},{name:&quot;Matt&quot;}],
+  data: {
+    continents: {
+      europe: {
+        countries: {
+          switzerland: {
+            capital: &quot;Bern&quot;,
+            population: 8000000
+          }
+        }
+      }
+    },
+    languages: {
+      spanish: {
+          hello: &quot;Hola&quot;
+      },
+      french: {
+          hello: &quot;Bonjour&quot;
+      }
+    }
+  }
+}</code></pre>
+<ul>
+<li><p>Write a function <code>addSpeaker</code> to add a speaker to the array of speakers. The speaker you add must be an object with a key of name and a value of whatever you&#39;d like.</p>
+</li>
+<li><p>Write a function <code>addLanguage</code> that adds a language to the languages object. The language object you add should have a key with the name of the language and the value of another object with a key of &quot;hello&quot; and a value of however you spell &quot;hello&quot; in the language you add.</p>
+</li>
+<li><p>Write a function <code>addCountry</code> that adds a European country to the countries object (inside of the continents object, inside of the countries object). The country you add should be an object with the key as name of the country and the value as an object with the keys of &quot;capital&quot; and &quot;population&quot; and their respective values.</p>
+</li>
+</ul>
+<h3>Solutions</h3>
+<p>You can find solutions to the exercises <a href="https://github.com/rithmschool/intermediate_javascript_solutions/blob/master/nested_objects_exercise/solution.js">here</a></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Nested Arrays</h1>
+<h3>Multidimensional Arrays</h3>
+<p>Multidimensional arrays are a special kind of nested data structure, which consists of an array, each of whose elements is again an array. Here&#39;s an example:</p>
+<pre><code>var myFirstSubarray = [[&#39;this&#39;,&#39;is&#39;],[&#39;super&#39;,&#39;cool&#39;]];</code></pre>
+<p>When working with two-dimensional arrays, if you want to print out all of the values, you are going to need a loop inside of a loop! Let&#39;s examine this a bit further.</p>
+<pre><code>var nestedArr = [[1,2], [3,4]];
+for(var i=0; i&lt;nestedArr.length; i++){
+    console.log(nestedArr[i]);
+}
+
+// this will log out...
+// [1,2]
+// [3,4]</code></pre>
+<p>But what if we want to print out each individual value (i.e. 1, 2, 3, 4), and not just each array? We will need another loop inside of the first loop! We traditionally initialize the inner counter as <code>j</code> (the letter that comes after <code>i</code>) and we will loop as long as <code>j</code> is less than the length of <strong>each</strong> inner array.</p>
+<pre><code>var nestedArr = [[1,2], [3,4]];
+for(var i=0; i&lt;nestedArr.length; i++){
+    for(var j=0; j&lt;nestedArr[i].length; j++){
+        // notice that we are going inside the outer array
+        // and now inside of the inner array
+        console.log(nestedArr[i][j]);
+    }
+}
+
+// this will log out...
+// 1
+// 2
+// 3
+// 4</code></pre>
+<p>Here is an another example - take a quick look and try to replicate it without looking at the code!</p>
+<pre><code>var nestedArr = [[1,2,3], [4,5,6], [7,8,9,10,11,12]];
+for(var i=0; i&lt; nestedArr.length; i++){
+    for(var j=0; j&lt;nestedArr[i].length; j++){
+        console.log(nestedArr[i][j]);
+    }
+}</code></pre>
+<p>So when are two-dimensional arrays used? Quite often! For example, when building games you can often model the game board like a nested array. You can use a nested array for a tic-tac-toe board, a Minesweeper board or maybe for a couple hands of poker!</p>
+<h3>Additional Resources</h3>
+<p>An excellent post on accessing nested resources - <a href="http://stackoverflow.com/questions/11922383/access-process-nested-objects-arrays-or-json"><a href="http://stackoverflow.com/questions/11922383/access-process-nested-objects-arrays-or-json">http://stackoverflow.com/questions/11922383/access-process-nested-objects-arrays-or-json</a></a></p>
+<h3>Exercises</h3>
+<p>Given the following array, write a function called <code>printEvens</code> that console.logs all of the even numbers</p>
+<pre><code>var nestedArr = [[1,2,3],[4,5,6],[7,8],[9,10,11,12]];
+
+printEvens(); 
+
+// 2
+// 4
+// 6
+// 8
+// 10
+// 12</code></pre>
+<p>Given the following array, write a function called <code>sumTotal</code> returns the sum of all numbers in the array</p>
+<pre><code>var nestedArr = [[[1,2],[3,4]],[[5,6]]];
+
+sumTotal(); // 21</code></pre>
+<p><strong>Optional Bonus</strong></p>
+<p>Given the following array, write a function called <code>countVowels</code>, which returns the count of all of the vowels in each string regardless of case. To see if a value is an array, you can <strong>not</strong> use <code>typeof</code> since that will return <code>&#39;object&#39;</code>, so one way to do this is by using the <code>Array.isArray</code> function.</p>
+<pre><code>var arr = []
+Array.isArray(arr) // true
+Array.isArray(&#39;Hello&#39;) // false
+
+var nestedArr = [&#39;Elie&#39;, [&#39;Matt&#39;, [&#39;Tim&#39;]],[&#39;Colt&#39;,[&#39;Whisky&#39;,[&#39;Janey&#39;], &#39;Tom&#39;]], &#39;Lorien&#39;];
+
+allVowels() // 13</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises</h1>
+<ul>
+<li>Write a function called <code>rotate</code> which takes an array and a number, and moves each element however many spaces the number is to the right. For the value at the end of the array, <code>rotate</code> should move it back to the beginning.</li>
+</ul>
+<pre><code>rotate([1,2,3], 1) // [3,1,2]
+rotate([1,2,3], 2) // [2,3,1]
+rotate([1,2,3], 3) // [1,2,3]</code></pre>
+<ul>
+<li>Write a function called <code>makeXOGrid</code> which takes in two parameters, rows and columns, and returns an array of arrays with the number of values in each subarray equal to the <code>columns</code> parameter and the number of subarrays equal to the <code>rows</code> parameter. The values in the sub-arrays should switch between <code>&quot;X&quot;</code> and <code>&quot;O&quot;</code>.</li>
+</ul>
+<pre><code>makeXOGrid(1,4)
+
+/*/
+[[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;,&quot;O&quot;]]
+/*/
+
+makeXOGrid(3,2)
+
+/*/
+[[&quot;X&quot;,&quot;O&quot;],[&quot;X&quot;,&quot;O&quot;],[&quot;X&quot;,&quot;O&quot;]]
+/*/
+
+makeXOGrid(3,3)
+/*/
+[[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;],[&quot;O&quot;,&quot;X&quot;,&quot;O&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;]]
+/*/</code></pre>
+<h3>Solutions</h3>
+<p>You can find solutions to the exercises <a href="./solutions.html">here</a></p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        Eamonn de Leastar & Brenda Mullally.
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+<script>
+  $(document).on('keydown', function (e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
