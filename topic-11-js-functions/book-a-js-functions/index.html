@@ -9,14 +9,14 @@
 
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -38,6 +38,13 @@ figcaption
 {
   display: flex;
   align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
 }
 
 
@@ -104,7 +111,7 @@ body
 
 </style>
 
-<div class="ui fixed top pointing inverted menu labmenu">
+<div class="ui fixed top pointing inverted stackable menu labmenu">
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
@@ -137,102 +144,23 @@ body
       Exercises
     </a>
     
-    <a class="item" href="../../index.html">
-      <i class="home icon"></i>
+    <a class="item" data-tab=".">
+      .
     </a>
+    
+    <div class="item">
+      
+    </div>
   </div>
 </div>
 
-<div class="ui segment pushable">
+<div class="ui segment pushable" >
+
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    
-      
-        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
-          Lab-1 Gomix Intro
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-02-js-intro/book-a-js-introduction/index.html">
-          Lab-2 JS Intro
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
-          Lab-3 Gomix Playlist 1
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
-          Lab-4 Gomix Playlist 2
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-05-app-models/book-a-gomix-playlist-3/index.html">
-          Lab-5 Gomix Playlist 3
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-06-gomark/book-a-gomark-1/index.html">
-          Lab-gomark-1
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-07-js-arrays/book-a-js-arrays/index.html">
-          Lab-6 JS Arrays
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-07-js-arrays/book-b-gomark-2/index.html">
-          Lab-gomark-2
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-08-gomix-sessions/book-a-gomark-3/index.html">
-          Lab-gomark-3
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
-          Lab-8 Gomix Sessions
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-09-js-objects/book-a-js-objects/index.html">
-          Lab-9 JS Objects
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-gomix-images/book-a-setup/index.html">
-          Lab-10a Cloudinary Setup
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
-          Lab-10b gomix-picture-store
-        </a>
-      
-    
-      
-        <a class="active item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
-          Lab-11 Functions
-        </a>
-      
     
   </div>
   <div class="pusher" tabindex="-1">
-    <div class="ui basic segment">
+    <div class="ui basic segment" id="labchat">
       <br>
       
       <div  class="ui tab segment lab" data-tab="Lab-11 Functions">
@@ -660,22 +588,188 @@ onlyCapitalLetters(&quot;EVERYTHING&quot;) // &quot;EVERYTHING&quot;</code></pre
 
       </div>
      
-    </div>
-  </div>
-</div>
-  <div class="ui bottom fixed borderless right menu">
-    <div class="ui right tiny menu">
-      <div class="ui mini message segment">
-        Eamonn de Leastar & Brenda Mullally.
-        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-            target="_blank">Creative Commons License
-        </a>
+      <div  class="ui tab segment lab" data-tab=".">
+        <h3>Step 03 Solutions</h3>
+<p><strong><code>myName</code></strong></p>
+<pre><code>function myName(){
+    var myName = &#39;Elie Schoppik&#39;;
+    console.log(myName);
+}</code></pre>
+<p><strong><code>randomFood</code></strong></p>
+<pre><code>var favoriteFoods = [&#39;pizza&#39;, &#39;ice cream&#39;];
+function randomFood(){
+    // lets find a random number between 0 and 1 and multiply it by the length of the array. This will give us a number between 0 and 2. If we always round down, we will get either 0 or 1, so we can use Math.floor to round down.
+    var randomIndex = Math.floor(Math.random() * favoriteFoods.length);
+    console.log(favoriteFoods[randomIndex]);
+}</code></pre>
+<p><strong><code>displayOddNumbers</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function displayOddNumbers(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        // if the value we are at in the array is not divisible by 2 (it&#39;s an odd number)
+        if(numbers[i] % 2 !== 0){
+            // print out that value!
+            console.log(numbers[i]);
+        }
+    }
+}</code></pre>
+<p><strong><code>displayEvenNumbers</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function displayEvenNumbers(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        // if the value we are at in the array is divisible by 2 (it&#39;s an even number)
+        if(numbers[i] % 2 === 0){
+            // print out that value!
+            console.log(numbers[i]);
+        }
+    }
+}</code></pre>
+<p><strong><code>returnFirstOddNumber</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnFirstOddNumber(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        if(numbers[i] % 2 !== 0){
+            // print out that value, using return gets us out of the function!
+            return numbers[i];
+        }
+    }
+}</code></pre>
+<p><strong><code>returnFirstEvenNumber</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnFirstEvenNumber(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        if(numbers[i] % 2 === 0){
+            // print out that value!
+            return numbers[i];
+        }
+    }
+}</code></pre>
+<p><strong><code>returnFirstHalf</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnFirstHalf(){
+    return numbers.slice(0,numbers.length/2);
+}</code></pre>
+<p><strong><code>returnSecondHalf</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnSecondHalf(){
+    return numbers.slice(numbers.length/2);
+}</code></pre>
+<h1>JS Functions Exercise Solutions</h1>
+<p><strong><code>add</code></strong></p>
+<pre><code>function add(num1,num2){
+    return num1 + num2;
+}</code></pre>
+<p><strong><code>subtract</code></strong></p>
+<pre><code>function subtract(num1,num2){
+    return num1 - num2;
+}</code></pre>
+<p><strong><code>multiply</code></strong></p>
+<pre><code>function multiply(num1,num2){
+    return num1 * num2;
+}</code></pre>
+<p><strong><code>divide</code></strong></p>
+<pre><code>function divide(num1,num2){
+    return num1 / num2;
+}</code></pre>
+<p><strong><code>sayHello</code></strong></p>
+<pre><code>var myFirstName = &quot;Elie&quot;;
+function sayHello(str){
+    if(str === myFirstName){
+        return &quot;Hello Boss&quot;;
+    }
+    return &quot;Hello &quot; + str;
+}</code></pre>
+<p><strong><code>average</code></strong></p>
+<pre><code>function average(arr){
+    var total = 0;
+    for(var i = 0; i &lt; arr.length; i++){
+        total += arr[i];
+    }
+    return total / arr.length;
+}</code></pre>
+<p><strong><code>createStudent</code></strong></p>
+<pre><code>function createStudent(firstName, lastName){
+    return {
+        firstName: firstName,
+        lastName: lastName
+    }
+}</code></pre>
+<p><strong><code>findStudentByFirstName</code></strong></p>
+<pre><code>// let&#39;s first create some students
+var tim = createStudent(&quot;Tim&quot;, &quot;Garcia&quot;);
+var matt = createStudent(&quot;Matt&quot;, &quot;Lane&quot;);
+var elie = createStudent(&quot;Elie&quot;, &quot;Schoppik&quot;);
+
+var students = [tim, matt, elie];
+
+function findStudentByFirstName(name){
+    var lowerCasedName = name.toLowerCase();
+    for(var i = 0; i &lt; students.length; i++){
+        if(students[i].firstName.toLowerCase() === lowerCasedName){
+            return true;
+        }
+    }
+    return false;
+}</code></pre>
+<p><strong><code>extractEveryThird</code></strong></p>
+<pre><code>function extractEveryThird(arr){
+    var newArr = [];
+    for(var i = 2; i &lt; arr.length; i += 3){
+        newArr.push(arr[i]);
+    }
+    return newArr;
+}</code></pre>
+<p><strong><code>countEvensAndOdds</code></strong></p>
+<pre><code>function countEvensAndOdds(arr){
+    var countObj = {
+        oddCount: 0,
+        evenCount: 0
+    }
+    for(var i = 0; i &lt; arr.length; i++){
+        if(arr[i] % 2 === 0){
+            countObj.evenCount++;
+        } else {
+            countObj.oddCount++;
+        }
+    }
+    return countObj;
+}</code></pre>
+<p><strong><code>scope practice</code></strong></p>
+<pre><code>// the first console.log(myVar) outputs &quot;Hello from global&quot;
+
+// the second console.log(myVar) also outputs &quot;Hello from global&quot; (the trickyScopePractice function was not called!)</code></pre>
+<p><strong><code>onlyCapitalLetters</code></strong></p>
+<pre><code>function onlyCapitalLetters(str){
+    var newStr = &#39;&#39;;
+    for(var i = 0; i &lt; str.length; i++){
+        if(str[i].charCodeAt(0) &lt; 91 &amp;&amp; str[i].charCodeAt(0) &gt; 64 ){
+            newStr += str[i];
+        }    
+    }
+    return newStr;
+}</code></pre>
+
       </div>
+     
     </div>
+
   </div>
 
+</div>
+<!--<div class="ui bottom fixed borderless right menu">
+  <div class="ui right tiny menu">
+    <div class="ui mini message segment">
+      .
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+</div>-->
+
 <script>
-  $(document).on('keydown', function (e) {
+  $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -697,39 +791,43 @@ onlyCapitalLetters(&quot;EVERYTHING&quot;) // &quot;EVERYTHING&quot;</code></pre
 
 </script>
 
+
+
     <footer>
 
     </footer>
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

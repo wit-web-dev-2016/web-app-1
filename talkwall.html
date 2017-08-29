@@ -9,14 +9,14 @@
 
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -50,1187 +57,1434 @@ figcaption
     
 
 
-  
+  <header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-<header class="ui middle aligned center aligned stackable grid segment">
-
+    
+      
   <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-  <div class="seven wide center aligned column">
-    <h2 class="headder">  Web Application Development 1</h2>
-    <p> All Slides in the Course </p>
-  </div>
-
-  
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="index.html"> <i class="huge home icon"></i> Module </a>
-  </div>
-</div>
-
-  
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    Eamonn de Leastar & Brenda Mullally.
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
-    </a>
-  </div>
-</div>
-
-  
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
+  </a>
+
+    
+
+    <div class="ui five wide column">
+      <h2>  Web Application Development 1 </h2>
+    </div>
+
+    <div class="ui two wide column">
+      
+          
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="index.html"> <i class="huge home icon"></i> <br> Module Home </a>
     </div>
   </div>
-</div>
 
+        
+    </div>
 
-</header>
-
-
-
-<div class="ui bottom attached segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    
-    <a class="item" href="topic-00-assignments/talk-a-assignment-1/assignment-1.pdf">
-      Assignment 1
-    </a>
-    
-    <a class="item" href="topic-00-assignments/talk-b-assignment-2/assignment-2.pdf">
-      Assignment 2
-    </a>
-    
-    <a class="item" href="topic-01-gomix-intro/talk-a-gomix/gomix.pdf">
-      Introducing Gomix
-    </a>
-    
-    <a class="item" href="topic-01-gomix-intro/talk-b-gomix-tour/gomix-tour.pdf">
-      Gomix Tour
-    </a>
-    
-    <a class="item" href="topic-01-gomix-intro/talk-c-gomix-features/gomix-features.pdf">
-      Gomix Features
-    </a>
-    
-    <a class="item" href="topic-01-gomix-intro/talk-d-js-background/js-background.pdf">
-      JS Introduction
-    </a>
-    
-    <a class="item" href="topic-02-js-intro/talk-a-js-varialbes/js-variables.pdf">
-      Variables
-    </a>
-    
-    <a class="item" href="topic-02-js-intro/talk-b-js-boolean-logic/js-boolean-logic.pdf">
-      Boolean Logic
-    </a>
-    
-    <a class="item" href="topic-02-js-intro/talk-c-js-variables-&-objects/js-variables-&-objects.pdf">
-      Const, Let & Objects
-    </a>
-    
-    <a class="item" href="topic-02-js-intro/talk-d-variables-&-objects-revisited/variables-&-objects-review.pdf">
-      Variables & Objects Review
-    </a>
-    
-    <a class="item" href="topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.pdf">
-      Web App Introduction
-    </a>
-    
-    <a class="item" href="topic-03-app-controllers+views/talk-b-front-end/front-end.pdf">
-      Front-end
-    </a>
-    
-    <a class="item" href="topic-03-app-controllers+views/talk-b-modules/modules.pdf">
-      Modules
-    </a>
-    
-    <a class="item" href="topic-03-app-controllers+views/talk-c-back-end/back-end.pdf">
-      Back-end
-    </a>
-    
-    <a class="item" href="topic-04-app-templates+views/talk-a-templates/templates.pdf">
-      Templates
-    </a>
-    
-    <a class="item" href="topic-04-app-templates+views/talk-b-templates+json/templates+json.pdf">
-      Json
-    </a>
-    
-    <a class="item" href="topic-04-app-templates+views/talk-c-dashboard/dashboard.pdf">
-      Dashboard
-    </a>
-    
-    <a class="item" href="topic-04-app-templates+views/talk-d-playlist/playlist.pdf">
-      Playlist
-    </a>
-    
-    <a class="item" href="topic-04-app-templates+views/talk-e-mvc/mvc.pdf">
-      MVC
-    </a>
-    
-    <a class="item" href="topic-05-app-models/talk-1-mvc-revisited/mvc.pdf">
-      Module View Controller
-    </a>
-    
-    <a class="item" href="topic-05-app-models/talk-2-delete-button/delete-button.pdf">
-      Delete Song
-    </a>
-    
-    <a class="item" href="topic-05-app-models/talk-3-form-design/forms-design.pdf">
-      Forms Design
-    </a>
-    
-    <a class="item" href="topic-05-app-models/talk-4-form-programming/form-prog.pdf">
-      Form Programming
-    </a>
-    
-    <a class="item" href="topic-05-app-models/talk-5-store/store.pdf">
-      The Store
-    </a>
-    
-    <a class="item" href="topic-06-gomark/talk-a-gomark-1/gomark-1.pdf">
-      Gomark V1
-    </a>
-    
-    <a class="item" href="topic-06-gomark/talk-b-arrays-basics/arrays-basics.pdf">
-      Arrays: Basics
-    </a>
-    
-    <a class="item" href="topic-07-js-arrays/talk-a-array-methods/array-methods.pdf">
-      Array Methods
-    </a>
-    
-    <a class="item" href="topic-07-js-arrays/talk-b-array-iteration/array-iteration.pdf">
-      Array Iteration
-    </a>
-    
-    <a class="item" href="topic-07-js-arrays/talk-c-arrays-of-strings/arrays-of-strings.pdf">
-      Arrays of Strings
-    </a>
-    
-    <a class="item" href="topic-07-js-arrays/talk-d-arrays-of-objects/arrays-of-objects.pdf">
-      Arrays of Objects
-    </a>
-    
-    <a class="item" href="topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.pdf">
-       Sessions Introduction
-    </a>
-    
-    <a class="item" href="topic-08-gomix-sessions/talk-2-using-sessions/using-sessions.pdf">
-      Using Sessions
-    </a>
-    
-    <a class="item" href="topic-08-gomix-sessions/talk-3-sessions-ux/sessions-ux.pdf">
-      Sessions UX
-    </a>
-    
-    <a class="item" href="topic-08-gomix-sessions/talk-4-creating-sessions/creating-sessions.pdf">
-      Creating Sessions
-    </a>
-    
-    <a class="item" href="topic-08-gomix-sessions/talk-b-gomix-sessions/sessions.pdf">
-      Gomark V3
-    </a>
-    
-    <a class="item" href="topic-09-js-objects/talk-1-objects/objects.pdf">
-      JS Objects
-    </a>
-    
-    <a class="item" href="topic-09-js-objects/talk-2-playlist-4/playlist-4.pdf">
-      Playlist 4 Review
-    </a>
-    
-    <a class="item" href="topic-10-gomix-images/talk-1-cloudinary/cloudinary.pdf">
-      Cloudinary API
-    </a>
-    
-    <a class="item" href="topic-10-gomix-images/talk-2-picture-app/picturestore.pdf">
-      Picture-store App
-    </a>
-    
-    <a class="item" href="topic-10-gomix-images/talk-3-picture-impl/picturestore-impl.pdf">
-      Picture-store Implementation
-    </a>
-    
-    <a class="item" href="topic-11-js-functions/talk-1-functions/functions.pdf">
-      Functions
-    </a>
-    
-    <a class="item" href="topic-11-js-functions/talk-2-nested-objects/nexted-objects.pdf">
-      Nested Objects
-    </a>
-    
-    <a class="item" href="topic-11-js-functions/talk-3-review/review.pdf">
-      Review + Roadmap
-    </a>
-    
+    <div class="ui five wide column">
+      
+  <div class="four wide column">
+    <div class="ui center aligned mini message segment">
+      Eamonn de Leastar & Brenda Mullally.
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
   </div>
-  <div class="pusher">
-    <div class="ui container">
-      <div class="ui basic segment">
-        <div class="ui four doubling stackable cards">
-          
-          
-  
-  <a class="ui raised link card" href="topic-00-assignments/talk-a-assignment-1/assignment-1.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Assignment 1 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-00-assignments/talk-a-assignment-1/assignment-1.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Assignment 1 specification.</p>
 
-      </div>
     </div>
+
+    <div class="three wide column">
+      
+        
+  <div class="ui equal width center aligned grid segment">
     
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-00-assignments/talk-b-assignment-2/assignment-2.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Assignment 2 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-00-assignments/talk-b-assignment-2/assignment-2.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Assignment 2 specification.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-01-gomix-intro/talk-a-gomix/gomix.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Introducing Gomix </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-a-gomix/gomix.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>What is is, what role it plays, why was it built.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-01-gomix-intro/talk-b-gomix-tour/gomix-tour.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Gomix Tour </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-b-gomix-tour/gomix-tour.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>A look at at the components of a gomix project. Also types of project will we build?</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-01-gomix-intro/talk-c-gomix-features/gomix-features.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Gomix Features </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-c-gomix-features/gomix-features.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The options available in a Gomix project + a an overview of the community projects</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-01-gomix-intro/talk-d-js-background/js-background.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> JS Introduction </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-d-js-background/js-background.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Place javascript in its proper context, and explore its relationship to the browser.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-02-js-intro/talk-a-js-varialbes/js-variables.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Variables </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-02-js-intro/talk-a-js-varialbes/js-variables.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Explore the javascript variables, including the basic types, conversion and usage</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-02-js-intro/talk-b-js-boolean-logic/js-boolean-logic.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Boolean Logic </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-02-js-intro/talk-b-js-boolean-logic/js-boolean-logic.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Boolean expressions, operators and selection statements</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-02-js-intro/talk-c-js-variables-&-objects/js-variables-&-objects.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Const, Let & Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-02-js-intro/talk-c-js-variables-&-objects/js-variables-&-objects.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Using const &amp; let. Declaring and using objects.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-02-js-intro/talk-d-variables-&-objects-revisited/variables-&-objects-review.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Variables & Objects Review </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-02-js-intro/talk-d-variables-&-objects-revisited/variables-&-objects-review.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>A concise tour of the structure of variables &amp; objects in Javascript</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Web App Introduction </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Structure of a web app: Front-end Vs Backend. Routers, Models, Views, Controllers</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-03-app-controllers+views/talk-b-front-end/front-end.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Front-end </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-b-front-end/front-end.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Views: Handlebars layouts, partials and templates</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-03-app-controllers+views/talk-b-modules/modules.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Modules </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-b-modules/modules.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The backend will use a modular approach, relying on specific mechanism to import/export shared objects</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-03-app-controllers+views/talk-c-back-end/back-end.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Back-end </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-c-back-end/back-end.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Server, routes + controllers</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-04-app-templates+views/talk-a-templates/templates.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Templates </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-a-templates/templates.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Templates enable dynamic composition of views from layouts, partials and expressions.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-04-app-templates+views/talk-b-templates+json/templates+json.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Json </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-b-templates+json/templates+json.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>JSON is notatino for representing javascript objects in a simple literal format.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-04-app-templates+views/talk-c-dashboard/dashboard.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Dashboard </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-c-dashboard/dashboard.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Review thee dashboard controller in detail.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-04-app-templates+views/talk-d-playlist/playlist.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Playlist </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-d-playlist/playlist.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Revise the Dashboard to render playlist without their contents. Use a new playlist view renders individual playlists</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-04-app-templates+views/talk-e-mvc/mvc.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> MVC </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-e-mvc/mvc.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Explore the MVC Pattern in action in Playlist 2</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-05-app-models/talk-1-mvc-revisited/mvc.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Module View Controller </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-05-app-models/talk-1-mvc-revisited/mvc.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>MVC is the guiding principle for the structure of our application.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-05-app-models/talk-2-delete-button/delete-button.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Delete Song </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-05-app-models/talk-2-delete-button/delete-button.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>How to remove a song from the playlist</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-05-app-models/talk-3-form-design/forms-design.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Forms Design </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-05-app-models/talk-3-form-design/forms-design.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>How a form UI is laid out in HTML using Semntic UI</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-05-app-models/talk-4-form-programming/form-prog.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Form Programming </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-05-app-models/talk-4-form-programming/form-prog.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>How to accept user input from a form and process it in a controller</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-05-app-models/talk-5-store/store.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> The Store </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-05-app-models/talk-5-store/store.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The Playlist are ultimately stored in a JSON file. This file is managed by database modules.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-06-gomark/talk-a-gomark-1/gomark-1.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Gomark V1 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-06-gomark/talk-a-gomark-1/gomark-1.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>A worked solution to gomark V1</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-06-gomark/talk-b-arrays-basics/arrays-basics.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Arrays: Basics </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-06-gomark/talk-b-arrays-basics/arrays-basics.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Creating, accessing, adding to and removing from arrays.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-07-js-arrays/talk-a-array-methods/array-methods.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Array Methods </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-a-array-methods/array-methods.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Exploring length, slice, concat, join, indexOf, lastIndexOf</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-07-js-arrays/talk-b-array-iteration/array-iteration.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Array Iteration </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-b-array-iteration/array-iteration.jpeg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Using for, while and do-while to iterate over an array</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-07-js-arrays/talk-c-arrays-of-strings/arrays-of-strings.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Arrays of Strings </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-c-arrays-of-strings/arrays-of-strings.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>A review of the structure of arrays of Strings</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-07-js-arrays/talk-d-arrays-of-objects/arrays-of-objects.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Arrays of Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-d-arrays-of-objects/arrays-of-objects.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Arrays of more complex data structures, including nested objects.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Sessions Introduction </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Keeping track of the currently logged in user is a challenge - as HTTP is, by definition &#39;stateless&#39;. Hidden form fields, url rewriting and cookies are three common techniques for implementing sessions.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-08-gomix-sessions/talk-2-using-sessions/using-sessions.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Using Sessions </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-2-using-sessions/using-sessions.gif">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Explore how we need to refactor the application to support sessions</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-08-gomix-sessions/talk-3-sessions-ux/sessions-ux.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Sessions UX </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-3-sessions-ux/sessions-ux.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>New forms needed to enable the user to signup / login</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-08-gomix-sessions/talk-4-creating-sessions/creating-sessions.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Creating Sessions </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-4-creating-sessions/creating-sessions.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The API to create, access and destroy sessions.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-08-gomix-sessions/talk-b-gomix-sessions/sessions.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Gomark V3 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-b-gomix-sessions/sessions.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Gomark V3 Review</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-09-js-objects/talk-1-objects/objects.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> JS Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-09-js-objects/talk-1-objects/objects.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Review the structure, syntax and access rules for Javascript Objects</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-09-js-objects/talk-2-playlist-4/playlist-4.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Playlist 4 Review </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-09-js-objects/talk-2-playlist-4/playlist-4.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Walk through the Playlist 4 application in detail</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-10-gomix-images/talk-1-cloudinary/cloudinary.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Cloudinary API </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-10-gomix-images/talk-1-cloudinary/cloudinary.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The fundamentals of the cloudinary service + API</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-10-gomix-images/talk-2-picture-app/picturestore.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Picture-store App </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-10-gomix-images/talk-2-picture-app/picturestore.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>A review of the UX of the picture-store app</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-10-gomix-images/talk-3-picture-impl/picturestore-impl.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Picture-store Implementation </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-10-gomix-images/talk-3-picture-impl/picturestore-impl.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The gomix app implementation.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-11-js-functions/talk-1-functions/functions.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Functions </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-11-js-functions/talk-1-functions/functions.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Function return values, scope and structure</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-11-js-functions/talk-2-nested-objects/nexted-objects.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Nested Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-11-js-functions/talk-2-nested-objects/nexted-objects.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>How more complex data structures can be constructed.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-11-js-functions/talk-3-review/review.pdf" target="_blank">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Review + Roadmap </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-11-js-functions/talk-3-review/review.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>A review of the course and a peek into the future of your learning</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
+      
+        <div class="column">
+          <div class="popup" data-content="All talk's in Course">
+            <a href="talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              43
+            </div>
+          </div>
         </div>
+      
+    
+      
+        <div class="column">
+          <div class="popup" data-content="All lab's in Course">
+            <a href="labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              14
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+      
     </div>
+
+
+  </header>
+  
+  
+
+
+
+  <div class="ui bottom attached segment pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      
+    </div>
+    <div class="pusher">
+      <div class="ui container">
+        <div class="ui basic segment">
+          <div class="ui centered four doubling stackable cards">
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-00-assignments/talk-a-assignment-1/assignment-1.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Assignment 1</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-00-assignments/talk-a-assignment-1/assignment-1.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Assignment 1 specification.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-00-assignments/talk-b-assignment-2/assignment-2.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Assignment 2</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-00-assignments/talk-b-assignment-2/assignment-2.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Assignment 2 specification.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-01-gomix-intro/talk-a-gomix/gomix.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Introducing Gomix</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-a-gomix/gomix.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>What is is, what role it plays, why was it built.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-01-gomix-intro/talk-b-gomix-tour/gomix-tour.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Gomix Tour</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-b-gomix-tour/gomix-tour.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>A look at at the components of a gomix project. Also types of project will we build?</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-01-gomix-intro/talk-c-gomix-features/gomix-features.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Gomix Features</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-c-gomix-features/gomix-features.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>The options available in a Gomix project + a an overview of the community projects</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-01-gomix-intro/talk-d-js-background/js-background.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> JS Introduction</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-d-js-background/js-background.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Place javascript in its proper context, and explore its relationship to the browser.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-02-js-intro/talk-a-js-varialbes/js-variables.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Variables</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-02-js-intro/talk-a-js-varialbes/js-variables.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Explore the javascript variables, including the basic types, conversion and usage</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-02-js-intro/talk-b-js-boolean-logic/js-boolean-logic.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Boolean Logic</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-02-js-intro/talk-b-js-boolean-logic/js-boolean-logic.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Boolean expressions, operators and selection statements</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-02-js-intro/talk-c-js-variables-&-objects/js-variables-&-objects.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Const, Let & Objects</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-02-js-intro/talk-c-js-variables-&-objects/js-variables-&-objects.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Using const &amp; let. Declaring and using objects.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-02-js-intro/talk-d-variables-&-objects-revisited/variables-&-objects-review.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Variables & Objects Review</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-02-js-intro/talk-d-variables-&-objects-revisited/variables-&-objects-review.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>A concise tour of the structure of variables &amp; objects in Javascript</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Web App Introduction</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Structure of a web app: Front-end Vs Backend. Routers, Models, Views, Controllers</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-03-app-controllers+views/talk-b-front-end/front-end.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Front-end</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-b-front-end/front-end.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Views: Handlebars layouts, partials and templates</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-03-app-controllers+views/talk-b-modules/modules.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Modules</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-b-modules/modules.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>The backend will use a modular approach, relying on specific mechanism to import/export shared objects</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-03-app-controllers+views/talk-c-back-end/back-end.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Back-end</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-c-back-end/back-end.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Server, routes + controllers</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-04-app-templates+views/talk-a-templates/templates.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Templates</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-a-templates/templates.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Templates enable dynamic composition of views from layouts, partials and expressions.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-04-app-templates+views/talk-b-templates+json/templates+json.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Json</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-b-templates+json/templates+json.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>JSON is notatino for representing javascript objects in a simple literal format.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-04-app-templates+views/talk-c-dashboard/dashboard.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Dashboard</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-c-dashboard/dashboard.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Review thee dashboard controller in detail.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-04-app-templates+views/talk-d-playlist/playlist.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Playlist</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-d-playlist/playlist.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Revise the Dashboard to render playlist without their contents. Use a new playlist view renders individual playlists</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-04-app-templates+views/talk-e-mvc/mvc.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> MVC</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-e-mvc/mvc.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Explore the MVC Pattern in action in Playlist 2</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-05-app-models/talk-1-mvc-revisited/mvc.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Module View Controller</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-05-app-models/talk-1-mvc-revisited/mvc.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>MVC is the guiding principle for the structure of our application.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-05-app-models/talk-2-delete-button/delete-button.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Delete Song</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-05-app-models/talk-2-delete-button/delete-button.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>How to remove a song from the playlist</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-05-app-models/talk-3-form-design/forms-design.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Forms Design</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-05-app-models/talk-3-form-design/forms-design.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>How a form UI is laid out in HTML using Semntic UI</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-05-app-models/talk-4-form-programming/form-prog.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Form Programming</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-05-app-models/talk-4-form-programming/form-prog.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>How to accept user input from a form and process it in a controller</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-05-app-models/talk-5-store/store.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> The Store</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-05-app-models/talk-5-store/store.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>The Playlist are ultimately stored in a JSON file. This file is managed by database modules.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-06-gomark/talk-a-gomark-1/gomark-1.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Gomark V1</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-06-gomark/talk-a-gomark-1/gomark-1.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>A worked solution to gomark V1</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-06-gomark/talk-b-arrays-basics/arrays-basics.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Arrays: Basics</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-06-gomark/talk-b-arrays-basics/arrays-basics.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Creating, accessing, adding to and removing from arrays.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-07-js-arrays/talk-a-array-methods/array-methods.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Array Methods</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-a-array-methods/array-methods.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Exploring length, slice, concat, join, indexOf, lastIndexOf</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-07-js-arrays/talk-b-array-iteration/array-iteration.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Array Iteration</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-b-array-iteration/array-iteration.jpeg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Using for, while and do-while to iterate over an array</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-07-js-arrays/talk-c-arrays-of-strings/arrays-of-strings.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Arrays of Strings</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-c-arrays-of-strings/arrays-of-strings.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>A review of the structure of arrays of Strings</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-07-js-arrays/talk-d-arrays-of-objects/arrays-of-objects.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Arrays of Objects</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-07-js-arrays/talk-d-arrays-of-objects/arrays-of-objects.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Arrays of more complex data structures, including nested objects.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header">  Sessions Introduction</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Keeping track of the currently logged in user is a challenge - as HTTP is, by definition &#39;stateless&#39;. Hidden form fields, url rewriting and cookies are three common techniques for implementing sessions.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-08-gomix-sessions/talk-2-using-sessions/using-sessions.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Using Sessions</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-2-using-sessions/using-sessions.gif">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Explore how we need to refactor the application to support sessions</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-08-gomix-sessions/talk-3-sessions-ux/sessions-ux.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Sessions UX</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-3-sessions-ux/sessions-ux.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>New forms needed to enable the user to signup / login</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-08-gomix-sessions/talk-4-creating-sessions/creating-sessions.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Creating Sessions</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-4-creating-sessions/creating-sessions.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>The API to create, access and destroy sessions.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-08-gomix-sessions/talk-b-gomix-sessions/sessions.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Gomark V3</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-b-gomix-sessions/sessions.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Gomark V3 Review</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-09-js-objects/talk-1-objects/objects.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> JS Objects</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-09-js-objects/talk-1-objects/objects.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Review the structure, syntax and access rules for Javascript Objects</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-09-js-objects/talk-2-playlist-4/playlist-4.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Playlist 4 Review</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-09-js-objects/talk-2-playlist-4/playlist-4.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Walk through the Playlist 4 application in detail</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-10-gomix-images/talk-1-cloudinary/cloudinary.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Cloudinary API</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-10-gomix-images/talk-1-cloudinary/cloudinary.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>The fundamentals of the cloudinary service + API</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-10-gomix-images/talk-2-picture-app/picturestore.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Picture-store App</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-10-gomix-images/talk-2-picture-app/picturestore.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>A review of the UX of the picture-store app</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-10-gomix-images/talk-3-picture-impl/picturestore-impl.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Picture-store Implementation</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-10-gomix-images/talk-3-picture-impl/picturestore-impl.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>The gomix app implementation.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-11-js-functions/talk-1-functions/functions.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Functions</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-11-js-functions/talk-1-functions/functions.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Function return values, scope and structure</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-11-js-functions/talk-2-nested-objects/nexted-objects.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Nested Objects</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-11-js-functions/talk-2-nested-objects/nexted-objects.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>How more complex data structures can be constructed.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+     <a class="ui raised link card" href="topic-11-js-functions/talk-3-review/review.pdf" target="_blank">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge object group icon"></i></div>
+        <div class="header"> Review + Roadmap</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-11-js-functions/talk-3-review/review.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>A review of the course and a peek into the future of your learning</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
 
     <footer>
 
     </footer>
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

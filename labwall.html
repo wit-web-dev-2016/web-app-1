@@ -9,14 +9,14 @@
 
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -50,462 +57,564 @@ figcaption
     
 
 
-  
+  <header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-<header class="ui middle aligned center aligned stackable grid segment">
-
+    
+      
   <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-  <div class="seven wide center aligned column">
-    <h2 class="headder">  Web Application Development 1</h2>
-    <p> All Labs in the Course </p>
-  </div>
-
-  
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="index.html"> <i class="huge home icon"></i> Module </a>
-  </div>
-</div>
-
-  
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    Eamonn de Leastar & Brenda Mullally.
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
-    </a>
-  </div>
-</div>
-
-  
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
+  </a>
+
+    
+
+    <div class="ui five wide column">
+      <h2>  Web Application Development 1 </h2>
+    </div>
+
+    <div class="ui two wide column">
+      
+          
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="index.html"> <i class="huge home icon"></i> <br> Module Home </a>
     </div>
   </div>
-</div>
 
+        
+    </div>
 
-</header>
-
-
-
-<div class="ui bottom attached segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    
-    <a class="item" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
-      Lab-1 Gomix Intro
-    </a>
-    
-    <a class="item" href="topic-02-js-intro/book-a-js-introduction/index.html">
-      Lab-2 JS Intro
-    </a>
-    
-    <a class="item" href="topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
-      Lab-3 Gomix Playlist 1
-    </a>
-    
-    <a class="item" href="topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
-      Lab-4 Gomix Playlist 2
-    </a>
-    
-    <a class="item" href="topic-05-app-models/book-a-gomix-playlist-3/index.html">
-      Lab-5 Gomix Playlist 3
-    </a>
-    
-    <a class="item" href="topic-06-gomark/book-a-gomark-1/index.html">
-      Lab-gomark-1
-    </a>
-    
-    <a class="item" href="topic-07-js-arrays/book-a-js-arrays/index.html">
-      Lab-6 JS Arrays
-    </a>
-    
-    <a class="item" href="topic-07-js-arrays/book-b-gomark-2/index.html">
-      Lab-gomark-2
-    </a>
-    
-    <a class="item" href="topic-08-gomix-sessions/book-a-gomark-3/index.html">
-      Lab-gomark-3
-    </a>
-    
-    <a class="item" href="topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
-      Lab-8 Gomix Sessions
-    </a>
-    
-    <a class="item" href="topic-09-js-objects/book-a-js-objects/index.html">
-      Lab-9 JS Objects
-    </a>
-    
-    <a class="item" href="topic-10-gomix-images/book-a-setup/index.html">
-      Lab-10a Cloudinary Setup
-    </a>
-    
-    <a class="item" href="topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
-      Lab-10b gomix-picture-store
-    </a>
-    
-    <a class="item" href="topic-11-js-functions/book-a-js-functions/index.html">
-      Lab-11 Functions
-    </a>
-    
+    <div class="ui five wide column">
+      
+  <div class="four wide column">
+    <div class="ui center aligned mini message segment">
+      Eamonn de Leastar & Brenda Mullally.
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
   </div>
-  <div class="pusher">
-    <div class="ui container">
-      <div class="ui basic segment">
-        <div class="ui four doubling stackable cards">
-          
-          
-  
-  <a class="ui raised link card" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-1 Gomix Intro </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-01-gomix-intro/book-a-gomix-intro/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Create, modify and view your first Gomix project.</p>
 
-      </div>
     </div>
+
+    <div class="three wide column">
+      
+        
+  <div class="ui equal width center aligned grid segment">
     
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-02-js-intro/book-a-js-introduction/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-2 JS Intro </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-02-js-intro/book-a-js-introduction/img/main.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Background &amp; Tools, Variables &amp; Boolean Logic</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-3 Gomix Playlist 1 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-03-app-controllers+views/book-a-gomix-playlist-1/img/main.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Import and run a new starter project. Extend this project to include multiple &#39;views&#39;. Explore the handlebars templating library.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-4 Gomix Playlist 2 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-04-app-templates+views/book-a-gomix-playlist-2/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Refactor the dashboard controller to show summary on of the playlists + link to show playlist details.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-05-app-models/book-a-gomix-playlist-3/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-5 Gomix Playlist 3 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-05-app-models/book-a-gomix-playlist-3/img/main.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Enable Songs and Playlists to be added via simple forms.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-06-gomark/book-a-gomark-1/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-gomark-1 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-06-gomark/book-a-gomark-1/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Implement version 1 of the Gomark assignment.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-07-js-arrays/book-a-js-arrays/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-6 JS Arrays </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-07-js-arrays/book-a-js-arrays/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Array Basics, Array Methods &amp; Iteration</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-07-js-arrays/book-b-gomark-2/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-gomark-2 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-07-js-arrays/book-b-gomark-2/img/main.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <h2>Github Repo</h2>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-08-gomix-sessions/book-a-gomark-3/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-gomark-3 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/book-a-gomark-3/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Final version of the Assignment 1 Gomark application</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-8 Gomix Sessions </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-08-gomix-sessions/book-b-gomix-sessions/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-09-js-objects/book-a-js-objects/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-9 JS Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-09-js-objects/book-a-js-objects/img/main.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Object basics and Object iteration.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-10-gomix-images/book-a-setup/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-10a Cloudinary Setup </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-10-gomix-images/book-a-setup/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Sign up and configure a Cloudinary Account.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-10b gomix-picture-store </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-10-gomix-images/book-b-gomix-cloudinary/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Build an application the can facilitate upload and display of images in Gomix.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
-          
-  
-  <a class="ui raised link card" href="topic-11-js-functions/book-a-js-functions/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-11 Functions </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic-11-js-functions/book-a-js-functions/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Functions basics, function parameters &amp; scope</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-          
+      
+        <div class="column">
+          <div class="popup" data-content="All talk's in Course">
+            <a href="talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              43
+            </div>
+          </div>
         </div>
+      
+    
+      
+        <div class="column">
+          <div class="popup" data-content="All lab's in Course">
+            <a href="labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              14
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+      
     </div>
+
+
+  </header>
+  
+  
+
+
+
+  <div class="ui bottom attached segment pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      
+    </div>
+    <div class="pusher">
+      <div class="ui container">
+        <div class="ui basic segment">
+          <div class="ui centered four doubling stackable cards">
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-01-gomix-intro/book-a-gomix-intro/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-1 Gomix Intro</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-01-gomix-intro/book-a-gomix-intro/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Create, modify and view your first Gomix project.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-02-js-intro/book-a-js-introduction/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-2 JS Intro</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-02-js-intro/book-a-js-introduction/img/main.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Background &amp; Tools, Variables &amp; Boolean Logic</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-03-app-controllers+views/book-a-gomix-playlist-1/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-3 Gomix Playlist 1</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-03-app-controllers+views/book-a-gomix-playlist-1/img/main.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Import and run a new starter project. Extend this project to include multiple &#39;views&#39;. Explore the handlebars templating library.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-04-app-templates+views/book-a-gomix-playlist-2/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-4 Gomix Playlist 2</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-04-app-templates+views/book-a-gomix-playlist-2/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Refactor the dashboard controller to show summary on of the playlists + link to show playlist details.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-05-app-models/book-a-gomix-playlist-3/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-5 Gomix Playlist 3</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-05-app-models/book-a-gomix-playlist-3/img/main.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Enable Songs and Playlists to be added via simple forms.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-06-gomark/book-a-gomark-1/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-gomark-1</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-06-gomark/book-a-gomark-1/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Implement version 1 of the Gomark assignment.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-07-js-arrays/book-a-js-arrays/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-6 JS Arrays</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-07-js-arrays/book-a-js-arrays/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Array Basics, Array Methods &amp; Iteration</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-07-js-arrays/book-b-gomark-2/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-gomark-2</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-07-js-arrays/book-b-gomark-2/img/main.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <h2>Github Repo</h2>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-08-gomix-sessions/book-a-gomark-3/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-gomark-3</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/book-a-gomark-3/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Final version of the Assignment 1 Gomark application</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-08-gomix-sessions/book-b-gomix-sessions/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-8 Gomix Sessions</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/book-b-gomix-sessions/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-09-js-objects/book-a-js-objects/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-9 JS Objects</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-09-js-objects/book-a-js-objects/img/main.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Object basics and Object iteration.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-10-gomix-images/book-a-setup/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-10a Cloudinary Setup</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-10-gomix-images/book-a-setup/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Sign up and configure a Cloudinary Account.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-10-gomix-images/book-b-gomix-cloudinary/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-10b gomix-picture-store</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-10-gomix-images/book-b-gomix-cloudinary/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Build an application the can facilitate upload and display of images in Gomix.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+              
+                
+
+  
+    <a class="ui raised link card" href="topic-11-js-functions/book-a-js-functions/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge lab icon"></i></div>
+        <div class="header"> Lab-11 Functions</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-11-js-functions/book-a-js-functions/img/main.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Functions basics, function parameters &amp; scope</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+              
+            
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
 
     <footer>
 
     </footer>
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

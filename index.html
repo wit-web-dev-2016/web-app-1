@@ -9,14 +9,14 @@
 
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -50,58 +57,91 @@ figcaption
     
 
 
+  <header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-
-<header class="ui middle aligned center aligned stackable grid segment">
-
+    
+      
   <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-  <div class="seven wide center aligned column">
-    <h2 class="headder">  Web Application Development 1</h2>
-    <p> Top Level Topics </p>
-  </div>
-
-
-  
-
-  
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    Eamonn de Leastar & Brenda Mullally.
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
-    </a>
-  </div>
-</div>
-
-
-  
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
+  </a>
+
+    
+
+    <div class="ui five wide column">
+      <h2>  Web Application Development 1 </h2>
+    </div>
+
+    <div class="ui two wide column">
+      
+          
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="index.html"> <i class="huge home icon"></i> <br> Module Home </a>
     </div>
   </div>
-</div>
+
+      
+    </div>
+
+    <div class="ui five wide column">
+      
+  <div class="four wide column">
+    <div class="ui center aligned mini message segment">
+      Eamonn de Leastar & Brenda Mullally.
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="three wide column">
+      
+        
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          <div class="popup" data-content="All talk's in Course">
+            <a href="talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              43
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          <div class="popup" data-content="All lab's in Course">
+            <a href="labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              14
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+      
+    </div>
 
 
+  </header>
+  
+  
 
-</header>
 
 
 <div class="ui segment pushable">
@@ -504,256 +544,340 @@ figcaption
   <div class="pusher">
     <div class="ui container">
       <div class="ui basic segment">
-        <div class="ui four doubling stackable cards">
+        <div class="ui centered four doubling stackable cards">
           
-          
-  
-  <a class="ui raised link card" href="./topic-00-assignments/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Assignments </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-00-assignments/talk-a-assignment-1/assignment-1.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Specifications for Assignments 1 &amp; 2</p>
+            
 
+  
+    <a class="ui raised link card" href="topic-00-assignments/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Assignments</div>
       </div>
-    </div>
-    
-  </a>
 
-          
-          
-  
-  <a class="ui raised link card" href="./topic-01-gomix-intro/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Gomix: Introduction to Gomix </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-01-gomix-intro/talk-a-gomix/gomix.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>An introduction to the gomix platform + the very basics of the Javascript Language</p>
-
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-00-assignments/talk-a-assignment-1/assignment-1.png">
       </div>
-    </div>
-    
-  </a>
 
-          
-          
-  
-  <a class="ui raised link card" href="./topic-02-js-intro/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> JS: Variables, Boolean Logic & Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-02-js-intro/talk-a-js-varialbes/js-variables.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Primitive JS types. Making decisions using selection statements. Simple objects.</p>
+      <div class="center aligned content">
+        <div class="description">
+          <p>Specifications for Assignments 1 &amp; 2</p>
 
+        </div>
       </div>
-    </div>
-    
-  </a>
+
+      
+
+    </a>
+
 
           
-          
-  
-  <a class="ui raised link card" href="./topic-03-app-controllers+views/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Gomix: Controllers + Views </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Build your first gomix app, a simple static playlist web site.</p>
+            
 
+  
+    <a class="ui raised link card" href="topic-01-gomix-intro/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Gomix: Introduction to Gomix</div>
       </div>
-    </div>
-    
-  </a>
 
-          
-          
-  
-  <a class="ui raised link card" href="./topic-04-app-templates+views/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Gomix: Templates + Routes </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-04-app-templates+views/talk-a-templates/templates.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Explore templating in more detail. Enhanced the routing behaviour</p>
-
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-01-gomix-intro/talk-a-gomix/gomix.png">
       </div>
-    </div>
-    
-  </a>
 
-          
-          
-  
-  <a class="ui raised link card" href="./topic-05-app-models/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Gomix: Model View Controller </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-05-app-models/topic.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Explore MVC as implemented in Playlist</p>
+      <div class="center aligned content">
+        <div class="description">
+          <p>An introduction to the gomix platform + the very basics of the Javascript Language</p>
 
+        </div>
       </div>
-    </div>
-    
-  </a>
+
+      
+
+    </a>
+
 
           
-          
-  
-  <a class="ui raised link card" href="./topic-06-gomark/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Gomix: Gomark Solution </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-06-gomark/talk-a-gomark-1/gomark-1.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The Assignment one - Gomark - application</p>
+            
 
+  
+    <a class="ui raised link card" href="topic-02-js-intro/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> JS: Variables, Boolean Logic & Objects</div>
       </div>
-    </div>
-    
-  </a>
 
-          
-          
-  
-  <a class="ui raised link card" href="./topic-07-js-arrays/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> JS: Arrays </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-07-js-arrays/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-02-js-intro/talk-a-js-varialbes/js-variables.jpg">
       </div>
-    </div>
-    
-  </a>
 
-          
-          
-  
-  <a class="ui raised link card" href="./topic-08-gomix-sessions/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Gomix: Sessions </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>In order to implement user account management, sessions provide a mechanism for identifying specific users</p>
+      <div class="center aligned content">
+        <div class="description">
+          <p>Primitive JS types. Making decisions using selection statements. Simple objects.</p>
 
+        </div>
       </div>
-    </div>
-    
-  </a>
+
+      
+
+    </a>
+
 
           
-          
-  
-  <a class="ui raised link card" href="./topic-09-js-objects/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> JS: Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-09-js-objects/talk-1-objects/objects.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Review structure of javascript objects - and re-examine the Playlist 4 application in detail.</p>
+            
 
+  
+    <a class="ui raised link card" href="topic-03-app-controllers+views/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Gomix: Controllers + Views</div>
       </div>
-    </div>
-    
-  </a>
 
-          
-          
-  
-  <a class="ui raised link card" href="./topic-10-gomix-images/index.html">
-  
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Gomix: Images </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-10-gomix-images/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>How to build an application that enables a user to upload and display images.</p>
-
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-03-app-controllers+views/talk-a-web-app-intro/web-app-intro.png">
       </div>
-    </div>
-    
-  </a>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Build your first gomix app, a simple static playlist web site.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
 
           
-          
+            
+
   
-  <a class="ui raised link card" href="./topic-11-js-functions/index.html">
+    <a class="ui raised link card" href="topic-04-app-templates+views/index.html">
   
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> JS: Functions & Nested Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic-11-js-functions/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Gomix: Templates + Routes</div>
       </div>
-    </div>
-    
-  </a>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-04-app-templates+views/talk-a-templates/templates.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Explore templating in more detail. Enhanced the routing behaviour</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+          
+            
+
+  
+    <a class="ui raised link card" href="topic-05-app-models/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Gomix: Model View Controller</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-05-app-models/topic.jpg">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Explore MVC as implemented in Playlist</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+          
+            
+
+  
+    <a class="ui raised link card" href="topic-06-gomark/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Gomix: Gomark Solution</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-06-gomark/talk-a-gomark-1/gomark-1.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>The Assignment one - Gomark - application</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+          
+            
+
+  
+    <a class="ui raised link card" href="topic-07-js-arrays/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> JS: Arrays</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-07-js-arrays/topic.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+          
+            
+
+  
+    <a class="ui raised link card" href="topic-08-gomix-sessions/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Gomix: Sessions</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-08-gomix-sessions/talk-1-sessions-intro/c-sessions.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>In order to implement user account management, sessions provide a mechanism for identifying specific users</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+          
+            
+
+  
+    <a class="ui raised link card" href="topic-09-js-objects/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> JS: Objects</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-09-js-objects/talk-1-objects/objects.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>Review structure of javascript objects - and re-examine the Playlist 4 application in detail.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+          
+            
+
+  
+    <a class="ui raised link card" href="topic-10-gomix-images/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> Gomix: Images</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-10-gomix-images/topic.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          <p>How to build an application that enables a user to upload and display images.</p>
+
+        </div>
+      </div>
+
+      
+
+    </a>
+
+
+          
+            
+
+  
+    <a class="ui raised link card" href="topic-11-js-functions/index.html">
+  
+
+      <div class="center aligned content">
+        <div class="right floated meta"><i class="huge sitemap icon"></i></div>
+        <div class="header"> JS: Functions & Nested Objects</div>
+      </div>
+
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic-11-js-functions/topic.png">
+      </div>
+
+      <div class="center aligned content">
+        <div class="description">
+          
+        </div>
+      </div>
+
+      
+
+    </a>
+
 
           
         </div>
@@ -767,35 +891,37 @@ figcaption
 
     </footer>
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>
