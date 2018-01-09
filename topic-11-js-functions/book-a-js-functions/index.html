@@ -115,7 +115,7 @@ body
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-      JS: Functions & Nested Objects
+      JS: Functions
     </a>
   </header>
   <div class="right tab-menu menu">
@@ -158,8 +158,20 @@ body
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     
       
-        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
-          Lab-1 Gomix Intro
+        <a class="item" href="../../topic-01-css-frameworks/book-a/index.html">
+          Lab-02a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-css-frameworks/book-b/index.html">
+          Lab-02b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
+          Lab-1 Glitch Intro
         </a>
       
     
@@ -241,6 +253,12 @@ body
         </a>
       
     
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
   </div>
   <div class="pusher" tabindex="-1">
     <div class="ui basic segment" id="labchat">
@@ -274,7 +292,7 @@ body
         <h1>Function Basics I</h1>
 <h3>What is a function</h3>
 <p>A function is a repeatable process or procedure. A real world analogy of a function is the brew button on a coffee machine. The coffee machine has inputs (hot water, and coffee grounds), and outputs (hot coffee). When you press the button to brew a pot of coffee, you are starting a process that should return an expected output to you. The same thing is true in programming. A function takes a set of variables as inputs and returns a value as an output.</p>
-<p>We have already seen many functions in action. For example, in the array section, we learned about <code>push</code> and <code>pop</code>. In GoMix you created functions that deleted or added songs and playlists.These are all functions that operate on an array. Consider the following example:</p>
+<p>We have already seen many functions in action. For example, in the array section, we learned about <code>push</code> and <code>pop</code>. In Glitch you created functions that deleted or added songs and playlists.These are all functions that operate on an array. Consider the following example:</p>
 <pre><code>var arr = [5,4,3,2,1];
 var poppedVal = arr.pop();
 console.log(arr);
@@ -284,7 +302,7 @@ console.log(poppedVal);</code></pre>
 <p>To be a knowledgeable JavaScript programmer, we need to learn to write our own functions as well. There are multiple ways to write functions in JavaScript. We will cover the differences in more detail later. For now, let&#39;s start with one way: a function declaration.</p>
 <p>In general, we declare a function in the following way:</p>
 <pre><code>function anyNameYouWantForTheFunction() {
-  // As many lines of code as you want
+    // As many lines of code as you want
 }</code></pre>
 <p>In general, this type of function syntax consists of four parts:</p>
 <ol>
@@ -314,6 +332,11 @@ function firstFunction(){
 <pre><code>// to call or invoke the function
 firstFunction();</code></pre>
 <p>If you run this code in the Chrome console, you will see the output is &quot;I just wrote my first function&quot; and on the next line, <code>undefined</code>. Next, we&#39;ll learn where the <code>undefined</code> is coming from.</p>
+<p>If you want to call a function from a html page you could use the following:</p>
+<pre><code>&lt;a href=&quot;#&quot; onClick=&quot;firstFunction();&quot;&gt;Function Call&lt;/a&gt;</code></pre>
+<p>You must make sure you include the script link (in the head section of the html file) to the js file that holds your firstFunction()</p>
+<pre><code> &lt;script src=&quot;functions-02.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>You will practice this in step 04</p>
 <h3>Returning Values From Functions</h3>
 <p>In JavaScript, if we do not specifically tell the function to <em>return</em> something, it will return <code>undefined</code> when it is finished executing. So how do we tell a function to return something? We use the <code>return</code> keyword!</p>
 <pre><code>// this is called the function definition -
@@ -338,43 +361,6 @@ console.log(returnValue);</code></pre>
 
 secondFunction(); // &quot;Hello&quot;</code></pre>
 <p>We see from this example that the <strong>return</strong> keyword can only be executed once in a function. Once it is executed, the function is complete and no other lines of code will be executed.</p>
-<h1>Exercises</h1>
-<p>For these exercises, create:</p>
-<ul>
-<li>functions-02.html</li>
-<li>functions-02.js</li>
-</ul>
-<p>And use the developer tools in chrome to run and monitor the script.</p>
-<h2>functions-02.html</h2>
-<pre><code>&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
-    &lt;script src=&quot;functions-02.js&quot;&gt;&lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<h2>Exercises 1: Function calls</h2>
-<p>In functions-02.js, </p>
-<p>Introduce this object:</p>
-<pre><code>const playList = {
-  id: &#39;01&#39;,
-  title: &#39;Beethoven Sonatas&#39;,
-  artist: &#39;Beethoven&#39;,
-  songs: [&#39;Piano Sonata No. 3&#39;, &#39;Piano Sonata No. 7&#39;, &#39;Piano Sonata No. 10&#39;],
-  rating: 4,
-};</code></pre>
-<ul>
-<li>Write a new function called songOuput() which uses a loop to iterate through the songs array and console.log all of the songs. See if you can call this function when you click a link on the html page. The ouput can still be posted to the console.</li>
-<li>Write another funciton called songOutputReverse() which again uses a loop to iterate in the reverse direction, logging the songs starting at &#39;Piano Sonata No. 10&#39; and finishing with &#39;Piano Sonata No. 3&#39;. See if you can call this function when you click a link on the html page. The ouput can still be posted to the console.</li>
-</ul>
-<p>If we wanted the output presented in the html page rather than the console we could use the return keyword in our songOutputReverse() function. In html use the following code so that you can see the songs output on the web page:</p>
-<pre><code>&lt;div&gt;
-  &lt;script&gt;
-    document.write(songOutputReverseReturn(&quot;&quot;))
-  &lt;/script&gt;
-&lt;/div&gt;</code></pre>
 
       </div>
      
@@ -382,96 +368,25 @@ secondFunction(); // &quot;Hello&quot;</code></pre>
         <h1>Function Basics II</h1>
 <h3>Conditional Logic With Return Statements</h3>
 <p>Now that we have an idea of how functions work, let&#39;s explore a previous topic and see how we can refactor some boolean logic. Let&#39;s imagine we want to write a function that returns true if a random number is over .5 - otherwise the function should return false. Here is one way we can write it</p>
-<pre><code>function isOverPointFive() {
-  if (Math.random() &gt; .5) {
-    return true;
-  } else {
-    return false;
-  }
+<pre><code>function isOverPointFive(){
+    if (Math.random() &gt; .5){
+        return true;
+    } else {
+        return false;
+    }
 }</code></pre>
 <p>This code will work just fine, but remember, the return keyword exits from a function. So if the random number is greater than .5 we will exit the function early and never reach the else condition. So we don&#39;t even need the &quot;else&quot; condition! We can refactor our code to look like this:</p>
-<pre><code>function isOverPointFive() {
-  if (Math.random() &gt; .5) {
-    return true;
-  }
-  return false;
+<pre><code>function isOverPointFive(){
+    if(Math.random() &gt; .5){
+        return true;
+    }
+    return false;
 }</code></pre>
 <p>Much better! If the number is greater than .5, return true and exit the function. Otherwise just return false.</p>
-<p>Finally if we wanted to be really fancy - we could use a ternary operator!</p>
-<pre><code>function isOverPointFive() {
-  return Math.random() &gt; .5 ? true : false;
-}</code></pre>
-<p>Simplifying it even further, we can take advantage of the fact that <code>Math.random() &gt; .5</code> returns <code>true</code> or <code>false</code>. So we don&#39;t actually need the ternary operator:</p>
+<p>Simplifying it even further, we can take advantage of the fact that <code>Math.random() &gt; .5</code> returns <code>true</code> or <code>false</code>. </p>
 <pre><code>function isOverPointFive(){
-  return Math.random() &gt; .5;
+    return Math.random() &gt; .5;
 }</code></pre>
-<h2>Exercises</h2>
-<p>For these exercises, create:</p>
-<ul>
-<li>functions-03.html</li>
-<li>functions-03.js</li>
-</ul>
-<p>And use the developer tools in chrome to run and monitor the script.</p>
-<h2>functions-03.html</h2>
-<pre><code>&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
-    &lt;script src=&quot;functions-03.js&quot;&gt;&lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<ul>
-<li><p>Write a function called <code>myName</code> that logs your full name. Save your full name to a variable inside of the function body, then use <code>console.log</code> to print your name to the console.</p>
-<pre><code>myName(); // if your full name was Elie Schoppik this function would return &quot;Elie Schoppik&quot;</code></pre>
-</li>
-<li><p>Create an array called <code>favoriteFoods</code> which contains the strings &quot;pizza&quot; and &quot;ice cream&quot;.</p>
-</li>
-<li><p>Write a function called <code>randomFood</code>. The function should use <code>Math.random</code> to randomly choose a favorite food in your <code>favoriteFoods</code> array to return. For example, your function will return either pizza or ice cream, depending on what you get back from <code>Math.random</code>.</p>
-<pre><code>randomFood(); // either returns &quot;pizza&quot; or &quot;ice cream&quot;</code></pre>
-</li>
-<li><p>Create a variable called <code>numbers</code> which is an array that contains the numbers 1 through 10.</p>
-</li>
-<li><p>Write a function called <code>displayOddNumbers</code> which iterates over the <code>numbers</code> array and console.logs out all of the numbers that are odd. Here is what that might look like:</p>
-<pre><code>displayOddNumbers(); 
-
-// 1
-// 3
-// 5
-// 7
-// 9</code></pre>
-</li>
-<li><p>Write a function called <code>displayEvenNumbers</code> which iterates over the <code>numbers</code> array and console.logs out all of the numbers that are even. Here is what that might look like:</p>
-<pre><code>displayEvenNumbers(); 
-
-// 2
-// 4
-// 6
-// 8
-// 10</code></pre>
-</li>
-<li><p>Create a function called <code>returnFirstOddNumber</code> which iterates over the <code>numbers</code> array and returns the first odd number it finds</p>
-<pre><code>returnFirstOddNumber(); 
-
-// 1</code></pre>
-</li>
-<li><p>Create a function called <code>returnFirstEvenNumber</code> which iterates over the <code>numbers</code> array and returns the first even number it finds</p>
-<pre><code>returnFirstEvenNumber(); 
-
-// 2</code></pre>
-</li>
-<li><p>Create a function called <code>returnFirstHalf</code> which returns the first half of the <code>numbers</code> array</p>
-<pre><code>returnFirstHalf(); 
-
-// [1,2,3,4,5]</code></pre>
-</li>
-<li><p>Create a function called <code>returnSecondHalf</code> which returns the second half of the <code>numbers</code> array</p>
-<pre><code>returnSecondHalf(); 
-
-// [6,7,8,9,10]</code></pre>
-</li>
-</ul>
 
       </div>
      
@@ -499,62 +414,40 @@ add(7, 1); // returns 8</code></pre>
 var num2 = 8;
 add(num1, num2);  // returns 13</code></pre>
 <p>It is important to understand that the variable names we are using when we invoke the function are not related at all to the variable names we have defined <em>inside</em> of the function. The values of <code>num1</code> and <code>num2</code> are being copied into the parameters <code>number1</code> and <code>number2</code> that are defined in the function.</p>
-<h3>Function Scope</h3>
-<p>Now that we have an idea of what functions do, let&#39;s talk about what happens when we define variables inside of functions. To do that, we first need to define what <code>scope</code> is.</p>
-<p>MDN defines <code>scope</code> as &quot;The context in which values and expressions are &#39;visible,&#39; or can be referenced&quot;. In JavaScript (before ES2015, which is where we will start), there are only 2 kinds of scope: <em>global scope</em> and <em>function scope</em>.</p>
-<p>The important takeaways here are</p>
-<ol>
-<li><p><strong>all variables that are defined outside of functions (and inside of functions without the <code>var</code> keyword) are declared in the global scope, and</strong></p>
-</li>
-<li><p><strong>all variables defined inside of functions can only be accessed by those functions (and any inner functions)</strong>.</p>
-</li>
-</ol>
-<p>Let&#39;s see an example.</p>
-<pre><code>var globalVariable = &quot;I live in the global scope&quot;;
-
-function makeNewScope(){
-    var functionScopeVariable = &quot;I live in the scope of the makeNewScope function&quot;;
-}
-
-globalVariable; // &quot;I live in the global scope&quot;;
-makeNewScope(); // maybe this will define the functionScopeVariable...
-
-functionScopeVariable; // This gives us an error! To be specific, a ReferenceError because the functionScopeVariable is not defined.</code></pre>
-<p>What happens when we remove the <code>var</code> keyword?</p>
-<pre><code>// Since thise variable declaration is in the global scope, it will
-// be a globalVariable with or without the var keyword.  It is a best
-// practice to always use the var keyword though.
-globalVariable = &quot;I live in the global scope&quot;;
-
-function makeNewScope(){
-    // You do not want to do this in practice.  You should
-    // always defined your variables with the var keyword.
-    functionScopeVariable = &quot;What happens now?&quot;;
-}
-
-globalVariable; // &quot;I live in the global scope&quot;
-makeNewScope(); // now this will define the functionScopeVariable!
-
-// The value of the variable will be &quot;What happens now?&quot;
-functionScopeVariable;</code></pre>
-<p>If we omit the <code>var</code> keyword inside of a function, we actually declare that variable in the global scope. While this may seem like the way to go, this is not best practice. If we need to change some variable in a function, we should at least declare it in the global scope and assign it in a function so that our code is more readable.</p>
-<pre><code>var globalVariable = &quot;I live in the global scope&quot;;
-
-// we are just declaring the variable now; its value will be set to undefined.
-var globalVariableToBeChanged;
-
-function makeNewScope() {
-    // Here we are assigning the value &quot;What happens now&quot; to the
-    // globalVariableToBeChanged variable.
-    globalVariableToBeChanged = &quot;Undefined no more!&quot;;
-}
-
-globalVariable; // &quot;I live in the global scope&quot;
-makeNewScope(); // now this will assign a new value to the globalVariableToBeChanged!
-
-// The value of globalVariableToBeChanged is &quot;Undefined no more!&quot;
-globalVariableToBeChanged;</code></pre>
-<p>You can read more about scope <a href="https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/">here</a>.</p>
+<h2>Exercises 1: Function calls</h2>
+<p>For these exercises, create:</p>
+<ul>
+<li>functions-02.html</li>
+<li>functions-02.js</li>
+</ul>
+<p>And use the developer tools in chrome to run and monitor the script.</p>
+<h2>functions-02.html</h2>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;functions-02.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>In functions-02.js, </p>
+<p>Introduce this object:</p>
+<pre><code>const playList = 
+  {
+    id: &quot;01&quot;,
+    title: &quot;Beethoven Sonatas&quot;,
+    artist: &quot;Beethoven&quot;,
+    songs: [ &quot;Piano Sonata No. 3&quot;,&quot;Piano Sonata No. 7&quot;,&quot;Piano Sonata No. 10&quot;],
+    rating: 4
+  };</code></pre>
+<ul>
+<li>Write a new function called songOuput() which uses a loop to iterate through the songs array and console.log all of the songs. See if you can call this function when you click a link on the html page. The ouput can still be posted to the console.</li>
+<li>Write another funciton called songOutputReverse() which again uses a loop to iterate in the reverse direction, logging the songs starting at &#39;Piano Sonata No. 10&#39; and finishing with &#39;Piano Sonata No. 3&#39;. See if you can call this function when you click a link on the html page. The ouput can still be posted to the console.</li>
+</ul>
+<p>If we wanted the output presented in the html page rather than the console we could use the return keyword in our songOutputReverse() function. In html use the following code so that you can see the songs output on the web page:</p>
+<pre><code>
+&lt;div&gt;&lt;script&gt;document.write(songOutputReverseReturn(&quot;&quot;))&lt;/script&gt;&lt;/div&gt;</code></pre>
 
       </div>
      
@@ -568,104 +461,56 @@ subtract(2,2); // 0
 multiply(2,2); // 4
 divide(2,2); // 1</code></pre>
 <ul>
-<li>Write a function called <code>sayHello</code> that takes in a string as a parameter. If the parameter passed to the function is your first name, it should return &quot;Hello Boss&quot;, but if the parameter passed to the function is any other name, it should return the string &quot;Hello&quot; and the <code>name</code> parameter.</li>
+<li>Write a function called <code>myName</code> that logs your full name. Save your full name to a variable inside of the function body, then use <code>console.log</code> to print your name to the console.</li>
 </ul>
-<pre><code>// for this example, my first name is Tim
-sayHello(&quot;Tim&quot;); // &quot;Hello Boss&quot;
-sayHello(&quot;Janey&quot;); // &quot;Hello Janey&quot;
-sayHello(&quot;Elie&quot;); // &quot;Hello Elie&quot;</code></pre>
+<pre><code>myName(); // if your full name was Elie Schoppik this function would return &quot;Elie Schoppik&quot;</code></pre>
 <ul>
-<li>Write a function called <code>average</code> which accepts an array as a parameter. The function should return the average of all of the numbers in the array (you can assume that the array passed to the function will contain <strong>only</strong> numbers)</li>
+<li><p>Create a variable called <code>numbers</code> which is an array that contains the numbers 1 through 10.</p>
+</li>
+<li><p>Write a function called <code>displayOddNumbers</code> which iterates over the <code>numbers</code> array and console.logs out all of the numbers that are odd. Here is what that might look like:</p>
+</li>
 </ul>
-<pre><code>average([1,2,3,4,5]); // 3
-average([1,2,3,4,5,6]); // 3.5
-average([10,20]); // 15</code></pre>
-<ul>
-<li>Write a function called <code>createStudent</code>, which accepts two parameters both of which are strings. The function should return an object with the keys <code>firstName</code> and <code>lastName</code> and the values should be each of the</li>
-</ul>
-<pre><code>createStudent(&quot;Elie&quot;, &quot;Schoppik&quot;);
-/*
-{
-    firstName: &quot;Elie&quot;,
-    lastName: &quot;Schoppik&quot;
-}
-*/
-createStudent(&quot;Tim&quot;, &quot;Garcia&quot;);
-/*
-{
-    firstName: &quot;Tim&quot;,
-    lastName: &quot;Garcia&quot;
-}
-*/</code></pre>
-<ul>
-<li>Using your <code>createStudent</code> function, create three students and save them each in a variable. Then create a variable called <code>students</code>, which is an array that will store your three students</li>
-</ul>
-<pre><code>var tim = createStudent(&quot;Tim&quot;, &quot;Garcia&quot;);
-var matt = createStudent(&quot;Matt&quot;, &quot;Lane&quot;);
-var elie = createStudent(&quot;Elie&quot;, &quot;Schoppik&quot;);
+<pre><code>displayOddNumbers(); 
 
-var students = [tim, matt, elie];
-
-// your students array should contain three objects each with the keys of firstName and lastName. If they do not - make sure you correctly implement the createStudent function from above!</code></pre>
+// 1
+// 3
+// 5
+// 7
+// 9</code></pre>
 <ul>
-<li>Write a function called <code>findStudentByFirstName</code>, which accepts one parameter, a string. This function should iterate through the <code>students</code> array you just made and if the parameter passed to the function is the same as one of the first name&#39;s of the students, the function should return <code>true</code>. Otherwise it should return <code>false</code>. This function should be <strong>case insensitive</strong> so that you can search successfully regardless of capitalization</li>
+<li>Write a function called <code>displayEvenNumbers</code> which iterates over the <code>numbers</code> array and console.logs out all of the numbers that are even. Here is what that might look like:</li>
 </ul>
-<pre><code>findStudentByFirstName(&#39;elie&#39;) // true
-findStudentByFirstName(&#39;Elie&#39;) // true
-findStudentByFirstName(&#39;Janey&#39;) // false
-findStudentByFirstName(&#39;Janey&#39;) // false
-findStudentByFirstName(&#39;TIM&#39;) // true
-findStudentByFirstName(&#39;MMMaaaTTTtttTTT&#39;) // false</code></pre>
+<pre><code>displayEvenNumbers(); 
+
+// 2
+// 4
+// 6
+// 8
+// 10</code></pre>
 <ul>
-<li>Write a function called <code>extractEveryThird</code> which accepts an array as a parameter. The function should iterate over the array and return a new array with every 3rd element in the array passed to the function.</li>
+<li>Create a function called <code>returnFirstOddNumber</code> which iterates over the <code>numbers</code> array and returns the first odd number it finds</li>
 </ul>
-<pre><code>extractEveryThird([1,2,3]); // [3]
-extractEveryThird([1,2,3,4,5,6]); // [3,6]
-extractEveryThird([&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;]); // [&quot;c&quot;]
-extractEveryThird([&quot;first value&quot;, &quot;second value&quot;, &quot;third value&quot;]); // [&quot;third value&quot;]</code></pre>
+<pre><code>returnFirstOddNumber(); 
+
+// 1</code></pre>
 <ul>
-<li>Write a function called <code>countEvensAndOdds</code> which accepts an array as a parameter. This function should return an object with the count of even numbers and the count of odd numbers. The object returned should have the keys <code>oddCount</code> and <code>evenCount</code>.</li>
+<li>Create a function called <code>returnFirstEvenNumber</code> which iterates over the <code>numbers</code> array and returns the first even number it finds</li>
 </ul>
-<pre><code>countEvensAndOdds([1,2,3,4]);
-/*
- {
-    oddCount:2,
-    evenCount:2
- }
-*/
-countEvensAndOdds([1,2,3,4,5,6,7]);
-/*
- {
-    oddCount:4,
-    evenCount:3
- }
-*/</code></pre>
+<pre><code>returnFirstEvenNumber(); 
+
+// 2</code></pre>
 <ul>
-<li>In the following example, what will be printed in the console? Make sure you first try read this code <strong>before</strong> pasting it into the console :)</li>
+<li>Create a function called <code>returnFirstHalf</code> which returns the first half of the <code>numbers</code> array</li>
 </ul>
-<pre><code>var myVar = &quot;Hello from global&quot;;
+<pre><code>returnFirstHalf(); 
 
-function scopePractice() {
-   var myVar = &quot;Hello from function scope&quot;;
-}
-
-scopePractice();
-console.log(myVar);
-
-var tricky = &quot;Hello from global&quot;;
-
-function trickyScopePractice() {
-    tricky = &quot;Hello from function scope&quot;;
-}
-
-console.log(tricky);</code></pre>
-<p><strong>Optional Bonus</strong></p>
+// [1,2,3,4,5]</code></pre>
 <ul>
-<li>Write a function called <code>onlyCapitalLetters</code> which accepts a string and returns a new string with only the capital letters passed to the string.</li>
+<li>Create a function called <code>returnSecondHalf</code> which returns the first half of the <code>numbers</code> array</li>
 </ul>
-<pre><code>onlyCapitalLetters(&quot;Amazing&quot;) // &quot;A&quot;
-onlyCapitalLetters(&quot;nothing&quot;) // &quot;&quot;
-onlyCapitalLetters(&quot;EVERYTHING&quot;) // &quot;EVERYTHING&quot;</code></pre>
+<pre><code>returnSecondHalf(); 
+
+// [6,7,8,9,10]</code></pre>
 <h2>Solutions</h2>
 <p>You can find the solutions <a href="./solutions.html">here</a></p>
 
@@ -677,13 +522,6 @@ onlyCapitalLetters(&quot;EVERYTHING&quot;) // &quot;EVERYTHING&quot;</code></pre
 <pre><code>function myName(){
     var myName = &#39;Elie Schoppik&#39;;
     console.log(myName);
-}</code></pre>
-<p><strong><code>randomFood</code></strong></p>
-<pre><code>var favoriteFoods = [&#39;pizza&#39;, &#39;ice cream&#39;];
-function randomFood(){
-    // lets find a random number between 0 and 1 and multiply it by the length of the array. This will give us a number between 0 and 2. If we always round down, we will get either 0 or 1, so we can use Math.floor to round down.
-    var randomIndex = Math.floor(Math.random() * favoriteFoods.length);
-    console.log(favoriteFoods[randomIndex]);
 }</code></pre>
 <p><strong><code>displayOddNumbers</code></strong></p>
 <pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
@@ -737,100 +575,55 @@ function returnFirstHalf(){
 function returnSecondHalf(){
     return numbers.slice(numbers.length/2);
 }</code></pre>
-<h1>JS Functions Exercise Solutions</h1>
-<p><strong><code>add</code></strong></p>
-<pre><code>function add(num1,num2){
-    return num1 + num2;
-}</code></pre>
-<p><strong><code>subtract</code></strong></p>
-<pre><code>function subtract(num1,num2){
-    return num1 - num2;
-}</code></pre>
-<p><strong><code>multiply</code></strong></p>
-<pre><code>function multiply(num1,num2){
-    return num1 * num2;
-}</code></pre>
-<p><strong><code>divide</code></strong></p>
-<pre><code>function divide(num1,num2){
-    return num1 / num2;
-}</code></pre>
-<p><strong><code>sayHello</code></strong></p>
-<pre><code>var myFirstName = &quot;Elie&quot;;
-function sayHello(str){
-    if(str === myFirstName){
-        return &quot;Hello Boss&quot;;
-    }
-    return &quot;Hello &quot; + str;
-}</code></pre>
-<p><strong><code>average</code></strong></p>
-<pre><code>function average(arr){
-    var total = 0;
-    for(var i = 0; i &lt; arr.length; i++){
-        total += arr[i];
-    }
-    return total / arr.length;
-}</code></pre>
-<p><strong><code>createStudent</code></strong></p>
-<pre><code>function createStudent(firstName, lastName){
-    return {
-        firstName: firstName,
-        lastName: lastName
-    }
-}</code></pre>
-<p><strong><code>findStudentByFirstName</code></strong></p>
-<pre><code>// let&#39;s first create some students
-var tim = createStudent(&quot;Tim&quot;, &quot;Garcia&quot;);
-var matt = createStudent(&quot;Matt&quot;, &quot;Lane&quot;);
-var elie = createStudent(&quot;Elie&quot;, &quot;Schoppik&quot;);
+<p><strong><code>Write a function that uses a loop to iterate through the songs array and console.log all of the songs.</code></strong></p>
+<pre><code>const playList = 
+  {
+    id: &quot;01&quot;,
+    title: &quot;Beethoven Sonatas&quot;,
+    artist: &quot;Beethoven&quot;,
+    songs: [ &quot;Piano Sonata No. 3&quot;,&quot;Piano Sonata No. 7&quot;,&quot;Piano Sonata No. 10&quot;],
+    rating: 4
+  };
 
-var students = [tim, matt, elie];
-
-function findStudentByFirstName(name){
-    var lowerCasedName = name.toLowerCase();
-    for(var i = 0; i &lt; students.length; i++){
-        if(students[i].firstName.toLowerCase() === lowerCasedName){
-            return true;
-        }
-    }
-    return false;
+function songOutput()
+{
+  for (let i=0;i&lt;playList.songs.length; i++)
+  {
+    console.log(playList.songs[i]);
+  }
 }</code></pre>
-<p><strong><code>extractEveryThird</code></strong></p>
-<pre><code>function extractEveryThird(arr){
-    var newArr = [];
-    for(var i = 2; i &lt; arr.length; i += 3){
-        newArr.push(arr[i]);
-    }
-    return newArr;
+<p><strong><code>Write another funciton that again uses a loop to iterate in the reverse direction, logging the people starting at &#39;James&#39; and finishing with &#39;Greg&#39;</code></strong></p>
+<pre><code>
+function songOutputReverse()
+{
+  for (let i=playList.songs.length; i&gt;-1; i--)
+  {
+    console.log(playList.songs[i]);
+  }
 }</code></pre>
-<p><strong><code>countEvensAndOdds</code></strong></p>
-<pre><code>function countEvensAndOdds(arr){
-    var countObj = {
-        oddCount: 0,
-        evenCount: 0
-    }
-    for(var i = 0; i &lt; arr.length; i++){
-        if(arr[i] % 2 === 0){
-            countObj.evenCount++;
-        } else {
-            countObj.oddCount++;
-        }
-    }
-    return countObj;
+<p><strong><code>write a function that uses the return keyword.</code></strong></p>
+<pre><code>
+function songOutputReverseReturn(tempString)
+{
+   for (let i=playList.songs.length; i&gt;0; i--)
+  {
+    tempString = tempString + &quot; &lt;br&gt;&quot; + playList.songs[i-1];
+  }
+  return tempString;
 }</code></pre>
-<p><strong><code>scope practice</code></strong></p>
-<pre><code>// the first console.log(myVar) outputs &quot;Hello from global&quot;
-
-// the second console.log(myVar) also outputs &quot;Hello from global&quot; (the trickyScopePractice function was not called!)</code></pre>
-<p><strong><code>onlyCapitalLetters</code></strong></p>
-<pre><code>function onlyCapitalLetters(str){
-    var newStr = &#39;&#39;;
-    for(var i = 0; i &lt; str.length; i++){
-        if(str[i].charCodeAt(0) &lt; 91 &amp;&amp; str[i].charCodeAt(0) &gt; 64 ){
-            newStr += str[i];
-        }    
-    }
-    return newStr;
-}</code></pre>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;functions-02.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet...&lt;/p&gt;
+    &lt;a href=&quot;#&quot; onClick=&quot;getPlaylists();&quot;&gt;Display Playlists&lt;/a&gt;&lt;hr&gt;
+    &lt;a href=&quot;#&quot; onClick=&quot;songOutput();&quot;&gt;Output songs of Playlist 1&lt;/a&gt;&lt;hr&gt;
+    &lt;a href=&quot;#&quot; onClick=&quot;songOutputReverse();&quot;&gt;Output songs of Playlist 1 in reverse&lt;/a&gt;&lt;hr&gt;
+    &lt;div&gt;&lt;script&gt;document.write(songOutputReverseReturn(&quot;&quot;))&lt;/script&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
       </div>
      

@@ -115,7 +115,7 @@ body
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-      Gomix: Sessions
+      Glitch: Sessions
     </a>
   </header>
   <div class="right tab-menu menu">
@@ -166,8 +166,20 @@ body
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     
       
-        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
-          Lab-1 Gomix Intro
+        <a class="item" href="../../topic-01-css-frameworks/book-a/index.html">
+          Lab-02a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-css-frameworks/book-b/index.html">
+          Lab-02b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
+          Lab-1 Glitch Intro
         </a>
       
     
@@ -249,6 +261,12 @@ body
         </a>
       
     
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
   </div>
   <div class="pusher" tabindex="-1">
     <div class="ui basic segment" id="labchat">
@@ -262,7 +280,7 @@ body
      
       <div  class="ui tab segment lab" data-tab="01">
         <h1>Playlist Model</h1>
-<p>This lab is based on Playlist-3. This can be imported into a new gomix project from <code>edeleastar/gomix-playlist-3</code>.</p>
+<p>This lab is based on Playlist-3. This can be imported into a new Glitch project from <code>edeleastar/Glitch-playlist-3</code>.</p>
 <h2>models/playlist-store.js</h2>
 <p>If your project has any playlists in the json store, delete them now. Your store should look like this:</p>
 <h2>models/playlist-store.json</h2>
@@ -332,7 +350,7 @@ const routes = require(&#39;./routes&#39;);
 app.use(&#39;/&#39;, routes);
 
 const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info(`gomix-template-1 started on port ${listener.address().port}`);
+  logger.info(`Glitch-template-1 started on port ${listener.address().port}`);
 });</code></pre>
 
       </div>
@@ -607,7 +625,7 @@ module.exports = router;</code></pre>
     }
   ]
 }</code></pre>
-<p>(you may need to make a cosmetic change in the source to get the editor to reload in gomix)</p>
+<p>(you may need to make a cosmetic change in the source to get the editor to reload in Glitch)</p>
 <p>This clearly is not what we were aiming for. We should only present the users own playlists.</p>
 <p>Here is how do it - all changes to the dashboard module:</p>
 <h2>controller/dashboard.js</h2>
@@ -693,9 +711,9 @@ const accounts = require (&#39;./accounts.js&#39;);
         <h1>Exercise</h1>
 <p>This is the completed archive at this stage:</p>
 <ul>
-<li><a href="https://github.com/edeleastar/gomix-playlist-4">https://github.com/edeleastar/gomix-playlist-4</a></li>
+<li><a href="https://github.com/edeleastar/Glitch-playlist-4">https://github.com/edeleastar/Glitch-playlist-4</a></li>
 </ul>
-<p>It can be imported into gomix using <code>edeleastar/gomix-playlist-4</code></p>
+<p>It can be imported into Glitch using <code>edeleastar/Glitch-playlist-4</code></p>
 <h2>Exercise 1</h2>
 <p>Test the application more comprehensively - signing up a range of users, and creating playlists. Make sure the users only see the playlists they have created.</p>
 <h2>Exercise 2</h2>
@@ -718,7 +736,7 @@ const accounts = require (&#39;./accounts.js&#39;);
 <ul>
 <li><a href="https://github.com/edeleastar/gomark-3">https://github.com/edeleastar/gomark-3</a></li>
 </ul>
-<p>In Gomix, create a new project, and import from github: <code>edeleastar/gomark-3</code>.</p>
+<p>In Glitch, create a new project, and import from github: <code>edeleastar/gomark-3</code>.</p>
 <p>Using this lab as a guide - see if you can introduce sessions into gomark?</p>
 <h2>Exercise 4</h2>
 <p>You should still have your own gomark assignment. Try this same now - bringing in the sessions feature into your solution.</p>

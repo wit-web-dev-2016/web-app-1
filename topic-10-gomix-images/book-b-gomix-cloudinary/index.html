@@ -115,7 +115,7 @@ body
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-      Gomix: Images
+      Glitch: Images
     </a>
   </header>
   <div class="right tab-menu menu">
@@ -166,8 +166,20 @@ body
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     
       
-        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
-          Lab-1 Gomix Intro
+        <a class="item" href="../../topic-01-css-frameworks/book-a/index.html">
+          Lab-02a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-css-frameworks/book-b/index.html">
+          Lab-02b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
+          Lab-1 Glitch Intro
         </a>
       
     
@@ -249,6 +261,12 @@ body
         </a>
       
     
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
   </div>
   <div class="pusher" tabindex="-1">
     <div class="ui basic segment" id="labchat">
@@ -256,17 +274,17 @@ body
       
       <div  class="ui tab segment lab" data-tab="Lab-10b gomix-picture-store">
         <h1>Objectives</h1>
-<p>Build an application the can facilitate upload and display of images in Gomix.</p>
+<p>Build an application the can facilitate upload and display of images in Glitch.</p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="01">
         <h1>Setup</h1>
-<p>In Gomix,  create a new project and then import this to replace the default content:</p>
+<p>In Glitch,  create a new project and then import this to replace the default content:</p>
 <ul>
-<li><a href="https://github.com/edeleastar/gomix-template-2">https://github.com/edeleastar/gomix-template-2</a></li>
+<li><a href="https://github.com/edeleastar/Glitch-template-2">https://github.com/edeleastar/Glitch-template-2</a></li>
 </ul>
-<p>You do this be going to the advanced menu, select Import from Github and enter <code>edeleastar/gomix-template-2</code></p>
+<p>You do this be going to the advanced menu, select Import from Github and enter <code>edeleastar/Glitch-template-2</code></p>
 <p>Explore the UX. It is a variant on the template we have been already using, except this one has user accounts built in. </p>
 <p>There are already 2 accounts pre-loaded (Homer and Marge). Try these out - and also try registering a new user.</p>
 <p>Review the source - it should be familiar from earlier labs.</p>
@@ -296,7 +314,7 @@ body
     &quot;winston&quot;: &quot;^2.3.0&quot;
   },
 ...</code></pre>
-<p>When editing the package.json file in gomix, make sure to keep the logs open - so you can see if there are any typos/errors immediately.</p>
+<p>When editing the package.json file in Glitch, make sure to keep the logs open - so you can see if there are any typos/errors immediately.</p>
 <p>If you are working fully offline, on your own workstations, then the following commands - entered from within the project folder - will update package.json for you automatically:</p>
 <pre><code>npm install express-fileupload --save
 npm install cloudinary --save</code></pre>
@@ -335,7 +353,7 @@ const routes = require(&#39;./routes&#39;);
 app.use(&#39;/&#39;, routes);
 
 const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info(`gomix-template-1 started on port ${listener.address().port}`);
+  logger.info(`Glitch-template-1 started on port ${listener.address().port}`);
 });</code></pre>
 <p>Make sure the app starts without any errors and functions as expected.</p>
 
@@ -531,7 +549,7 @@ const dashboard = {
 
 module.exports = dashboard;</code></pre>
 <p>Try this now, and upload a picture - pick a small image from somewhere on your local machine. It will not display yet - but it should upload successfully.</p>
-<p>Because of the lag in how gomix works, it may take a little while for <code>picture-store.json</code> to refresh. When it eventually does, it may look something like this:</p>
+<p>Because of the lag in how Glitch works, it may take a little while for <code>picture-store.json</code> to refresh. When it eventually does, it may look something like this:</p>
 <h2>models/picture-store.json</h2>
 <pre><code>{
   &quot;pictures&quot;: [
@@ -657,9 +675,9 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
         <h1>Solution</h1>
 <p>This is the completed application:</p>
 <ul>
-<li><a href="https://github.com/edeleastar/gomix-image-store">https://github.com/edeleastar/gomix-image-store</a></li>
+<li><a href="https://github.com/edeleastar/Glitch-image-store">https://github.com/edeleastar/Glitch-image-store</a></li>
 </ul>
-<p>If you are in Gomix - import the project from github: <code>edeleastar/gomix-image-store</code> </p>
+<p>If you are in Glitch - import the project from github: <code>edeleastar/Glitch-image-store</code> </p>
 <h1>Exercise 1: Download and run Locally</h1>
 <p>Download the project and run it on our own workstation. Remember, after downloading you must run:</p>
 <pre><code>npm install</code></pre>

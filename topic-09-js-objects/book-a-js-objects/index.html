@@ -140,6 +140,14 @@ body
       04
     </a>
     
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
     <a class="item" data-tab="Exercises">
       Exercises
     </a>
@@ -158,8 +166,20 @@ body
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     
       
-        <a class="item" href="../../topic-01-gomix-intro/book-a-gomix-intro/index.html">
-          Lab-1 Gomix Intro
+        <a class="item" href="../../topic-01-css-frameworks/book-a/index.html">
+          Lab-02a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-css-frameworks/book-b/index.html">
+          Lab-02b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
+          Lab-1 Glitch Intro
         </a>
       
     
@@ -238,6 +258,12 @@ body
       
         <a class="item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
           Lab-11 Functions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
         </a>
       
     
@@ -517,6 +543,49 @@ if (&quot;nothing&quot; in obj){
 
       </div>
      
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Object Iteration II</h1>
+<h4>if...in: Determining If a Key Exists in an Object</h4>
+<p>Sometimes, we just want to check and see if a certain key exists in an object. To do that we use a <code>if...in</code> statement. Here is an example</p>
+<pre><code>var obj = {
+    favoriteNumber: 33,
+    favoriteColor: &#39;blue&#39;
+}
+
+if (&quot;favoriteNumber&quot; in obj){
+    console.log(&quot;The favoriteNumber key exists!&quot;);
+}
+
+// &quot;The favoriteNumber key exists!&quot;
+
+if (&quot;nothing&quot; in obj){
+    console.log(&quot;The nothing key exists!&quot;);
+}</code></pre>
+<h3>Exercises</h3>
+<ol>
+<li>Given the following object below, write code to print the value then the key to the console separated by &#39;=&gt;&#39;:</li>
+</ol>
+<pre><code>const goMark = 
+  {
+    url: &quot;http://www.wit.ie&quot;,
+    description: &quot;third level educational institution&quot;,
+    rating: 3,
+  }
+;</code></pre>
+<p>// Output should be:
+// <a href="http://www.wit.ie">http://www.wit.ie</a> =&gt; url
+// third level educational institution =&gt; description
+// 3 =&gt; rating</p>
+<p>~~~</p>
+<ol>
+<li><p>Add a key of your name and a value for your the year you started in W.I.T.</p>
+</li>
+<li><p>Write an if statement that console.logs your name and the year you started in W.I.T to the console if the key of your name is contained in the object.</p>
+</li>
+</ol>
+
+      </div>
+     
       <div  class="ui tab segment lab" data-tab="Exercises">
         <h1>Exercises</h1>
 <p>Using the files you created earlier:</p>
@@ -545,6 +614,31 @@ if (&quot;nothing&quot; in obj){
 <li>Using a loop, console.log all of the keys in the playList object.</li>
 <li>Using a loop, console.log all of the values in the playList object.</li>
 </ol>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises</h1>
+<p>For each of the exercises below, assume you are starting with the following <code>playList</code> object</p>
+<pre><code>const playList = 
+  {
+    id: &quot;01&quot;,
+    title: &quot;Beethoven Sonatas&quot;,
+    artist: &quot;Beethoven&quot;,
+    songs: [ &quot;Piano Sonata No. 3&quot;,&quot;Piano Sonata No. 7&quot;,&quot;Piano Sonata No. 10&quot;],
+    rating: 4
+  };</code></pre>
+<ol>
+<li>Write the command to add the song &quot;Paino Sonata 13&quot; to the end of the songs array.</li>
+<li>Change the rating to the value of <code>7</code>.</li>
+<li>Using the <code>delete</code> keyword, write the command to remove the artist key from the playList object.</li>
+<li>Write the command to add a new key called <code>oldSchool</code> and a value of <code>true</code> to the playList object.</li>
+<li>Using a loop, iterate through the songs array and console.log all of the songs.</li>
+<li>Using a loop, console.log all of the keys in the playList object.</li>
+<li>Using a loop, console.log all of the values in the playList object.</li>
+</ol>
+<h3>Solutions</h3>
+<p>You can find solutions to the exercises <a href="./solutions.html">here</a></p>
 
       </div>
      

@@ -1,0 +1,31 @@
+{{> menu id="dashboard"}}
+
+{{#each bookmarklistCollection}}
+
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{title}}
+    </h2>
+    <table class="ui fixed table">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Link</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each bookmarks}}
+        <tr>
+          <td>
+            {{title}}
+          </td>
+          <td>
+            <a href="{{link}}"> {{link}}</a>
+          </td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </section>
+
+{{/each}}
