@@ -1,0 +1,452 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Week 5 Glitch: Templates + Routes
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Exercise Solutions">
+      Exercise Solutions
+    </a>
+    
+    <div class="item">
+      
+    </div>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-a/index.html">
+          Lab-01a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-b/index.html">
+          Lab-01b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
+          Lab-1 Glitch Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-controllers+views/book-a-gomix-playlist-1/index.html">
+          01
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Exercise Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-AssignmentSolution/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment" id="labchat">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Exercise Solutions">
+        <h1>Exercise Solutions</h1>
+<p>This lab requires that the <code>Glitch-playlist-1</code> lab be completed. If you have lost your solution, create a new project in Glitch and select the <code>import from github</code> option and enter <code>bmullally/playlist1-complete</code> to import a completed version.</p>
+<h2>Exercise 2: Add a new playlist</h2>
+<p>Extend the JSON file to include an additional playlist - so that three playlists are displayed on the dashboard.</p>
+<h2>Exercise 3: Introduce IDs</h2>
+<p>When manipulating data maintained in JSON, or other external format, each object will often require an ID in order to manipulate the information effectively. Introduce an ID for every playlist, and every song.</p>
+<h2>Exercise 4: New Fields</h2>
+<p>Extend the playlist to have new entry called <code>duration</code>. Also, extend each song to also have a <code>duration</code> field + a <code>genre</code> field.</p>
+<p>Modify the dashboard view to display these new fields.</p>
+<h2>Solutions</h2>
+<h2>models/playlist-store.json</h2>
+<pre><code class="lang-js">{
+  &quot;playlistCollection&quot;: [
+    {
+      &quot;id&quot; : &quot;01&quot;,
+      &quot;title&quot;: &quot;Beethoven Sonatas&quot;,
+      &quot;duration&quot;: 35,
+      &quot;songs&quot;: [
+        {
+          &quot;id&quot; : &quot;04&quot;,
+          &quot;title&quot;: &quot;Piano Sonata No. 3&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 5
+        },
+        {
+          &quot;id&quot; : &quot;05&quot;,
+          &quot;title&quot;: &quot;Piano Sonata No. 7&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 6
+        },
+        {
+          &quot;id&quot; : &quot;06&quot;,
+          &quot;title&quot;: &quot;Piano Sonata No. 10&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 4
+        }
+      ]
+    },
+    {
+      &quot;id&quot; : &quot;02&quot;,
+      &quot;title&quot;: &quot;Beethoven Concertos&quot;,
+      &quot;duration&quot;: 23,
+      &quot;songs&quot;: [
+        {
+          &quot;id&quot; : &quot;07&quot;,
+          &quot;title&quot;: &quot;Piano Concerto No. 0&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 8
+        },
+        {
+          &quot;id&quot; : &quot;08&quot;,
+          &quot;title&quot;: &quot;Piano Concerto No. 4&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 3
+        },
+        {
+          &quot;id&quot; : &quot;09&quot;,
+          &quot;title&quot;: &quot;Piano Concerto No. 6&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 4
+        }
+      ]
+    },
+    {
+      &quot;id&quot; : &quot;03&quot;,
+      &quot;title&quot;: &quot;Beethoven Variations&quot;,
+      &quot;duration&quot;: 67,
+      &quot;songs&quot;: [
+        {
+          &quot;id&quot; : &quot;10&quot;,
+          &quot;title&quot;: &quot;Opus 34: Six variations on a theme in F major&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 11
+        },
+        {
+          &quot;id&quot; : &quot;11&quot;,
+          &quot;title&quot;: &quot;Opus 120: Thirty-three variations on a waltz by Diabelli in C majo&quot;,
+          &quot;artist&quot;: &quot;Beethoven&quot;,
+          &quot;genre&quot;: &quot;Classical&quot;,
+          &quot;duration&quot;: 45
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<h2>views/dashboard.hbs</h2>
+<pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
+
+{{#each playlists}}
+  &lt;section class=&quot;ui segment&quot;&gt;
+    &lt;h2 class=&quot;ui header&quot;&gt;
+      {{title}}
+    &lt;/h2&gt;
+    &lt;p&gt; Total Duration: {{duration}} &lt;/p&gt;
+    &lt;table class=&quot;ui table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Song&lt;/th&gt;
+          &lt;th&gt;Artist&lt;/th&gt;
+          &lt;th&gt;Genre&lt;/th&gt;
+          &lt;th&gt;Duration&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        {{#each songs}}
+          &lt;tr&gt;
+            &lt;td&gt;
+              {{title}}
+            &lt;/td&gt;
+            &lt;td&gt;
+              {{artist}}
+            &lt;/td&gt;
+            &lt;td&gt;
+              {{genre}}
+            &lt;/td&gt;
+            &lt;td&gt;
+              {{duration}}
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        {{/each}}
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/section&gt;
+{{/each}}</code></pre>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--<div class="ui bottom fixed borderless right menu">
+  <div class="ui right tiny menu">
+    <div class="ui mini message segment">
+      .
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+</div>-->
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
