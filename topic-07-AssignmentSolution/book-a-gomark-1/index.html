@@ -1,0 +1,773 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Glitch: Gomark Solution
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-gomark-1">
+      Lab-gomark-1
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <div class="item">
+      
+    </div>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-a/index.html">
+          Lab-01a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-b/index.html">
+          Lab-01b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
+          Lab-1 Glitch Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-AssignmentSolution/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
+          Lab-11 Functions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment" id="labchat">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-gomark-1">
+        <h1>Objectives</h1>
+<p>Implement version 1 of the Gomark assignment.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Starter Project</h1>
+<p>In Glitch, create a new project:</p>
+<p><img src="img/01.png" alt=""></p>
+<p>Keep the logs open - and view the running app:</p>
+<p><img src="img/02.png" alt=""></p>
+<p>Rename the app to something more appropriate (perhaps use your initials in the name to keep it unique):</p>
+<p><img src="img/03.png" alt=""></p>
+<p>Now, replace the project with our starter template by selecting the <code>Import from Github</code> option and importing the <code>edeleastar/Glitch-template-1</code> repo:</p>
+<p><img src="img/04.png" alt=""></p>
+<p>This may take a few minutes:</p>
+<p><img src="img/05.png" alt=""></p>
+<p>Review the running app:</p>
+<p><img src="img/06.png" alt=""></p>
+<p><img src="img/07.png" alt=""></p>
+<p><img src="img/08.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Specification: View 1 - Welcome</h1>
+<blockquote>
+<p><em>Contains an outline of the purpose of the app in a short passage of text.</em></p>
+</blockquote>
+<h1>Solution</h1>
+<p>A simple change to the view:</p>
+<h2>views/start.hbs</h2>
+<pre><code>{{&gt; menu}}
+
+&lt;section class=&quot;ui center aligned middle aligned segment&quot;&gt;
+  &lt;h1 class=&quot;ui header&quot;&gt;
+    Welcome to Gomark 1
+  &lt;/h1&gt;
+  &lt;p&gt;
+    This app enable you to manage your bookmarks. You can organise them into categories and share them with your friends and colleagues.
+  &lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<h2>Alternative:</h2>
+<p>Instead of entering the text in the template, we could modify the controller to pass the text to the view. This is the current start controller:</p>
+<h2>controllers/start.js</h2>
+<pre><code>&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+
+const start = {
+  index(request, response) {
+    logger.info(&#39;start rendering&#39;);
+    const viewData = {
+      title: &#39;Welcome to Template 1&#39;,
+    };
+    response.render(&#39;start&#39;, viewData);
+  },
+};
+
+module.exports = start;</code></pre>
+<p>Here is a revised version:</p>
+<pre><code>&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+
+const start = {
+  index(request, response) {
+    logger.info(&#39;start rendering&#39;);
+    const viewData = {
+      title: &#39;Welcome to Gomark 1&#39;,
+      description: &#39;This app enable you to manage your bookmarks. You can organise them into categories and share them with your friends and colleagues.&#39;,
+    };
+    response.render(&#39;start&#39;, viewData);
+  },
+};
+
+module.exports = start;</code></pre>
+<p>Everything is the same - except we are passing two properties now:</p>
+<ul>
+<li>title</li>
+<li>description</li>
+</ul>
+<p>Rework <code>start.hbs</code> to use these properties in the view:</p>
+<h2>views/start.hbs</h2>
+<pre><code>{{&gt; menu}}
+
+&lt;section class=&quot;ui center aligned middle aligned segment&quot;&gt;
+  &lt;h1 class=&quot;ui header&quot;&gt;
+    {{ title }}
+  &lt;/h1&gt;
+  &lt;p&gt;
+    {{ description }}
+  &lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<p><code>title</code> and <code>description</code> should now be rendered in the start view:</p>
+<p><img src="img/09.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Specification: View 2 - Bookmarks</h1>
+<blockquote>
+<p><em>A static list of bookmarks, divided into three categories:</em></p>
+<ul>
+<li><em>HTML Learning Resources</em></li>
+<li><em>CSS Learning Resources</em></li>
+<li><em>Javascript Learning Resources</em></li>
+</ul>
+<p><em>Each of these contains a small set (3 or 4) of links to web sites of interest in these categories. Each link consists of:</em></p>
+<ul>
+<li><em>title: an appropriate title for the link</em></li>
+<li><em>link: the actual url for the link</em></li>
+</ul>
+<p><em>Clicking on the link will open the url in a new browser window</em></p>
+</blockquote>
+<h1>Solution: Static Bookmarks</h1>
+<p>We could simply revise dasbboard.hbs to include the links directly:</p>
+<pre><code>{{&gt; menu id=&quot;dashboard&quot;}}
+
+&lt;section class=&quot;ui segment&quot;&gt;
+
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    HTML Learning Resources
+  &lt;/h2&gt;
+  &lt;table class=&quot;ui fixed table&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Title&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Sitepoint
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;https://www.sitepoint.com/html-css/&quot;&gt; https://www.sitepoint.com/html-css/&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Google HTML Style Guide
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;https://google.github.io/styleguide/htmlcssguide.xml&quot;&gt; https://google.github.io/styleguide/htmlcssguide.xml&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Front End Focus
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;http://frontendfocus.co/issues&quot;&gt; http://frontendfocus.co/issues&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/section&gt;
+
+&lt;section class=&quot;ui segment&quot;&gt;
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    CSS Learning Resources
+  &lt;/h2&gt;
+  &lt;table class=&quot;ui fixed table&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Title&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        W3C Learn CSS
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;https://www.w3.org/Style/CSS/learning&quot;&gt; https://www.w3.org/Style/CSS/learning&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Flexbox
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt; https://css-tricks.com/snippets/css/a-guide-to-flexbox/&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Grid
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;https://css-tricks.com/snippets/css/complete-guide-grid/&quot;&gt; https://css-tricks.com/snippets/css/complete-guide-grid/&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;ui segment&quot;&gt;
+  &lt;h2 class=&quot;ui header&quot;&gt;
+    Javascript Learning Resources
+  &lt;/h2&gt;
+  &lt;table class=&quot;ui fixed table&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Title&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Eloquent Javascript
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;http://eloquentjavascript.net/&quot;&gt; http://eloquentjavascript.net/&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Free Code Camp
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;https://www.freecodecamp.com/&quot;&gt; https://www.freecodecamp.com/&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        Javascript Weekly
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;http://javascriptweekly.com/issues&quot;&gt; http://javascriptweekly.com/issues&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+<p>Try this now:</p>
+<p><img src="img/10.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Solution: Dynamic Bookmarks (1)</h1>
+<p>The bookmarks are more efficiently stored in JSON format. Create a new file in a models folder called <code>bookmark-store.json</code>:</p>
+<h2>models/bookmarklist-store.json</h2>
+<pre><code>{
+  &quot;bookmarklistCollection&quot;: [
+    {
+      &quot;id&quot;: &quot;01&quot;,
+      &quot;title&quot;: &quot;HTML Learning Resources&quot;,
+      &quot;bookmarks&quot;: [
+        {
+          &quot;id&quot;: &quot;04&quot;,
+          &quot;title&quot;: &quot;Sitepoint&quot;,
+          &quot;link&quot;: &quot;https://www.sitepoint.com/html-css/&quot;
+        },
+        {
+          &quot;id&quot;: &quot;05&quot;,
+          &quot;title&quot;: &quot;Google HTML Style Guide&quot;,
+          &quot;link&quot;: &quot;https://google.github.io/styleguide/htmlcssguide.xml&quot;
+        },
+        {
+          &quot;id&quot;: &quot;06&quot;,
+          &quot;title&quot;: &quot;Front End Focus&quot;,
+          &quot;link&quot;: &quot;http://frontendfocus.co/issues&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;02&quot;,
+      &quot;title&quot;: &quot;CSS Learning Resources&quot;,
+      &quot;bookmarks&quot;: [
+        {
+          &quot;id&quot;: &quot;07&quot;,
+          &quot;title&quot;: &quot;W3C Learn CSS&quot;,
+          &quot;link&quot;: &quot;https://www.w3.org/Style/CSS/learning&quot;
+        },
+        {
+          &quot;id&quot;: &quot;08&quot;,
+          &quot;title&quot;: &quot;Flexbox&quot;,
+          &quot;link&quot;: &quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;
+        },
+        {
+          &quot;id&quot;: &quot;09&quot;,
+          &quot;title&quot;: &quot;Grid&quot;,
+          &quot;link&quot;: &quot;https://css-tricks.com/snippets/css/complete-guide-grid/&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;03&quot;,
+      &quot;title&quot;: &quot;Javascript Learning Resources&quot;,
+      &quot;bookmarks&quot;: [
+        {
+          &quot;id&quot;: &quot;10&quot;,
+          &quot;title&quot;: &quot;Eloquent Javascript&quot;,
+          &quot;link&quot;: &quot;http://eloquentjavascript.net/&quot;
+        },
+        {
+          &quot;id&quot;: &quot;11&quot;,
+          &quot;title&quot;: &quot;Free Code Camp&quot;,
+          &quot;link&quot;: &quot;https://www.freecodecamp.com/&quot;
+        },
+        {
+          &quot;id&quot;: &quot;12&quot;,
+          &quot;title&quot;: &quot;Javascript Weekly&quot;,
+          &quot;link&quot;: &quot;http://javascriptweekly.com/issues&quot;
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<p>This is the same data we were rendering, but in a more convenient format.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Solution: Dynamic Bookmarks (2)</h1>
+<p>We need another module to load these bookmarks:</p>
+<h2>models/bookmarklist-store.js</h2>
+<pre><code>&#39;use strict&#39;;
+
+const bookmarklistCollection = require(&#39;./bookmarklist-store.json&#39;).bookmarklistCollection;
+
+module.exports = bookmarklistCollection;</code></pre>
+<p>This will read the bookmarks from the json file, and &quot;export&quot; them to any other module that is interested in using them.</p>
+<p>In the dashboard controller, we import the bookmarks exported above, and insert them into the <code>viewData</code> object:</p>
+<h2>controllers/dashboard.js</h2>
+<pre><code>&#39;use strict&#39;;
+
+const logger = require(&#39;../utils/logger&#39;);
+const bookmarklistCollection = require(&#39;../models/bookmarklist-store.js&#39;);
+
+const dashboard = {
+  index(request, response) {
+    logger.info(&#39;dashboard rendering&#39;);
+    const viewData = {
+      title: &#39;Template 1 Dashboard&#39;,
+      bookmarklistCollection: bookmarklistCollection,
+    };
+    response.render(&#39;dashboard&#39;, viewData);
+  },
+};
+
+module.exports = dashboard;</code></pre>
+<p>They will now be available in the view - so we can rewrite the dashboard templates to display them:</p>
+<h2>views/dashboard.hbs</h2>
+<pre><code>{{&gt; menu id=&quot;dashboard&quot;}}
+
+{{#each bookmarklistCollection}}
+
+  &lt;section class=&quot;ui segment&quot;&gt;
+    &lt;h2 class=&quot;ui header&quot;&gt;
+      {{title}}
+    &lt;/h2&gt;
+    &lt;table class=&quot;ui fixed table&quot;&gt;
+      &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Title&lt;/th&gt;
+        &lt;th&gt;Link&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+      {{#each bookmarks}}
+        &lt;tr&gt;
+          &lt;td&gt;
+            {{title}}
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;a href=&quot;{{link}}&quot;&gt; {{link}}&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      {{/each}}
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/section&gt;
+
+{{/each}}</code></pre>
+<p>These should now appear as before:</p>
+<p><img src="img/10.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Specification: View 3 - About</h1>
+<blockquote>
+<p><em>Contact details for the author of the app (these can be fictitious company or person).</em></p>
+</blockquote>
+<h1>Solution</h1>
+<h2>views/about.hbs</h2>
+<pre><code>{{&gt; menu id=&quot;about&quot;}}
+
+&lt;section class=&quot;ui center aligned middle aligned segment&quot;&gt;
+  &lt;h1 class=&quot;ui header&quot;&gt;
+    About Gomark 1
+  &lt;/h1&gt;
+  &lt;p&gt;
+    Developed by GoMark Associates, WIT, Waterford.
+  &lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<p><img src="img/11.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Archive</h1>
+<p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Glitch project, and import <code>edeleastar/Glitch-gomark-1</code>.</p>
+<h2>Exercise 1: Menu</h2>
+<p>Change the menu to show &#39;Welcome&#39; instead of &#39;Template 1&#39;.</p>
+<h2>Exercise 2: About View</h2>
+<p>Revise the about view such that <code>title</code> and <code>contact</code> strings are passed from the controller to the view in the <code>viewData</code> object. See step 2 in this lab for an example of how to do this.</p>
+<h2>Exercise 2:</h2>
+<p>Show the number of bookmarks - like this:</p>
+<p><img src="img/13.png" alt=""></p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--<div class="ui bottom fixed borderless right menu">
+  <div class="ui right tiny menu">
+    <div class="ui mini message segment">
+      .
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+</div>-->
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

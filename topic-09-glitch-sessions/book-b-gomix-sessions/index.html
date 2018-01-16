@@ -1,0 +1,826 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Glitch: Sessions
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-8 Gomix Sessions">
+      Lab-8 Gomix Sessions
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <div class="item">
+      
+    </div>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-a/index.html">
+          Lab-01a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-b/index.html">
+          Lab-01b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
+          Lab-1 Glitch Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+          Lab-2 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+          Lab-3 Gomix Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-AssignmentSolution/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
+          Lab-11 Functions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment" id="labchat">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-8 Gomix Sessions">
+        <h1>Objectives</h1>
+<p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Playlist Model</h1>
+<p>This lab is based on Playlist-3. This can be imported into a new Glitch project from <code>edeleastar/Glitch-playlist-3</code>.</p>
+<h2>models/playlist-store.js</h2>
+<p>If your project has any playlists in the json store, delete them now. Your store should look like this:</p>
+<h2>models/playlist-store.json</h2>
+<pre><code>{
+  &quot;playlistCollection&quot;: [
+  ]
+}</code></pre>
+<p>We need a new method in the playlist-store module, which will retrieve a playlist based on a specific user id.</p>
+<h2>models/playlist-store.js</h2>
+<pre><code>...
+  getUserPlaylists(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
+...</code></pre>
+<p>This new methods takes a userid, and will only fetch playlists belonging to the user with the specific id. We havent introduced the User model yet - nor are we storing playlists with such an id. We will make these changes in this lab.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Cookie Parser</h1>
+<p>We need to install a new library in our project - in the form of a library to manage browser based cookies. This requires 2 steps:</p>
+<h1>Update package.json</h1>
+<h2>package.json</h2>
+<p>This entry must go in:</p>
+<pre><code>    &quot;cookie-parser&quot;: &quot;^1.4.3&quot;,</code></pre>
+<p>This is the context:</p>
+<pre><code>...
+  &quot;dependencies&quot;: {
+    &quot;body-parser&quot;: &quot;^1.15.2&quot;,
+    &quot;cookie-parser&quot;: &quot;^1.4.3&quot;,
+    &quot;express&quot;: &quot;^4.14.0&quot;,
+    &quot;express-handlebars&quot;: &quot;^3.0.0&quot;,
+    &quot;lodash&quot;: &quot;^4.17.3&quot;,
+    &quot;lowdb&quot;: &quot;^0.14.0&quot;,
+    &quot;uuid&quot;: &quot;^3.0.1&quot;,
+    &quot;winston&quot;: &quot;^2.3.0&quot;
+  },
+...</code></pre>
+<h1>Load the Library</h1>
+<h2>server.js</h2>
+<p>In server, we need to import and the initialise the library:</p>
+<pre><code>...
+const cookieParser = require(&#39;cookie-parser&#39;);
+...
+app.use(cookieParser());
+...</code></pre>
+<p>This is the complete server.js</p>
+<pre><code>&#39;use strict&#39;;
+
+const express = require(&#39;express&#39;);
+const logger = require(&#39;./utils/logger&#39;);
+const bodyParser = require(&#39;body-parser&#39;);
+const cookieParser = require(&#39;cookie-parser&#39;);
+
+const app = express();
+app.use(cookieParser());
+const exphbs = require(&#39;express-handlebars&#39;);
+app.use(bodyParser.urlencoded({ extended: false, }));
+app.use(express.static(&#39;public&#39;));
+app.engine(&#39;.hbs&#39;, exphbs({
+  extname: &#39;.hbs&#39;,
+  defaultLayout: &#39;main&#39;,
+}));
+app.set(&#39;view engine&#39;, &#39;.hbs&#39;);
+
+const routes = require(&#39;./routes&#39;);
+app.use(&#39;/&#39;, routes);
+
+const listener = app.listen(process.env.PORT || 4000, function () {
+  logger.info(`Glitch-template-1 started on port ${listener.address().port}`);
+});</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>UserStore</h1>
+<p>Now we can introduce a new model:</p>
+<h2>models/user-store.js</h2>
+<pre><code>&#39;use strict&#39;;
+
+const _ = require(&#39;lodash&#39;);
+const JsonStore = require(&#39;./json-store&#39;);
+
+const userStore = {
+
+  store: new JsonStore(&#39;./models/user-store.json&#39;, {users: []}),
+  collection: &#39;users&#39;,
+
+  getAllUsers() {
+    return this.store.findAll(this.collection);
+  },
+
+  addUser(user) {
+    this.store.add(this.collection, user);
+  },
+
+  getUserById(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
+
+  getUserByEmail(email) {
+    return this.store.findOneBy(this.collection, { email: email });
+  },
+}
+
+module.exports = userStore;</code></pre>
+<h2>models/user-store.json</h2>
+<pre><code>{
+  &quot;users&quot;: [
+    {
+      &quot;firstName&quot;: &quot;homer&quot;,
+      &quot;lastName&quot;: &quot;simpson&quot;,
+      &quot;email&quot;: &quot;homer@simpson.com&quot;,
+      &quot;password&quot;: &quot;secret&quot;,
+      &quot;id&quot;: &quot;3ad52697-6d98-4d80-8273-084de55a86c0&quot;
+    },
+    {
+      &quot;firstName&quot;: &quot;marge&quot;,
+      &quot;lastName&quot;: &quot;simpson&quot;,
+      &quot;email&quot;: &quot;marge@simpson.com&quot;,
+      &quot;password&quot;: &quot;secret&quot;,
+      &quot;id&quot;: &quot;2b6f0989-7b7f-4a38-ad26-aa06b922d751&quot;
+    }
+  ]
+}</code></pre>
+<p>In the above we are pre-loading two users for test purposes.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Accounts views</h1>
+<p>We need a suite of new views to support signup / login</p>
+<h2>views/index.hbs</h2>
+<pre><code>{{&gt; welcomemenu }}
+
+&lt;section class=&quot;ui center aligned middle aligned segment&quot;&gt;
+  &lt;p&gt; Sign up or Log in... &lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<h2>views/login.hbs</h2>
+<pre><code>{{&gt; welcomemenu id=&#39;login&#39; }}
+
+&lt;form class=&quot;ui stacked segment form&quot; action=&quot;/authenticate&quot; method=&quot;POST&quot;&gt;
+  &lt;h3 class=&quot;ui header&quot;&gt;Log-in&lt;/h3&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Email&lt;/label&gt; &lt;input placeholder=&quot;Email&quot; name=&quot;email&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot;  name=&quot;password&quot;&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;ui blue submit button&quot;&gt;Login&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+<h2>views/signup.hbs</h2>
+<pre><code>{{&gt; welcomemenu id=&quot;signup&quot;}}
+
+&lt;form class=&quot;ui stacked segment form&quot; action=&quot;/register&quot; method=&quot;POST&quot;&gt;
+  &lt;h3 class=&quot;ui header&quot;&gt;Register&lt;/h3&gt;
+  &lt;div class=&quot;two fields&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label&gt;First Name&lt;/label&gt;
+      &lt;input placeholder=&quot;First Name&quot; type=&quot;text&quot;  name=&quot;firstName&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label&gt;Last Name&lt;/label&gt;
+      &lt;input placeholder=&quot;Last Name&quot; type=&quot;text&quot;  name=&quot;lastName&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input placeholder=&quot;Email&quot; type=&quot;text&quot; name=&quot;email&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;ui blue submit button&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+<p>In addition, a new menu which will support the above views:</p>
+<h2>views/partials/welcomemenu.hbs</h2>
+<pre><code>&lt;nav class=&quot;ui menu&quot;&gt;
+  &lt;header class=&quot;ui header item&quot;&gt; &lt;a href=&quot;/&quot;&gt; Playlist 4 &lt;/a&gt;&lt;/header&gt;
+  &lt;div class=&quot;right menu&quot;&gt;
+    &lt;a id=&quot;signup&quot; class=&quot;item&quot; href=&quot;/signup&quot;&gt; Signup  &lt;/a&gt;
+    &lt;a id=&quot;login&quot; class=&quot;item&quot; href=&quot;/login&quot;&gt;  Login   &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;script&gt;
+  $(&quot;#{{id}}&quot;).addClass(&quot;active item&quot;);
+&lt;/script&gt;</code></pre>
+<p>And finally, we need to extend the menu partial - which will introduce a new menu option to allow a user to log out:</p>
+<h2>views/partials/menu.hbs</h2>
+<pre><code>&lt;nav class=&quot;ui menu&quot;&gt;
+  &lt;header class=&quot;ui header item&quot;&gt; &lt;a href=&quot;/&quot;&gt; Playlist 4 &lt;/a&gt;&lt;/header&gt;
+  &lt;div class=&quot;right menu&quot;&gt;
+    &lt;a id=&quot;dashboard&quot; class=&quot;item&quot; href=&quot;/dashboard&quot;&gt; Dashboard  &lt;/a&gt;
+    &lt;a id=&quot;about&quot; class=&quot;item&quot; href=&quot;/about&quot;&gt; About &lt;/a&gt;
+    &lt;a id=&quot;logout&quot; class=&quot;item&quot; href=&quot;/logout&quot;&gt; Logout &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;script&gt;
+  $(&quot;#{{id}}&quot;).addClass(&quot;active item&quot;);
+&lt;/script&gt;</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Accounts controller</h1>
+<p>This is a new controller to support these views:</p>
+<h2>controllers/accounts</h2>
+<pre><code>&#39;use strict&#39;;
+const userstore = require(&#39;../models/user-store&#39;);
+const logger = require(&#39;../utils/logger&#39;);
+const uuid = require(&#39;uuid&#39;);
+
+const accounts = {
+
+  index(request, response) {
+    const viewData = {
+      title: &#39;Login or Signup&#39;,
+    };
+    response.render(&#39;index&#39;, viewData);
+  },
+
+  login(request, response) {
+    const viewData = {
+      title: &#39;Login to the Service&#39;,
+    };
+    response.render(&#39;login&#39;, viewData);
+  },
+
+  logout(request, response) {
+    response.cookie(&#39;playlist&#39;, &#39;&#39;);
+    response.redirect(&#39;/&#39;);
+  },
+
+  signup(request, response) {
+    const viewData = {
+      title: &#39;Login to the Service&#39;,
+    };
+    response.render(&#39;signup&#39;, viewData);
+  },
+
+  register(request, response) {
+    const user = request.body;
+    user.id = uuid();
+    userstore.addUser(user);
+    logger.info(`registering ${user.email}`);
+    response.redirect(&#39;/&#39;);
+  },
+
+  authenticate(request, response) {
+    const user = userstore.getUserByEmail(request.body.email);
+    if (user) {
+      response.cookie(&#39;playlist&#39;, user.email);
+      logger.info(`logging in ${user.email}`);
+      response.redirect(&#39;/dashboard&#39;);
+    } else {
+      response.redirect(&#39;/login&#39;);
+    }
+  },
+
+  getCurrentUser (request) {
+    const userEmail = request.cookies.playlist;
+    return userstore.getUserByEmail(userEmail);
+  }
+}
+
+module.exports = accounts;</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Routes</h1>
+<p>These new views+ controller  all require new routes:</p>
+<h2>routes.js</h2>
+<p>In particular, these specific routes:</p>
+<pre><code>...
+router.get(&#39;/&#39;, accounts.index);
+router.get(&#39;/login&#39;, accounts.login);
+router.get(&#39;/signup&#39;, accounts.signup);
+router.get(&#39;/logout&#39;, accounts.logout);
+router.post(&#39;/register&#39;, accounts.register);
+router.post(&#39;/authenticate&#39;, accounts.authenticate);
+...</code></pre>
+<p>This is the complete revised routes.js</p>
+<pre><code>&#39;use strict&#39;;
+
+const express = require(&#39;express&#39;);
+const router = express.Router();
+
+const start = require(&#39;./controllers/start&#39;);
+const dashboard = require(&#39;./controllers/dashboard.js&#39;);
+const playlist = require(&#39;./controllers/playlist.js&#39;);
+const about = require(&#39;./controllers/about.js&#39;);
+const accounts = require (&#39;./controllers/accounts.js&#39;);
+
+router.get(&#39;/&#39;, accounts.index);
+router.get(&#39;/login&#39;, accounts.login);
+router.get(&#39;/signup&#39;, accounts.signup);
+router.get(&#39;/logout&#39;, accounts.logout);
+router.post(&#39;/register&#39;, accounts.register);
+router.post(&#39;/authenticate&#39;, accounts.authenticate);
+
+router.get(&#39;/dashboard&#39;, dashboard.index);
+router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
+router.post(&#39;/dashboard/addplaylist&#39;, dashboard.addPlaylist);
+
+router.get(&#39;/playlist/:id&#39;, playlist.index);
+router.get(&#39;/playlist/:id/deletesong/:songid&#39;, playlist.deleteSong);
+router.post(&#39;/playlist/:id/addsong&#39;, playlist.addSong);
+
+router.get(&#39;/about&#39;, about.index);
+
+module.exports = router;</code></pre>
+<p>The application should be running now. You should see these new views:</p>
+<h3>A new landing page</h3>
+<p><img src="img/02.png" alt=""></p>
+<h3>Signup</h3>
+<p><img src="img/01.png" alt=""></p>
+<h3>login</h3>
+<p><img src="img/03.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>Dashboard</h1>
+<p>Try the following now:</p>
+<ul>
+<li>Log in as &#39;homer@simpson&#39;, &#39;secret&#39;. </li>
+<li>Add a playlist called &#39;test&#39;.</li>
+<li>logout</li>
+<li>Log in as &#39;marge@simpson&#39;, &#39;secret&#39;. </li>
+</ul>
+<p>Notice that we are seeing Homers test playlist even when we log in as marge? The plaulist-store.json may look loke this:</p>
+<pre><code>{
+  &quot;playlistCollection&quot;: [
+    {
+      &quot;id&quot;: &quot;4a1ea4ec-303e-4b13-bd98-a6b04877e093&quot;,
+      &quot;title&quot;: &quot;test&quot;,
+      &quot;songs&quot;: []
+    }
+  ]
+}</code></pre>
+<p>(you may need to make a cosmetic change in the source to get the editor to reload in Glitch)</p>
+<p>This clearly is not what we were aiming for. We should only present the users own playlists.</p>
+<p>Here is how do it - all changes to the dashboard module:</p>
+<h2>controller/dashboard.js</h2>
+<p>In the top of the module, import the new accounts module:</p>
+<pre><code>...
+const accounts = require (&#39;./accounts.js&#39;);
+...</code></pre>
+<p>Revised index action:</p>
+<pre><code>...
+  index(request, response) {
+    logger.info(&#39;dashboard rendering&#39;);
+    const loggedInUser = accounts.getCurrentUser(request);
+    const viewData = {
+      title: &#39;Playlist Dashboard&#39;,
+      playlists: playlistStore.getUserPlaylists(loggedInUser.id),
+    };
+    logger.info(&#39;about to render&#39;, playlistStore.getAllPlaylists());
+    response.render(&#39;dashboard&#39;, viewData);
+  },
+...</code></pre>
+<p>Revised addPlaylist action:</p>
+<pre><code>...
+  addPlaylist(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newPlayList = {
+      id: uuid(),
+      userid: loggedInUser.id,
+      title: request.body.title,
+      songs: [],
+    };
+    logger.debug(&#39;Creating a new Playlist&#39;, newPlayList);
+    playlistStore.addPlaylist(newPlayList);
+    response.redirect(&#39;/dashboard&#39;);
+  },
+...</code></pre>
+<p>Log in as marge and homer in turn, creating a single playlist (use a name you will remember). Make sure that the appropriate playlist appears in each users dashboard.</p>
+<h2>The Stores</h2>
+<p>Looking at the playlist-store.json - it might (eventually when loaded) look like this:</p>
+<pre><code>{
+  &quot;playlistCollection&quot;: [
+    {
+      &quot;id&quot;: &quot;4a1ea4ec-303e-4b13-bd98-a6b04877e093&quot;,
+      &quot;title&quot;: &quot;test&quot;,
+      &quot;songs&quot;: []
+    },
+    {
+      &quot;id&quot;: &quot;1e6ed5a0-28fe-4527-8ce8-6cb5c800b5be&quot;,
+      &quot;userid&quot;: &quot;2b6f0989-7b7f-4a38-ad26-aa06b922d751&quot;,
+      &quot;title&quot;: &quot;marges playlist&quot;,
+      &quot;songs&quot;: []
+    },
+    {
+      &quot;id&quot;: &quot;07dd66fe-9f8f-456c-944d-48330bde4610&quot;,
+      &quot;userid&quot;: &quot;3ad52697-6d98-4d80-8273-084de55a86c0&quot;,
+      &quot;title&quot;: &quot;homers playlist&quot;,
+      &quot;songs&quot;: []
+    }
+  ]
+}</code></pre>
+<p>Examine it carefully - notice that the very first playlist is &#39;orphaned&#39; - it has no userid. The others have userid - which corellates the playlists with the user in the users store:</p>
+<pre><code>{
+  &quot;users&quot;: [
+    {
+      &quot;firstName&quot;: &quot;homer&quot;,
+      &quot;lastName&quot;: &quot;simpson&quot;,
+      &quot;email&quot;: &quot;homer@simpson.com&quot;,
+      &quot;password&quot;: &quot;secret&quot;,
+      &quot;id&quot;: &quot;3ad52697-6d98-4d80-8273-084de55a86c0&quot;
+    },
+    {
+      &quot;firstName&quot;: &quot;marge&quot;,
+      &quot;lastName&quot;: &quot;simpson&quot;,
+      &quot;email&quot;: &quot;marge@simpson.com&quot;,
+      &quot;password&quot;: &quot;secret&quot;,
+      &quot;id&quot;: &quot;2b6f0989-7b7f-4a38-ad26-aa06b922d751&quot;
+    }
+  ]
+}</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercise</h1>
+<p>This is the completed archive at this stage:</p>
+<ul>
+<li><a href="https://github.com/edeleastar/Glitch-playlist-4">https://github.com/edeleastar/Glitch-playlist-4</a></li>
+</ul>
+<p>It can be imported into Glitch using <code>edeleastar/Glitch-playlist-4</code></p>
+<h2>Exercise 1</h2>
+<p>Test the application more comprehensively - signing up a range of users, and creating playlists. Make sure the users only see the playlists they have created.</p>
+<h2>Exercise 2</h2>
+<p>Look at the <code>authenticate</code> method again:</p>
+<pre><code>  authenticate(request, response) {
+    const user = userstore.getUserByEmail(request.body.email);
+    if (user) {
+      response.cookie(&#39;playlist&#39;, user.email);
+      logger.info(`logging in ${user.email}`);
+      response.redirect(&#39;/dashboard&#39;);
+    } else {
+      response.redirect(&#39;/login&#39;);
+    }
+  },</code></pre>
+<p>Can you see anything not quite right about it? </p>
+<p>Hint: what happens if incorrect password entered? Try this now.</p>
+<p>See if you can fix this problem - i.e. only allow user to log in if they provide correct password.</p>
+<h2>Exercise 3</h2>
+<p>Version 3 of the Gomark assignment can be downloaded from here:</p>
+<ul>
+<li><a href="https://github.com/edeleastar/gomark-3">https://github.com/edeleastar/gomark-3</a></li>
+</ul>
+<p>In Glitch, create a new project, and import from github: <code>edeleastar/gomark-3</code>.</p>
+<p>Using this lab as a guide - see if you can introduce sessions into gomark?</p>
+<h2>Exercise 4</h2>
+<p>You should still have your own gomark assignment. Try this same now - bringing in the sessions feature into your solution.</p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--<div class="ui bottom fixed borderless right menu">
+  <div class="ui right tiny menu">
+    <div class="ui mini message segment">
+      .
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+</div>-->
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
