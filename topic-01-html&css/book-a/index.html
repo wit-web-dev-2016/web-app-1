@@ -124,10 +124,6 @@ body
       Lab-01a Semantic UI
     </a>
     
-    <a class="item" data-tab="Lab-02a Semantic UI">
-      Lab-02a Semantic UI
-    </a>
-    
     <a class="item" data-tab="01">
       01
     </a>
@@ -168,10 +164,6 @@ body
       Exercise
     </a>
     
-    <a class="item" data-tab="Exercises">
-      Exercises
-    </a>
-    
     <div class="item">
       
     </div>
@@ -194,26 +186,20 @@ body
       
     
       
-        <a class="item" href="../../topic-02-glitch-intro/book-a-glitch-intro/index.html">
-          Lab-1 Glitch Intro
+        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
+          Lab-2 Glitch Intro
         </a>
       
     
       
         <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
-          Lab-2 JS Intro
+          Lab-3 JS Intro
         </a>
       
     
       
         <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
-          Lab-3 Gomix Playlist 1
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-04-app-controllers+views/book-a-gomix-playlist-1/index.html">
-          01
+          Lab-4 Glitch Playlist 1
         </a>
       
     
@@ -277,6 +263,24 @@ body
         </a>
       
     
+      
+        <a class="item" href="../../topic-10-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
+          Lab-11 Functions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
   </div>
   <div class="pusher" tabindex="-1">
     <div class="ui basic segment" id="labchat">
@@ -285,12 +289,6 @@ body
       <div  class="ui tab segment lab" data-tab="Lab-01a Semantic UI">
         <h1>Objectives</h1>
 <p>Rebuild the web site using semantic-ui</p>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Lab-02a Semantic UI">
-        <h1>Objectives</h1>
-<p>Rebuild the iot web site using semantic-ui</p>
 
       </div>
      
@@ -622,7 +620,7 @@ and sponsors</p>
       <div  class="ui tab segment lab" data-tab="06">
         <h1>Strands</h1>
 <p>We need to make similar adjustments to all of the pages in the strands folder.</p>
-<p>Replace the head section with the version to include Semantic-ui</p>
+<p>Replace the head section with the version shown below that includes Semantic-ui</p>
 <pre><code>&lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://fonts.googleapis.com/css?family=Open+Sans&quot; /&gt;
@@ -641,8 +639,7 @@ and sponsors</p>
     ... existing footer section
   &lt;section&gt;
 &lt;/body&gt;</code></pre>
-<p>It includes the <strong>semantic.css</strong> file in the <code>&lt;head&gt;</code>, and also a <strong>container</strong>  class and a <strong>segment</strong> class. 
-We do this once, and all the pages in the strands folder will be updated:??</p>
+<p>You should see the segment border around the articles and figures as shown here:</p>
 <p><img src="img/05.png" alt=""></p>
 <p>Here is the complete data page in case you need further guidance:</p>
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -692,7 +689,7 @@ We do this once, and all the pages in the strands folder will be updated:??</p>
       &lt;/p&gt;
     &lt;/article&gt;
 
-   &lt;/section&gt; 
+   &lt;/section&gt;
 
   &lt;footer&gt;
     &lt;hr&gt;
@@ -791,13 +788,12 @@ We do this once, and all the pages in the strands folder will be updated:??</p>
     &lt;a href=&quot;https://ie.linkedin.com/pub/computing-at-wit/a9/221/1b6&quot;&gt; linkedin &lt;/a&gt;
   &lt;/p&gt;
 &lt;/footer&gt;</code></pre>
-<p>(This has the path to semantic adjusted)</p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="08">
         <h1>Grids II</h1>
-<p>We can apply the same principles to tidy up the  sponsors section the home page:</p>
+<p>We can apply the same principles to tidy up the sponsors section the home page:</p>
 <pre><code>&lt;section class=&quot;ui segment&quot;&gt;
   &lt;h4&gt; Supported by leading edge research at... &lt;/h4&gt;
   &lt;p&gt;
@@ -837,7 +833,7 @@ We do this once, and all the pages in the strands folder will be updated:??</p>
     &lt;/div&gt;
   &lt;/section&gt;
 &lt;/section&gt;</code></pre>
-<p>It is a grid segment - with two rows. The first row has no columns - it is the full width of the section. The second row is a <strong>three column</strong> row. 
+<p>It is a grid segment - with two rows. The first row has no columns - it is the full width of the section. The second row is a <strong>three column</strong> row.
 Try this out now:</p>
 <p><img src="img/13.png" alt=""></p>
 <p>One more change to center align the elements:</p>
@@ -865,7 +861,7 @@ Try this out now:</p>
         <h1>Grids III</h1>
 <p>Currently our curriculum section looks like this:</p>
 <p><img src="img/14.png" alt=""></p>
-<p>We would like the reformat it as follows:</p>
+<p>We would like to reformat it as follows:</p>
 <p><img src="img/15.png" alt=""></p>
 <p>This is the current source:</p>
 <pre><code>&lt;article class=&quot;ui segment&quot;&gt;
@@ -987,24 +983,6 @@ Try this out now:</p>
       <div  class="ui tab segment lab" data-tab="Exercise">
         <h1>Exercise</h1>
 <h2>Exercise 1: Icons</h2>
-<p>Currently the footer looks like this:</p>
-<p><img src="img/16.png" alt=""></p>
-<p>See if you can figure out how to make the section look like this:</p>
-<p><img src="img/17.png" alt=""></p>
-<p>As well as the alignment options you have seen so far in this lab, the icons section of the Semantic-UI documentation should help:</p>
-<ul>
-<li><a href="http://semantic-ui.com/elements/icon.html">http://semantic-ui.com/elements/icon.html</a></li>
-</ul>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Exercises">
-        <h1>Archive</h1>
-<p>This is the version of the site at this stage:</p>
-<ul>
-<li><a href="https://github.com/wit-computing/iot-web/releases/tag/Lab05a">https://github.com/wit-computing/iot-web/releases/tag/Lab05a</a></li>
-</ul>
-<h1>Exercise 1: Icons</h1>
 <p>Currently the footer looks like this:</p>
 <p><img src="img/16.png" alt=""></p>
 <p>See if you can figure out how to make the section look like this:</p>

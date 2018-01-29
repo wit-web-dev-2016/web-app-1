@@ -1,0 +1,716 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      JS: Functions
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-11 Functions">
+      Lab-11 Functions
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" data-tab=".">
+      .
+    </a>
+    
+    <div class="item">
+      
+    </div>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-a/index.html">
+          Lab-01a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-b/index.html">
+          Lab-01b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
+          Lab-2 Glitch Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+          Lab-3 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+          Lab-4 Glitch Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Exercise Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-AssignmentSolution/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
+          Lab-11 Functions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment" id="labchat">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-11 Functions">
+        <h1>Objectives</h1>
+<p>Functions basics, function parameters &amp; scope</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Objectives</h1>
+<h2>Function Basics</h2>
+<ul>
+<li>Define what a function is and how they are essential in programming</li>
+<li>Create functions using function declarations or function expressions</li>
+<li>Explain how scope works in JavaScript and compare function, block and global scope</li>
+<li>Understand what hoisting is and how the JavaScript compiler works when analyzing variables and functions</li>
+</ul>
+<h2>Function Parameters &amp; Scope</h2>
+<ul>
+<li>Define what a parameter is and why they are essential when writing functions</li>
+<li>Compare and contrast global and function scope</li>
+<li>Understand what happens when variables are declared without the <code>var</code> keyword</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Function Basics I</h1>
+<h3>What is a function</h3>
+<p>A function is a repeatable process or procedure. A real world analogy of a function is the brew button on a coffee machine. The coffee machine has inputs (hot water, and coffee grounds), and outputs (hot coffee). When you press the button to brew a pot of coffee, you are starting a process that should return an expected output to you. The same thing is true in programming. A function takes a set of variables as inputs and returns a value as an output.</p>
+<p>We have already seen many functions in action. For example, in the array section, we learned about <code>push</code> and <code>pop</code>. In Glitch you created functions that deleted or added songs and playlists.These are all functions that operate on an array. Consider the following example:</p>
+<pre><code>var arr = [5,4,3,2,1];
+var poppedVal = arr.pop();
+console.log(arr);
+console.log(poppedVal);</code></pre>
+<p>In the example, we are using the <code>pop</code> function. It takes no inputs, and it returns a value which is the last item in the array that has been removed from the array. When you run the code in your console, you&#39;ll see the array is now <code>[5,4,3,2]</code> and the value of <code>poppedVal</code> is <code>1</code>.</p>
+<h3>Declaring Functions</h3>
+<p>To be a knowledgeable JavaScript programmer, we need to learn to write our own functions as well. There are multiple ways to write functions in JavaScript. We will cover the differences in more detail later. For now, let&#39;s start with one way: a function declaration.</p>
+<p>In general, we declare a function in the following way:</p>
+<pre><code>function anyNameYouWantForTheFunction() {
+    // As many lines of code as you want
+}</code></pre>
+<p>In general, this type of function syntax consists of four parts:</p>
+<ol>
+<li>The <code>function</code> keyword,</li>
+<li>The name of the function (in this case, <code>anyNameYouWantForTheFunction</code>),</li>
+<li>Any parameters for the function (we&#39;ll ignore this for now, but parameters will go inside of the parentheses after the function name),</li>
+<li>The function body (the code for the function, which lives inside of the curly braces).</li>
+</ol>
+<p>It might seem silly, but it would be good to practice typing this syntax out a few times. You&#39;ll be writing functions constantly in JavaScript, so the syntax is something you should commit to muscle memory. Try typing these out in your browser console window:</p>
+<pre><code>function myFunction() {
+}
+
+function myOtherFunction() {
+}
+
+function yetAnotherFunction() {
+}
+
+function okayIGetItThisIsTheSyntaxForFunctions() {
+}</code></pre>
+<p>The functions above aren&#39;t very interesting, because none of them have a function body. Let&#39;s look at an example of a function that actually does something:</p>
+<pre><code>// this is called the function definition - we are ONLY defining the function here
+function firstFunction(){
+    console.log(&quot;I just wrote my first function!&quot;);
+}</code></pre>
+<p>Now we have declared a function called <code>firstFunction</code>, but we have not used the function yet. To execute the code within the function, we must <em>invoke</em> the function. A function is invoked by adding a <code>()</code> after the name of the function:</p>
+<pre><code>// to call or invoke the function
+firstFunction();</code></pre>
+<p>If you run this code in the Chrome console, you will see the output is &quot;I just wrote my first function&quot; and on the next line, <code>undefined</code>. Next, we&#39;ll learn where the <code>undefined</code> is coming from.</p>
+<p>If you want to call a function from a html page you could use the following:</p>
+<pre><code>&lt;a href=&quot;#&quot; onClick=&quot;firstFunction();&quot;&gt;Function Call&lt;/a&gt;</code></pre>
+<p>You must make sure you include the script link (in the head section of the html file) to the js file that holds your firstFunction()</p>
+<pre><code> &lt;script src=&quot;functions-02.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>You will practice this in step 04</p>
+<h3>Returning Values From Functions</h3>
+<p>In JavaScript, if we do not specifically tell the function to <em>return</em> something, it will return <code>undefined</code> when it is finished executing. So how do we tell a function to return something? We use the <code>return</code> keyword!</p>
+<pre><code>// this is called the function definition -
+// we are ONLY defining the function here
+
+function firstFunction(){
+    return &quot;I just wrote my first function!&quot;;
+}
+
+// to call or invoke the function
+
+firstFunction(); // now we don&#39;t see undefined anymore!</code></pre>
+<p>Now our function is returning &quot;I just wrote my first function&quot;. To capture that string, let&#39;s use a variable:</p>
+<pre><code>var returnValue = firstFunction();
+console.log(returnValue);</code></pre>
+<p>Now in the console, you should see &quot;I just wrote my first function&quot;. That is the value that was returned from our function call and that is now saved in the <code>returnValue</code> variable.</p>
+<p>Remember, the <code>return</code> keyword can <strong>ONLY</strong> be used inside of a function. let&#39;s take a look at another example.</p>
+<pre><code>function secondFunction(){
+    return &quot;Hello&quot;;
+    return &quot;Goodbye&quot;;
+}
+
+secondFunction(); // &quot;Hello&quot;</code></pre>
+<p>We see from this example that the <strong>return</strong> keyword can only be executed once in a function. Once it is executed, the function is complete and no other lines of code will be executed.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Function Basics II</h1>
+<h3>Conditional Logic With Return Statements</h3>
+<p>Now that we have an idea of how functions work, let&#39;s explore a previous topic and see how we can refactor some boolean logic. Let&#39;s imagine we want to write a function that returns true if a random number is over .5 - otherwise the function should return false. Here is one way we can write it</p>
+<pre><code>function isOverPointFive(){
+    if (Math.random() &gt; .5){
+        return true;
+    } else {
+        return false;
+    }
+}</code></pre>
+<p>This code will work just fine, but remember, the return keyword exits from a function. So if the random number is greater than .5 we will exit the function early and never reach the else condition. So we don&#39;t even need the &quot;else&quot; condition! We can refactor our code to look like this:</p>
+<pre><code>function isOverPointFive(){
+    if(Math.random() &gt; .5){
+        return true;
+    }
+    return false;
+}</code></pre>
+<p>Much better! If the number is greater than .5, return true and exit the function. Otherwise just return false.</p>
+<p>Simplifying it even further, we can take advantage of the fact that <code>Math.random() &gt; .5</code> returns <code>true</code> or <code>false</code>. </p>
+<pre><code>function isOverPointFive(){
+    return Math.random() &gt; .5;
+}</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Function Parameters &amp; Scope I</h1>
+<h3>Function Parameters</h3>
+<p>So far our functions have not been taking in any input; they simply are returning an output. So when would we want an input to our functions? Let&#39;s imagine we want to calculate the sum of two numbers. If our numbers are 5 and 5, well, that&#39;s easy.</p>
+<pre><code>5 + 5; // 10</code></pre>
+<p>But what happens if we don&#39;t know what our numbers are? How could we possibly do this? Better yet, what if we want to do 4 + 6, and 2 + 8 and 7 + 3...we would have to start writing a whole bunch of code that&#39;s does basically the same function. This is a great example of when we want to add inputs and use a function. Inputs to a function are called <em>parameters</em> or <em>arguments</em>.</p>
+<p>So what does a function look like with parameters? Let&#39;s write a function called <code>add</code> that takes in two parameters - <code>number1</code> and <code>number2</code> - and returns their sum.</p>
+<pre><code>function add(number1, number2){
+    return number1 + number2;
+}</code></pre>
+<p>Now our add function will work for any two numbers that we want to add together. It&#39;s important to note that the name of the paramters, <code>number1</code> and <code>number2</code>, are arbitrary names that we have chosen. If we change the names of the parameters to <code>a</code> and <code>b</code>, the function would do exactly the same thing:</p>
+<pre><code>// This function will do the same thing as our previous function
+function add(a, b){
+    return a + b;
+}</code></pre>
+<p>Now we can define a function with parameters. Let&#39;s see how we <em>invoke</em> that function:</p>
+<pre><code>add(4, 6); // returns 10
+add(2, 8); // returns 10
+add(7, 1); // returns 8</code></pre>
+<p>In the example above, we are now invoking the add function with parameters. A parameter can be a literal number like we have above, or we could even use variables:</p>
+<pre><code>var num1 = 5;
+var num2 = 8;
+add(num1, num2);  // returns 13</code></pre>
+<p>It is important to understand that the variable names we are using when we invoke the function are not related at all to the variable names we have defined <em>inside</em> of the function. The values of <code>num1</code> and <code>num2</code> are being copied into the parameters <code>number1</code> and <code>number2</code> that are defined in the function.</p>
+<h2>Exercises 1: Function calls</h2>
+<p>For these exercises, create:</p>
+<ul>
+<li>functions-02.html</li>
+<li>functions-02.js</li>
+</ul>
+<p>And use the developer tools in chrome to run and monitor the script.</p>
+<h2>functions-02.html</h2>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;functions-02.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>In functions-02.js, </p>
+<p>Introduce this object:</p>
+<pre><code>const playList = 
+  {
+    id: &quot;01&quot;,
+    title: &quot;Beethoven Sonatas&quot;,
+    artist: &quot;Beethoven&quot;,
+    songs: [ &quot;Piano Sonata No. 3&quot;,&quot;Piano Sonata No. 7&quot;,&quot;Piano Sonata No. 10&quot;],
+    rating: 4
+  };</code></pre>
+<ul>
+<li>Write a new function called songOuput() which uses a loop to iterate through the songs array and console.log all of the songs. See if you can call this function when you click a link on the html page. The ouput can still be posted to the console.</li>
+<li>Write another funciton called songOutputReverse() which again uses a loop to iterate in the reverse direction, logging the songs starting at &#39;Piano Sonata No. 10&#39; and finishing with &#39;Piano Sonata No. 3&#39;. See if you can call this function when you click a link on the html page. The ouput can still be posted to the console.</li>
+</ul>
+<p>If we wanted the output presented in the html page rather than the console we could use the return keyword in our songOutputReverse() function. In html use the following code so that you can see the songs output on the web page:</p>
+<pre><code>
+&lt;div&gt;&lt;script&gt;document.write(songOutputReverseReturn(&quot;&quot;))&lt;/script&gt;&lt;/div&gt;</code></pre>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises</h1>
+<ul>
+<li>Make a function for <code>add</code>, <code>subtract</code>, <code>multiply</code>, and <code>divide</code>. Each of these functions should accept two parameters and return the sum, difference, product and quotient.</li>
+</ul>
+<pre><code>add(2,2); // 4
+subtract(2,2); // 0
+multiply(2,2); // 4
+divide(2,2); // 1</code></pre>
+<ul>
+<li>Write a function called <code>myName</code> that logs your full name. Save your full name to a variable inside of the function body, then use <code>console.log</code> to print your name to the console.</li>
+</ul>
+<pre><code>myName(); // if your full name was Elie Schoppik this function would return &quot;Elie Schoppik&quot;</code></pre>
+<ul>
+<li><p>Create a variable called <code>numbers</code> which is an array that contains the numbers 1 through 10.</p>
+</li>
+<li><p>Write a function called <code>displayOddNumbers</code> which iterates over the <code>numbers</code> array and console.logs out all of the numbers that are odd. Here is what that might look like:</p>
+</li>
+</ul>
+<pre><code>displayOddNumbers(); 
+
+// 1
+// 3
+// 5
+// 7
+// 9</code></pre>
+<ul>
+<li>Write a function called <code>displayEvenNumbers</code> which iterates over the <code>numbers</code> array and console.logs out all of the numbers that are even. Here is what that might look like:</li>
+</ul>
+<pre><code>displayEvenNumbers(); 
+
+// 2
+// 4
+// 6
+// 8
+// 10</code></pre>
+<ul>
+<li>Create a function called <code>returnFirstOddNumber</code> which iterates over the <code>numbers</code> array and returns the first odd number it finds</li>
+</ul>
+<pre><code>returnFirstOddNumber(); 
+
+// 1</code></pre>
+<ul>
+<li>Create a function called <code>returnFirstEvenNumber</code> which iterates over the <code>numbers</code> array and returns the first even number it finds</li>
+</ul>
+<pre><code>returnFirstEvenNumber(); 
+
+// 2</code></pre>
+<ul>
+<li>Create a function called <code>returnFirstHalf</code> which returns the first half of the <code>numbers</code> array</li>
+</ul>
+<pre><code>returnFirstHalf(); 
+
+// [1,2,3,4,5]</code></pre>
+<ul>
+<li>Create a function called <code>returnSecondHalf</code> which returns the first half of the <code>numbers</code> array</li>
+</ul>
+<pre><code>returnSecondHalf(); 
+
+// [6,7,8,9,10]</code></pre>
+<h2>Solutions</h2>
+<p>You can find the solutions <a href="./solutions.html">here</a></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab=".">
+        <h3>Step 03 Solutions</h3>
+<p><strong><code>myName</code></strong></p>
+<pre><code>function myName(){
+    var myName = &#39;Elie Schoppik&#39;;
+    console.log(myName);
+}</code></pre>
+<p><strong><code>displayOddNumbers</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function displayOddNumbers(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        // if the value we are at in the array is not divisible by 2 (it&#39;s an odd number)
+        if(numbers[i] % 2 !== 0){
+            // print out that value!
+            console.log(numbers[i]);
+        }
+    }
+}</code></pre>
+<p><strong><code>displayEvenNumbers</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function displayEvenNumbers(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        // if the value we are at in the array is divisible by 2 (it&#39;s an even number)
+        if(numbers[i] % 2 === 0){
+            // print out that value!
+            console.log(numbers[i]);
+        }
+    }
+}</code></pre>
+<p><strong><code>returnFirstOddNumber</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnFirstOddNumber(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        if(numbers[i] % 2 !== 0){
+            // print out that value, using return gets us out of the function!
+            return numbers[i];
+        }
+    }
+}</code></pre>
+<p><strong><code>returnFirstEvenNumber</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnFirstEvenNumber(){
+    for(var i = 0; i &lt; numbers.length; i++){
+        if(numbers[i] % 2 === 0){
+            // print out that value!
+            return numbers[i];
+        }
+    }
+}</code></pre>
+<p><strong><code>returnFirstHalf</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnFirstHalf(){
+    return numbers.slice(0,numbers.length/2);
+}</code></pre>
+<p><strong><code>returnSecondHalf</code></strong></p>
+<pre><code>var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnSecondHalf(){
+    return numbers.slice(numbers.length/2);
+}</code></pre>
+<p><strong><code>Write a function that uses a loop to iterate through the songs array and console.log all of the songs.</code></strong></p>
+<pre><code>const playList = 
+  {
+    id: &quot;01&quot;,
+    title: &quot;Beethoven Sonatas&quot;,
+    artist: &quot;Beethoven&quot;,
+    songs: [ &quot;Piano Sonata No. 3&quot;,&quot;Piano Sonata No. 7&quot;,&quot;Piano Sonata No. 10&quot;],
+    rating: 4
+  };
+
+function songOutput()
+{
+  for (let i=0;i&lt;playList.songs.length; i++)
+  {
+    console.log(playList.songs[i]);
+  }
+}</code></pre>
+<p><strong><code>Write another funciton that again uses a loop to iterate in the reverse direction, logging the people starting at &#39;James&#39; and finishing with &#39;Greg&#39;</code></strong></p>
+<pre><code>
+function songOutputReverse()
+{
+  for (let i=playList.songs.length; i&gt;-1; i--)
+  {
+    console.log(playList.songs[i]);
+  }
+}</code></pre>
+<p><strong><code>write a function that uses the return keyword.</code></strong></p>
+<pre><code>
+function songOutputReverseReturn(tempString)
+{
+   for (let i=playList.songs.length; i&gt;0; i--)
+  {
+    tempString = tempString + &quot; &lt;br&gt;&quot; + playList.songs[i-1];
+  }
+  return tempString;
+}</code></pre>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;functions-02.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet...&lt;/p&gt;
+    &lt;a href=&quot;#&quot; onClick=&quot;getPlaylists();&quot;&gt;Display Playlists&lt;/a&gt;&lt;hr&gt;
+    &lt;a href=&quot;#&quot; onClick=&quot;songOutput();&quot;&gt;Output songs of Playlist 1&lt;/a&gt;&lt;hr&gt;
+    &lt;a href=&quot;#&quot; onClick=&quot;songOutputReverse();&quot;&gt;Output songs of Playlist 1 in reverse&lt;/a&gt;&lt;hr&gt;
+    &lt;div&gt;&lt;script&gt;document.write(songOutputReverseReturn(&quot;&quot;))&lt;/script&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--<div class="ui bottom fixed borderless right menu">
+  <div class="ui right tiny menu">
+    <div class="ui mini message segment">
+      .
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+</div>-->
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

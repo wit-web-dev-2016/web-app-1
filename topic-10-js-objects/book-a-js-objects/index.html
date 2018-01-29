@@ -1,0 +1,777 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Week 10: JS: Objects
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-9 JS Objects">
+      Lab-9 JS Objects
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" data-tab=".">
+      .
+    </a>
+    
+    <div class="item">
+      
+    </div>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-a/index.html">
+          Lab-01a Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-01-html&css/book-b/index.html">
+          Lab-01b Semantic UI
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
+          Lab-2 Glitch Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+          Lab-3 JS Intro
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+          Lab-4 Glitch Playlist 1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+          Lab-4 Gomix Playlist 2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-05-app-templates+views/book-a-gomix-playlist-2/index.html">
+          Exercise Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-AssignmentSolution/book-a-gomark-1/index.html">
+          Lab-gomark-1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+          Lab-5 Gomix Playlist 3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+          Lab-6 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-08-js-arrays/book-b-gomark-2/index.html">
+          Lab-gomark-2
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-gomark-3/index.html">
+          Lab-gomark-3
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-gomix-sessions/index.html">
+          Lab-8 Gomix Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-js-objects/book-a-js-objects/index.html">
+          Lab-9 JS Objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-11-js-functions/book-a-js-functions/index.html">
+          Lab-11 Functions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-12-js-nested-objects/book-a-js-nested-objects/index.html">
+          Lab-12 Nested Objects
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment" id="labchat">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-9 JS Objects">
+        <h1>Objectives</h1>
+<p>Object basics and Object iteration.</p>
+<h2>Object Basics</h2>
+<ul>
+<li>Compare and contrast objects and arrays, and explain good use cases for each one</li>
+<li>Iterate over arrays and objects</li>
+<li>Add and remove properties/elements from objects</li>
+</ul>
+<h2>Object Iteration</h2>
+<ul>
+<li>Understand how to iterate through an object using a <code>for...in</code> loop</li>
+<li>Determine if a key exists in an object using an <code>if...in</code> statement</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Object Basics I</h1>
+<h3>Introduction</h3>
+<p>In JavaScript, along with primitives we have objects. Objects allow you to map keys to values. For example, the key <code>&#39;name&#39;</code> could map to <code>&quot;Tim&quot;</code>. Or the key <code>&#39;isInstructor&#39;</code> could map to the boolean <code>true</code>. These are example of key value mappings. When you want to know the name property of the object, you look it up and get the value back, which is <code>&quot;Tim&quot;</code> in this case. Here is an example of declaring an object:</p>
+<pre><code>var firstObj = {
+  firstName: &quot;Tim&quot;,
+  lastName: &quot;Garcia&quot;,
+  isInstructor: true
+};</code></pre>
+<p>In this object, we have keys of <code>&quot;firstName&quot;</code>, <code>&quot;lastName&quot;</code>, and <code>&quot;isInstructor&quot;</code> and values of <code>&quot;Tim&quot;</code>, <code>&quot;Garcia&quot;</code>, and <code>true</code> respectively.</p>
+<p>Notice the format of an object. It has a key, followed by a colon, followed by a value, then a comma. But the last key and value in the object omits the comma. Forgetting the comma is an error that you may run into from time to time. Try putting the following in your console. You should see an error, <code>Uncaught SyntaxError: Unexpected identifier</code>, because there is no comma after the <code>firstName</code> key and value:</p>
+<pre><code>var firstObj = {
+  firstName: &quot;Tim&quot;
+  lastName: &quot;Garcia&quot;,
+  isInstructor: true
+};</code></pre>
+<p>After we have created an object, the first thing we may want to do with it is access the values using the object&#39;s keys.</p>
+<h3>Accessing Object Values</h3>
+<p>To access values in an object, we could use the dot notation:</p>
+<pre><code>firstObj.firstName;       // returns &quot;Tim&quot;
+firstObj.lastName;        // returns &quot;Garcia&quot;
+firstObj.isInstructor;    // returns true
+firstObj.keyDoesntExist;  // returns undefined</code></pre>
+<p>Or we could use the bracket notation:</p>
+<pre><code>firstObj[&quot;firstName&quot;];       // returns &quot;Tim&quot;
+firstObj[&quot;lastName&quot;];        // returns &quot;Garcia&quot;
+firstObj[&quot;isInstructor&quot;];    // returns true
+firstObj[&quot;keyDoesntExist&quot;];  // returns undefined</code></pre>
+<p>We will learn the difference between these two later on.</p>
+<p>Objects are one of the built-in types in JavaScript and consist of unordered key-value pairs. Let&#39;s look at another object:</p>
+<pre><code>var tim = {
+  name: &quot;Tim&quot;,
+  catOwner: true,
+  boatOwner: true
+};</code></pre>
+<p>In the object above we have a set of keys (<code>name</code>, <code>catOwner</code>, <code>boatOwner</code>) and values (<code>&quot;Tim&quot;</code>, <code>true</code> and <code>true</code>).</p>
+<h3>Bracket Notation vs Dot Notation</h3>
+<p>If we want to access values in the object we can do it two different ways: either using brackets (<code>[]</code>) or dot notation. Let&#39;s take a look at both.</p>
+<pre><code>var obj = {
+  firstName: &quot;Elie&quot;,
+  lastName: &quot;Schoppik&quot;,
+  favoriteColor: &quot;purple&quot;,
+  job: &quot;instructor&quot;,
+  isDeveloper: true
+};
+
+obj.firstName; // Elie
+obj[&quot;lastName&quot;]; // Schoppik
+obj[favoriteColor]; // This gives us an error, because there is no variable called favoriteColor!</code></pre>
+<p>So which one should we use? Well, best practice is to use the dot notation <em>if you can use it</em>. But there are cases in which you&#39;ll need to use bracket notation. Let&#39;s take a look at this example:</p>
+<pre><code>var obj = {};
+var person = &quot;Tom&quot;;
+
+obj[person] = &quot;This is a person&quot;;
+obj[1+1+1] = &quot;Three&quot;;
+
+obj;
+
+
+/*
+obj now should look like this: 
+{
+    Tom: &quot;This is a person&quot;,
+    3: &quot;Three&quot;
+}
+*/
+
+obj.3;// Syntax Error! Can&#39;t use the dot notation with a number
+obj[3]; // &quot;Three&quot; - we NEED to use the bracket notation
+obj[person]; // &quot;This is a person&quot; it works because the var person has the name Tom contained in it.
+obj[&quot;Tom&quot;]; // &quot;This is a person&quot;
+obj.person; // undefined this is because the key is not person it is Tom.</code></pre>
+<p>In short, use the bracket notation when you need to evaluate some expression or pass in a variable to get the name of the key, but when you know the name of the key and it is not a variable or expression, always use the dot notation.</p>
+<h1>Exercises</h1>
+<p>For these exercises, create:</p>
+<ul>
+<li>objects-09.html</li>
+<li>objects-09.js</li>
+</ul>
+<p>And use the developer tools in chrome to run and monitor the script.</p>
+<h2>objects-09.html</h2>
+<pre><code>&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Test Site&lt;/title&gt;
+    &lt;script src=&quot;objects-09.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Nothing going on yet.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h1>Exercise 1</h1>
+<ul>
+<li>Create a goMark object that has &#39;url&#39;, &#39;description&#39;, and &#39;rating&#39; as keys. Initialise the object with some values and log to the console.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Object Basics II</h1>
+<h3>Keys Are Always Strings in JavaScript</h3>
+<p>It is important to note that the type of a key in JavaScript is always a string. Let&#39;s say we create the following object of some employee id to the employee name:</p>
+<pre><code>var idToName = {
+    754: &quot;Tim&quot;,
+    843: &quot;Matt&quot;,
+    921: &quot;Janey&quot;,
+    192: &quot;Elie&quot;
+};</code></pre>
+<p>Now we want to access the key <code>754</code> to get the value <code>&quot;Tim&quot;</code>. We cannot use the dot notation for this:</p>
+<pre><code>idToName.754;  // causes an error</code></pre>
+<p>Instead we need to use the bracket notation. And the value inside the bracket notation is a string:</p>
+<pre><code>idToName[&quot;754&quot;];  // returns &quot;Tim&quot;</code></pre>
+<p>So even though we did not quote the key name when we created the <code>idToName</code> object, JavaScript automatically converts the number into a string. <strong>Every key in a JavaScript object is a string!</strong></p>
+<h4>Adding to objects</h4>
+<p>To add properties or functions (which are sometimes called methods) to our objects, we can use the <code>.</code> or <code>[]</code> operator (as before, the dot notation is preferred, but not always possible).</p>
+<pre><code>var obj = {
+  name: &quot;Jon Snow&quot;,
+  watchMember: true,
+};
+
+obj.gameOfThrones = &quot;awesome&quot;;
+obj;
+
+/*
+{
+    name: &quot;Jon Snow&quot;,
+    watchMember: true,
+    gameOfThrones: &quot;awesome&quot;
+}
+*/</code></pre>
+<h4>Removing from objects</h4>
+<p>We can remove a key from an object by using the <code>delete</code> keywork. Here&#39;s an example:</p>
+<pre><code>var obj = {
+  name: &quot;Elie&quot;,
+  job: &quot;Instructor&quot;
+};
+
+delete obj.job; // returns true
+
+obj;
+
+/*
+{
+    name: &quot;Elie&quot;
+}
+*/</code></pre>
+<h1>Exercises</h1>
+<p>Use the files you created earlier:</p>
+<ul>
+<li>objects-09.html</li>
+<li>objects-09.js</li>
+</ul>
+<h2>Exercises 3: Dot and Bracket notation.</h2>
+<ul>
+<li>Access each value from your goMark object using both dot notation and brakcet notation.</li>
+<li>Add a key for &#39;category&#39; to your object. Remove the key and value for &#39;rating&#39;.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Object Iteration I</h1>
+<h4>Looping over objects</h4>
+<p>One of the most important ideas in programming is the idea of iteration, or looping. Let&#39;s say we want to print out all of the values in an object. One way we can do this is by printing the values individually, one per line.</p>
+<pre><code>var obj = {
+  firstName: &quot;Elie&quot;,
+  lastName: &quot;Schoppik&quot;,
+  favoriteColor: &quot;purple&quot;,
+  job: &quot;instructor&quot;,
+  isDeveloper: true
+};
+
+console.log(obj.firstName);
+console.log(obj.lastName);
+console.log(obj.favoriteColor);
+console.log(obj.job);
+console.log(obj.developer);</code></pre>
+<p>Although this will work, there are cases where we don&#39;t know the keys that an object has. In that case, looping is a much better idea. Let&#39;s take a look at how we would loop over the keys in an object.</p>
+<p>To iterate over objects, we use a <code>for in</code> loop.</p>
+<pre><code>var instructor = {
+  name: &quot;Matt&quot;,
+  mathWizard: true,
+  dogOwner: true
+};
+
+for (var singleKey in instructor) {
+  console.log(instructor[singleKey]);
+}
+
+// the loop will log:
+// &quot;Matt&quot;
+// true
+// true</code></pre>
+<p>In the code example, <code>singleKey</code> is a variable that will be assigned to each key in the <code>instructor</code> object. To access the key&#39;s value, we must use the bracket notation.</p>
+<h1>Exercises</h1>
+<p>Use the files you created earlier:</p>
+<ul>
+<li>objects-09.html</li>
+<li>objects-09.js</li>
+</ul>
+<h2>Exercise 3</h2>
+<p>Experiment with the following:</p>
+<ul>
+<li>Log the GoMark objects fields using object iteration</li>
+<li>after you have logged the fields, dynamically add a new field <code>title</code>, and log the fields again</li>
+<li>after you have logged the field the second time, delete a field and log them again.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Object Iteration II</h1>
+<h4>if...in: Determining If a Key Exists in an Object</h4>
+<p>Sometimes, we just want to check and see if a certain key exists in an object. To do that we use a <code>if...in</code> statement. Here is an example</p>
+<pre><code>var obj = {
+    favoriteNumber: 33,
+    favoriteColor: &#39;blue&#39;
+}
+
+if (&quot;favoriteNumber&quot; in obj){
+    console.log(&quot;The favoriteNumber key exists!&quot;);
+}
+
+// &quot;The favoriteNumber key exists!&quot;
+
+if (&quot;nothing&quot; in obj){
+    console.log(&quot;The nothing key exists!&quot;);
+}</code></pre>
+<h3>Exercises</h3>
+<p>Use the files you created earlier:</p>
+<ul>
+<li>objects-09.html</li>
+<li>objects-09.js</li>
+</ul>
+<h2>Exercise 4</h2>
+<p>Experiment with the following:</p>
+<ul>
+<li>Given the following object below, write code to print the value then the key to the console separated by <code>=&gt;</code></li>
+</ul>
+<pre><code>const goMark = {
+  url: &quot;http://www.wit.ie&quot;,
+  description: &quot;third level educational institution&quot;,
+  rating: 3,
+};</code></pre>
+<pre><code>// Output should be:
+// http://www.wit.ie =&gt; url
+// third level educational institution =&gt; description
+// 3 =&gt; rating</code></pre>
+<ul>
+<li>Add a key of your name and a value for your the year you started in W.I.T.</li>
+<li>Write an if statement that console.logs your name and the year you started in W.I.T to the console if the key of your name is contained in the object.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Object Iteration II</h1>
+<h4>if...in: Determining If a Key Exists in an Object</h4>
+<p>Sometimes, we just want to check and see if a certain key exists in an object. To do that we use a <code>if...in</code> statement. Here is an example</p>
+<pre><code>var obj = {
+    favoriteNumber: 33,
+    favoriteColor: &#39;blue&#39;
+}
+
+if (&quot;favoriteNumber&quot; in obj){
+    console.log(&quot;The favoriteNumber key exists!&quot;);
+}
+
+// &quot;The favoriteNumber key exists!&quot;
+
+if (&quot;nothing&quot; in obj){
+    console.log(&quot;The nothing key exists!&quot;);
+}</code></pre>
+<h3>Exercises</h3>
+<ol>
+<li>Given the following object below, write code to print the value then the key to the console separated by &#39;=&gt;&#39;:</li>
+</ol>
+<pre><code>const goMark = 
+  {
+    url: &quot;http://www.wit.ie&quot;,
+    description: &quot;third level educational institution&quot;,
+    rating: 3,
+  }
+;</code></pre>
+<p>// Output should be:
+// <a href="http://www.wit.ie">http://www.wit.ie</a> =&gt; url
+// third level educational institution =&gt; description
+// 3 =&gt; rating</p>
+<p>~~~</p>
+<ol>
+<li><p>Add a key of your name and a value for your the year you started in W.I.T.</p>
+</li>
+<li><p>Write an if statement that console.logs your name and the year you started in W.I.T to the console if the key of your name is contained in the object.</p>
+</li>
+</ol>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises</h1>
+<p>Using the files you created earlier:</p>
+<ul>
+<li>objects-09.html</li>
+<li>objects-09.js</li>
+</ul>
+<h2>Exercise 5:</h2>
+<p>Experiment with the following:</p>
+<p>For each of the exercises below, assume you are starting with the following <code>playList</code> object</p>
+<pre><code>const playList = {
+  id: &quot;01&quot;,
+  title: &quot;Beethoven Sonatas&quot;,
+  artist: &quot;Beethoven&quot;,
+  songs: [&quot;Piano Sonata No. 3&quot;, 
+          &quot;Piano Sonata No. 7&quot;, 
+          &quot;Piano Sonata No. 10&quot;],
+  rating: 4,
+};</code></pre>
+<ol>
+<li>Write the command to add the song &quot;Paino Sonata 13&quot; to the end of the songs array.</li>
+<li>Change the rating to the value of <code>7</code>.</li>
+<li>Using the <code>delete</code> keyword, write the command to remove the artist key from the playList object.</li>
+<li>Write the command to add a new key called <code>oldSchool</code> and a value of <code>true</code> to the playList object.</li>
+<li>Using a loop, iterate through the songs array and console.log all of the songs.</li>
+<li>Using a loop, console.log all of the keys in the playList object.</li>
+<li>Using a loop, console.log all of the values in the playList object.</li>
+</ol>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises</h1>
+<p>For each of the exercises below, assume you are starting with the following <code>playList</code> object</p>
+<pre><code>const playList = 
+  {
+    id: &quot;01&quot;,
+    title: &quot;Beethoven Sonatas&quot;,
+    artist: &quot;Beethoven&quot;,
+    songs: [ &quot;Piano Sonata No. 3&quot;,&quot;Piano Sonata No. 7&quot;,&quot;Piano Sonata No. 10&quot;],
+    rating: 4
+  };</code></pre>
+<ol>
+<li>Write the command to add the song &quot;Paino Sonata 13&quot; to the end of the songs array.</li>
+<li>Change the rating to the value of <code>7</code>.</li>
+<li>Using the <code>delete</code> keyword, write the command to remove the artist key from the playList object.</li>
+<li>Write the command to add a new key called <code>oldSchool</code> and a value of <code>true</code> to the playList object.</li>
+<li>Using a loop, iterate through the songs array and console.log all of the songs.</li>
+<li>Using a loop, console.log all of the keys in the playList object.</li>
+<li>Using a loop, console.log all of the values in the playList object.</li>
+</ol>
+<h3>Solutions</h3>
+<p>You can find solutions to the exercises <a href="./solutions.html">here</a></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab=".">
+        <h1>JS Objects Exercise Solutions</h1>
+<pre><code class="lang-js">var programming = {
+    languages: [&quot;JavaScript&quot;, &quot;Python&quot;, &quot;Ruby&quot;],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes: &quot;http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke&quot;
+}
+
+// 1
+
+programming.languages.push(&quot;Go&quot;);
+
+// 2
+
+programming.difficulty = 7;
+
+// 3
+
+delete programming.jokes;
+
+// 4
+
+programming.isFun = true;
+
+// 5
+
+for (var i = 0; i &lt; programming.languages.length; i++) {
+    console.log(programming.languages[i]);
+}
+
+// 6
+
+for (var key in programming){
+    console.log(key);
+}
+
+// 7
+
+for (var key in programming){
+    console.log(programming[key]);
+}</code></pre>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--<div class="ui bottom fixed borderless right menu">
+  <div class="ui right tiny menu">
+    <div class="ui mini message segment">
+      .
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+</div>-->
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
